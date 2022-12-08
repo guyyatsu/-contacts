@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+{{InputType}}<br>
+<label for="returnHome">Main Page</label><br>
+<button name=""><a href="https://guyyatsu.me">home</a></button><br>
+
+<label for="updateInfo">Update Info</label><br>
+<button name=""><a href="{{ url_for('ContactForm') }}">home</a></button><br>
+{% endblock %}

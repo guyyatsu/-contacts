@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+
+    <label for="FirstName">First name:</label><br>
+    <input required type="text" id="FirstName" name="FirstName"><br>
+
+    <label for="LastName">Last name:</label><br>
+    <input required type="text" id="LastName" name="LastName"><br>
+
+    <label for="Email">Email:</label><br>
+    <input required type="email" id="Email" name="Email"><br>
+
+    <label for="PreferredPhone">Preferred Phone:</label><br>
+    <input type="tel" id="PreferredPhone" name="PreferredPhone"
+           placeholder="123 456 7890"
+           pattern="[0-9]{3} [0-9]{3} [0-9]{4}"><br>
+
+    <label for="Company">Company:</label><br>
+    <input type="text" id="Company" name="Company"><br>
+
+    <label for="Website">Website:</label><br>
+    <input type="url" id="Website" name="Website"><br>
+
+    <input type="submit"><br>
+  </form> 
+{% endblock %}

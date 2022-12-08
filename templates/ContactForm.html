@@ -1,27 +1,44 @@
 {% extends "layout.html" %}
+
+
+{% block scripting %}
+<!-- SUPPOSEDLY this allows for input masking, but so far I cant get it to work. -->
+
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='masking-input.js') }}" data-autoinit="true"></script> -->
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='masking-input.css') }}"/> -->
+{% endblock %}
+
+
 {% block content %}
 <form method="post" enctype="multipart/form-data">
 
-    <label for="FirstName">First name:</label><br>
-    <input required type="text" id="FirstName" name="FirstName"><br>
+    <!-- Visitors $NAME -->
+    <label for="ContactName">Name:</label><br>
+    <input required type="text" id="ContactName"
+           name="ContactName" value="{{ name }}"><br>
 
-    <label for="LastName">Last name:</label><br>
-    <input required type="text" id="LastName" name="LastName"><br>
-
+    <!-- Visitors $EMAIL -->
     <label for="Email">Email:</label><br>
-    <input required type="email" id="Email" name="Email"><br>
+    <input required type="email" id="Email"
+           value="{{ email }}" name="Email"><br>
 
+    <!-- Visitors $PHONE -->
     <label for="PreferredPhone">Preferred Phone:</label><br>
     <input type="tel" id="PreferredPhone" name="PreferredPhone"
-           placeholder="123 456 7890"
-           pattern="[0-9]{3} [0-9]{3} [0-9]{4}"><br>
+           value="{{ phone }}"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
 
+    <!-- Visitors $COMPANY -->
     <label for="Company">Company:</label><br>
-    <input type="text" id="Company" name="Company"><br>
+    <input type="text" value="{{ company }}"
+           id="Company" name="Company"><br>
 
+    <!-- Visitors $WEBSITE -->
     <label for="Website">Website:</label><br>
-    <input type="url" id="Website" name="Website"><br>
+    <input type="url" value="{{ website }}"
+           id="Website" name="Website"><br>
 
     <input type="submit"><br>
-  </form> 
+  </form>
+
 {% endblock %}

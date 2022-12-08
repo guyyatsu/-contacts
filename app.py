@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
 
 # Set sqlite3 constants.
-ContactsDatabase = "./contacts.db"
+ContactsDatabase = "/administrator/.contacts.db"
 connection = sqlite3.connect(ContactsDatabase)
 cursor = connection.cursor()
 
@@ -25,84 +25,149 @@ app = Flask(__name__)
 def ContactForm():
 
   # Set sqlite3 constants.
-  ContactsDatabase = "./contacts.db"
+  ContactsDatabase = "/administrator/.contacts.db"
   connection = sqlite3.connect(ContactsDatabase)
   cursor = connection.cursor()
 
 
   if request.method == "GET":
+
+    """ Check for existing session variables. """
+    # This allows the user to review their
+    # submission after they've already entered it.
+    #
+    # 
+    #
+    
+
+    if session.get("name") == None: name= "Firstname Lastname"
+    else: name= session["name"].title().replace("_", " ")
+
+    if session.get("email") == None: email= "username@domain.tld"
+    else: email= session["email"]
+
+    if session.get("number") == None: number= "123-456-7890"
+    else: number= session["number"]
+
+
+    if session.get("company") == None: company= "Business Factory llc"
+    else: company= session["company"].title().replace("_", " ")
+
+    if session.get("website") == None: website= "yourdomain.tld"
+    else: website= session["website"]
+
+
+
     """ Retrieve form data and write to database."""
-    return render_template("ContactForm.html", title="Contact Form")
+    return render_template("ContactForm.html",
+                           title="Contact Form",
+                           name=name,
+                           email=email,
+                           number=number,
+                           company=company,
+                           website=website)
 
 
   if request.method == "POST":
 
-    post_type = "add"
+
 
     """ Format and set the users input."""
   
-    # Add the last name to the first name.
-    name = f"{request.form['FirstName'].lower()}_{request.form['LastName'].lower()}"
+    # Name.
+    session["name"]= name= f"{request.form['ContactName'].lower().replace(' ', '_')}"
+    #session["name"] = name
 
-    # Email needs no formatting.
-    email = f"{request.form['Email']}"
 
-    # Replace spaces in number with dashes.
+    # Email.
+    session["email"]= email= f"{request.form['Email']}"
+    #session["email"] = email
+
+
+    # Phone Number.
     if request.form["PreferredPhone"]:
-      number = f"{request.form['PreferredPhone'].replace(' ', '-')}"
+      session["number"]= number= f"{request.form['PreferredPhone'].replace(' ', '-')}"
+      print(session["number"])
+      #session["number"] = number
 
-    # Company gets lowercased, because we dont respect them.
+
+    # Company.
     if request.form["Company"]:
-      company = f"{request.form['Company'].lower().replace(' ', '_')}"
+      session["company"]= company= f"{request.form['Company'].lower().replace(' ', '_')}"
+      #session["company"] = company
 
-    # Website also gets collected without formatting. 
+
+    # Website.
     if request.form["Website"]:
-      website = f"{request.form['Website']}"
+      session["website"]= website= f"{request.form['Website']}"
+      #session["website"] = website
 
 
-    """ Check for existing contact in the database. """
+
+    """ Write or update entry. """
+    # When an entry is made the page is refreshed and the previously
+    # given information is displayed so that the user has the option
+    # to review their input and change it as necessary.
+    #
+    # In an effort to prevent us from having to choose between
+    # required keys, we'll simply delete any rows matching
+    # any of the keys.
 
     # Select either the name or the email.
-    cursor.execute(f"SELECT * FROM contacts WHERE name=? OR email=?;",
-                   (name, email))
+    cursor.execute(
+      f"SELECT * FROM contacts WHERE name=? OR email=?;",
+      (name, email)); _results = cursor.fetchall()
 
-    # If a match is found, continue to updating the row.
-    if len(cursor.fetchall()) > 0:  post_type = "update"
+    # If a match is found, delete the entry and rewrite it.
+    if len(_results) > 0:
+      cursor.execute(f"DELETE FROM contacts WHERE name=? OR email=?",
+                     (name, email))
 
-    # Otherwise, populate a new row with the required information.
-    else: cursor.execute(f"INSERT INTO contacts (name,email) "
-                         f"VALUES( ?, ? )", (name, email))
+    # Write a new row with the required name and email.
+    cursor.execute(f"INSERT INTO contacts (name,email) "
+                       f"VALUES( ?, ? )", (name, email))
 
 
-    """ Update the non-required columns. """
+    """ Write optional fields to the database row. """
+    # These options are nice to have, but not required
+    # input.
+    #
+    # To check for a variables existence we use the
+    # built-in .locals against every optional field.
+    #
+    # If any matches are found, apply the appropriate
+    # SQLite transaction.
 
     if "number" in locals():# Add the number, if given.
       cursor.execute(f"UPDATE contacts SET number = ? "
                      f"WHERE name=? OR email=?;",
-                     (number, name, email))
+                     (number, name, email)); del number
+
 
     if "company" in locals():# Add the company, if given.
       cursor.execute(f"UPDATE contacts SET company = ? "
                      f"WHERE name=? OR email=?;",
-                     (company, name, email))
+                     (company, name, email)); del company
+
 
     if "website" in locals():# Add the website, if given.
       cursor.execute(f"UPDATE contacts SET company = ? "
                      f"WHERE name=? OR email=?;",
-                     (website, name, email))
+                     (website, name, email)); del website
+
 
     # Save your work.
     connection.commit()
 
-    #return redirect(url_for("FormSuccess"))
-    return redirect(url_for("FormSuccess", post_type=post_type))
+    return redirect("https://guyyatsu.me/contacts")
 
-@app.route("/<post_type>/success")
-def FormSuccess(post_type):
+
+@app.route("/success")
+def FormSuccess():
   """ Inform the user of a successful transaction. """
 
   # Let the user know the UPDATE was successful.
-  if post_type == "update":
+  if session["update"]:
     return render_template("FormSuccess.html",
       title="Success!",
       InputType="Contact information updated successfully.")
@@ -112,3 +177,8 @@ def FormSuccess(post_type):
     return render_template("FormSuccess.html",
       title="Success!",
       InputType="Contact information successfully added.")
+
+if __name__ == "__main__":
+  app.secret_key = "xXssD"
+  app.config['SESSION_TYPE'] = 'filesystem'
+  app.run(host="0.0.0.0", port="65354")

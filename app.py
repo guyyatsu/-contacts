@@ -1,6 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
 
+with open("/home/hunter/.ssh/id_ed25519.pub") as pubkeyFile:
+  KeyHeaders = pubkeyFile.read()\
+                         .split(" ")
+
+PublicKey = KeyHeaders[1]
+
 # Set sqlite3 constants.
 ContactsDatabase = "/administrator/.contacts.db"
 connection = sqlite3.connect(ContactsDatabase)
@@ -20,6 +26,8 @@ if len(cursor.fetchall()) == 0:
 
 # Initialize the flask instance.
 app = Flask(__name__)
+app.secret_key = str(PublicKey)
+app.config['SESSION_TYPE'] = 'filesystem'
 
 @app.route("/", methods=["GET", "POST"])
 def ContactForm():
@@ -179,6 +187,4 @@ def FormSuccess():
       InputType="Contact information successfully added.")
 
 if __name__ == "__main__":
-  app.secret_key = "xXssD"
-  app.config['SESSION_TYPE'] = 'filesystem'
   app.run(host="0.0.0.0", port="65354")

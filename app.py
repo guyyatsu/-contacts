@@ -43,27 +43,25 @@ def ContactForm():
     """ Check for existing session variables. """
     # This allows the user to review their
     # submission after they've already entered it.
-    #
-    # 
-    #
-    
-
-    if session.get("name") == None: name= "Firstname Lastname"
+    if session.get("name") == None: name= None
     else: name= session["name"].title().replace("_", " ")
+    namePlaceholer = "Firstname Lastname"
 
-    if session.get("email") == None: email= "username@domain.tld"
+    if session.get("email") == None: email= None
     else: email= session["email"]
+    emailPlaceholder = "YOUsername@YOURDOMAIN.mail"
 
-    if session.get("number") == None: number= "123-456-7890"
+    if session.get("number") == None: number= None
     else: number= session["number"]
+    numberPlaceholder = "123-456-7899"
 
-
-    if session.get("company") == None: company= "Business Factory llc"
+    if session.get("company") == None: company= None
     else: company= session["company"].title().replace("_", " ")
+    companyPlaceholder = "Business Factory ltd"
 
-    if session.get("website") == None: website= "yourdomain.tld"
+    if session.get("website") == None: website= None
     else: website= session["website"]
-
+    companyPlaceholder = "https://yourdomain.ltd"
 
 
     """ Retrieve form data and write to database."""

@@ -65,13 +65,18 @@ def ContactForm():
 
 
     """ Retrieve form data and write to database."""
-    return render_template("ContactForm.html",
-                           title="Contact Form",
-                           name=name,
-                           email=email,
-                           number=number,
-                           company=company,
-                           website=website)
+    return render_template( "ContactForm.html",
+                            title="Contact Form",
+                            name=name,
+                            namePlaceholder=namePlaceholder,
+                            email=email,
+                            emailPlaceholder=emailPlaceholder,
+                            number=number,
+                            numberPlaceholder=numberPlaceholder,
+                            company=company,
+                            companyPlaceholder=companyPlaceholder,
+                            website=website,
+                            websitePlaceholder=websitePlaceholder  ) 
 
 
   if request.method == "POST":

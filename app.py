@@ -34,14 +34,14 @@ app = Flask(__name__)
 app.secret_key = str(PublicKey)
 app.config['SESSION_TYPE'] = 'filesystem'
 
+
+""" APP ROUTING """
 @app.route("/", methods=["GET", "POST"])
 def ContactForm():
+  """
+  """
 
-  # New sqlite3 connection.
-  connection = sqlite3.connect(ContactsDatabase)
-  cursor = connection.cursor()
-
-
+  """ HANDLE [GET] METHOD """
   if request.method == "GET":
 
     """ SET DEFAULT NAME """
@@ -54,111 +54,51 @@ def ContactForm():
     """ USE SESSION EMAIL """
     else: email = session["email"]
 
-    if session.get("company") == None: company= None
-    else: company= session["company"].title().replace("_", " ")
-    companyPlaceholder = "Business Factory ltd"
+    # TODO: Utilize loopable custom input.
+    # TODO: Implement input-masking.
 
-    if session.get("website") == None: website= None
-    else: website= session["website"]
-    companyPlaceholder = "https://yourdomain.ltd"
-
-
-    """ Retrieve form data and write to database."""
+    """ PREPARE VIEWPOINT """
     return render_template( "ContactForm.html",
                             title="Contact Form",
                             name=name,
                             email=email           )
 
 
+  """ HANDLE [POST] METHOD """
   if request.method == "POST":
 
+    """ CONNECT TO DATABASE """
+    connection = sqlite3.connect(ContactsDatabase)
+    cursor = connection.cursor()
 
-
-    """ Format and set the users input."""
-  
-    # Name.
+    """ HANDLE REQUIRED ARGUMENTS """
     session["name"]= name= f"{request.form['ContactName'].lower().replace(' ', '_')}"
     session["email"]= email= f"{request.form['Email']}"
-    #session["email"] = email
+
+    """ HANDLE OPTIONAL ARGUMENTS """
+    # TODO: Allow for a single custom input that
+    #       adds to the updated review display.
 
 
-    # Phone Number.
-    if request.form["PreferredPhone"]:
-      session["number"]= number= f"{request.form['PreferredPhone'].replace(' ', '-')}"
-      print(session["number"])
-      #session["number"] = number
+    """ DATABASE LOOKUP """
+    cursor.execute( f"SELECT * FROM contacts WHERE name=? OR email=?;",
+                    (name, email)); _results = cursor.fetchall()
 
-
-    # Company.
-    if request.form["Company"]:
-      session["company"]= company= f"{request.form['Company'].lower().replace(' ', '_')}"
-      #session["company"] = company
-
-
-    # Website.
-    if request.form["Website"]:
-      session["website"]= website= f"{request.form['Website']}"
-      #session["website"] = website
-
-
-
-    """ Write or update entry. """
-    # When an entry is made the page is refreshed and the previously
-    # given information is displayed so that the user has the option
-    # to review their input and change it as necessary.
-    #
-    # In an effort to prevent us from having to choose between
-    # required keys, we'll simply delete any rows matching
-    # any of the keys.
-
-    # Select either the name or the email.
-    cursor.execute(
-      f"SELECT * FROM contacts WHERE name=? OR email=?;",
-      (name, email)); _results = cursor.fetchall()
-
-    # If a match is found, delete the entry and rewrite it.
+    """ DELETE MATCHES """
     if len(_results) > 0:
       cursor.execute(f"DELETE FROM contacts WHERE name=? OR email=?",
                      (name, email))
 
-    # Write a new row with the required name and email.
+    """ (RE)WRITE TO TABLE """
     cursor.execute(f"INSERT INTO contacts (name,email) "
                        f"VALUES( ?, ? )", (name, email))
 
-
-    """ Write optional fields to the database row. """
-    # These options are nice to have, but not required
-    # input.
-    #
-    # To check for a variables existence we use the
-    # built-in .locals against every optional field.
-    #
-    # If any matches are found, apply the appropriate
-    # SQLite transaction.
-
-    if "number" in locals():# Add the number, if given.
-      cursor.execute(f"UPDATE contacts SET number = ? "
-                     f"WHERE name=? OR email=?;",
-                     (number, name, email)); del number
-
-
-    if "company" in locals():# Add the company, if given.
-      cursor.execute(f"UPDATE contacts SET company = ? "
-                     f"WHERE name=? OR email=?;",
-                     (company, name, email)); del company
-
-
-    if "website" in locals():# Add the website, if given.
-      cursor.execute(f"UPDATE contacts SET company = ? "
-                     f"WHERE name=? OR email=?;",
-                     (website, name, email)); del website
-
-
-    # Save your work.
+    """ TRANSACT UPDATE """
     connection.commit()
-
     return redirect("https://guyyatsu.me/contacts")
 
 
+""" DEFINE RUNTIME """
 if __name__ == "__main__":
+  # TODO: Add command-line argument for host and port.
   app.run(host="0.0.0.0", port="65354")

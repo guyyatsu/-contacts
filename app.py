@@ -44,20 +44,15 @@ def ContactForm():
 
   if request.method == "GET":
 
-    """ Check for existing session variables. """
-    # This allows the user to review their
-    # submission after they've already entered it.
-    if session.get("name") == None: name= None
-    else: name= session["name"].title().replace("_", " ")
-    namePlaceholer = "Firstname Lastname"
+    """ SET DEFAULT NAME """
+    if session.get("name") == None: name = "Firstname Lastname"
+    """ USE SESSION NAME """
+    else: name = session["name"].title().replace("_", " ")
 
-    if session.get("email") == None: email= None
-    else: email= session["email"]
-    emailPlaceholder = "YOUsername@YOURDOMAIN.mail"
-
-    if session.get("number") == None: number= None
-    else: number= session["number"]
-    numberPlaceholder = "123-456-7899"
+    """ SET DEFAULT EMAIL """
+    if session.get("email") == None: email = "YOUsername@YOUrdomain.mail"
+    """ USE SESSION EMAIL """
+    else: email = session["email"]
 
     if session.get("company") == None: company= None
     else: company= session["company"].title().replace("_", " ")
@@ -72,15 +67,7 @@ def ContactForm():
     return render_template( "ContactForm.html",
                             title="Contact Form",
                             name=name,
-                            namePlaceholder=namePlaceholder,
-                            email=email,
-                            emailPlaceholder=emailPlaceholder,
-                            number=number,
-                            numberPlaceholder=numberPlaceholder,
-                            company=company,
-                            companyPlaceholder=companyPlaceholder,
-                            website=website,
-                            websitePlaceholder=websitePlaceholder  ) 
+                            email=email           )
 
 
   if request.method == "POST":
@@ -91,10 +78,6 @@ def ContactForm():
   
     # Name.
     session["name"]= name= f"{request.form['ContactName'].lower().replace(' ', '_')}"
-    #session["name"] = name
-
-
-    # Email.
     session["email"]= email= f"{request.form['Email']}"
     #session["email"] = email
 

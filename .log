@@ -1,0 +1,2518 @@
+[2022-12-09 12:19:17 -0500] [47109] [INFO] Starting gunicorn 20.1.0
+[2022-12-09 12:19:17 -0500] [47109] [INFO] Listening at: http://0.0.0.0:65354 (47109)
+[2022-12-09 12:19:17 -0500] [47109] [INFO] Using worker: sync
+[2022-12-09 12:19:17 -0500] [47110] [INFO] Booting worker with pid: 47110
+[2022-12-09 12:19:17 -0500] [47111] [INFO] Booting worker with pid: 47111
+[2022-12-09 12:19:17 -0500] [47112] [INFO] Booting worker with pid: 47112
+[2022-12-09 12:19:56,885] ERROR in app: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/administrator/websites/guyyatsu.me/ContactForm/app.py", line 77, in ContactForm
+    session["name"]= name= f"{request.form['ContactName'].lower().replace(' ', '_')}"
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+[2022-12-09 12:21:11,368] ERROR in app: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/administrator/websites/guyyatsu.me/ContactForm/app.py", line 77, in ContactForm
+    session["name"]= name= f"{request.form['ContactName'].lower().replace(' ', '_')}"
+  File "/home/hunter/.local/lib/python3.10/site-packages/flask/sessions.py", line 98, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+[2022-12-09 12:26:27 -0500] [47110] [INFO] Worker exiting (pid: 47110)
+[2022-12-09 12:26:27 -0500] [47109] [INFO] Handling signal: term
+[2022-12-09 12:26:27 -0500] [47111] [INFO] Worker exiting (pid: 47111)
+[2022-12-09 12:26:27 -0500] [47112] [INFO] Worker exiting (pid: 47112)
+[2022-12-09 12:26:28 -0500] [47109] [INFO] Shutting down: Master
+[2022-12-09 12:26:29 -0500] [47312] [INFO] Starting gunicorn 20.1.0
+[2022-12-09 12:26:29 -0500] [47312] [INFO] Listening at: http://0.0.0.0:65354 (47312)
+[2022-12-09 12:26:29 -0500] [47312] [INFO] Using worker: sync
+[2022-12-09 12:26:29 -0500] [47314] [INFO] Booting worker with pid: 47314
+[2022-12-09 12:26:29 -0500] [47315] [INFO] Booting worker with pid: 47315
+[2022-12-09 12:26:29 -0500] [47316] [INFO] Booting worker with pid: 47316
+[2022-12-09 12:26:30 -0500] [47314] [INFO] Worker exiting (pid: 47314)
+[2022-12-09 12:26:30 -0500] [47315] [INFO] Worker exiting (pid: 47315)
+[2022-12-09 12:26:30 -0500] [47316] [INFO] Worker exiting (pid: 47316)
+[2022-12-09 12:26:30 -0500] [47317] [INFO] Booting worker with pid: 47317
+[2022-12-09 12:26:30 -0500] [47318] [INFO] Booting worker with pid: 47318
+[2022-12-09 12:26:30 -0500] [47319] [INFO] Booting worker with pid: 47319
+[2022-12-09 12:26:31 -0500] [47317] [INFO] Worker exiting (pid: 47317)
+[2022-12-09 12:26:31 -0500] [47318] [INFO] Worker exiting (pid: 47318)
+[2022-12-09 12:26:31 -0500] [47319] [INFO] Worker exiting (pid: 47319)
+[2022-12-09 12:26:31 -0500] [47320] [INFO] Booting worker with pid: 47320
+[2022-12-09 12:26:31 -0500] [47321] [INFO] Booting worker with pid: 47321
+[2022-12-09 12:26:32 -0500] [47322] [INFO] Booting worker with pid: 47322
+[2022-12-09 12:26:32 -0500] [47320] [INFO] Worker exiting (pid: 47320)
+[2022-12-09 12:26:32 -0500] [47321] [INFO] Worker exiting (pid: 47321)
+[2022-12-09 12:26:32 -0500] [47322] [INFO] Worker exiting (pid: 47322)
+[2022-12-09 12:26:33 -0500] [47323] [INFO] Booting worker with pid: 47323
+[2022-12-09 12:26:33 -0500] [47324] [INFO] Booting worker with pid: 47324
+[2022-12-09 12:26:33 -0500] [47325] [INFO] Booting worker with pid: 47325
+[2022-12-09 12:26:33 -0500] [47323] [INFO] Worker exiting (pid: 47323)
+[2022-12-09 12:26:34 -0500] [47324] [INFO] Worker exiting (pid: 47324)
+[2022-12-09 12:26:34 -0500] [47325] [INFO] Worker exiting (pid: 47325)
+[2022-12-09 12:26:34 -0500] [47326] [INFO] Booting worker with pid: 47326
+[2022-12-09 12:26:34 -0500] [47327] [INFO] Booting worker with pid: 47327
+[2022-12-09 12:26:34 -0500] [47328] [INFO] Booting worker with pid: 47328
+[2022-12-09 12:26:35 -0500] [47326] [INFO] Worker exiting (pid: 47326)
+[2022-12-09 12:26:35 -0500] [47327] [INFO] Worker exiting (pid: 47327)
+[2022-12-09 12:26:35 -0500] [47328] [INFO] Worker exiting (pid: 47328)
+[2022-12-09 12:26:35 -0500] [47331] [INFO] Booting worker with pid: 47331
+[2022-12-09 12:26:35 -0500] [47332] [INFO] Booting worker with pid: 47332
+[2022-12-09 12:26:35 -0500] [47333] [INFO] Booting worker with pid: 47333
+[2022-12-09 12:26:36 -0500] [47331] [INFO] Worker exiting (pid: 47331)
+[2022-12-09 12:26:36 -0500] [47332] [INFO] Worker exiting (pid: 47332)
+[2022-12-09 12:26:36 -0500] [47333] [INFO] Worker exiting (pid: 47333)
+[2022-12-09 12:26:36 -0500] [47334] [INFO] Booting worker with pid: 47334
+[2022-12-09 12:26:36 -0500] [47335] [INFO] Booting worker with pid: 47335
+[2022-12-09 12:26:36 -0500] [47336] [INFO] Booting worker with pid: 47336
+[2022-12-09 12:26:37 -0500] [47334] [INFO] Worker exiting (pid: 47334)
+[2022-12-09 12:26:37 -0500] [47335] [INFO] Worker exiting (pid: 47335)
+[2022-12-09 12:26:37 -0500] [47336] [INFO] Worker exiting (pid: 47336)
+[2022-12-09 12:26:37 -0500] [47337] [INFO] Booting worker with pid: 47337
+[2022-12-09 12:26:38 -0500] [47338] [INFO] Booting worker with pid: 47338
+[2022-12-09 12:26:38 -0500] [47339] [INFO] Booting worker with pid: 47339
+[2022-12-09 12:26:38 -0500] [47337] [INFO] Worker exiting (pid: 47337)
+[2022-12-09 12:26:38 -0500] [47338] [INFO] Worker exiting (pid: 47338)
+[2022-12-09 12:26:39 -0500] [47339] [INFO] Worker exiting (pid: 47339)
+[2022-12-09 12:26:39 -0500] [47340] [INFO] Booting worker with pid: 47340
+[2022-12-09 12:26:39 -0500] [47341] [INFO] Booting worker with pid: 47341
+[2022-12-09 12:26:39 -0500] [47342] [INFO] Booting worker with pid: 47342
+[2022-12-09 12:26:40 -0500] [47340] [INFO] Worker exiting (pid: 47340)
+[2022-12-09 12:26:40 -0500] [47341] [INFO] Worker exiting (pid: 47341)
+[2022-12-09 12:26:40 -0500] [47342] [INFO] Worker exiting (pid: 47342)
+[2022-12-09 12:26:40 -0500] [47343] [INFO] Booting worker with pid: 47343
+[2022-12-09 12:26:40 -0500] [47344] [INFO] Booting worker with pid: 47344
+[2022-12-09 12:26:40 -0500] [47345] [INFO] Booting worker with pid: 47345
+[2022-12-09 12:26:41 -0500] [47343] [INFO] Worker exiting (pid: 47343)
+[2022-12-09 12:26:41 -0500] [47344] [INFO] Worker exiting (pid: 47344)
+[2022-12-09 12:26:41 -0500] [47345] [INFO] Worker exiting (pid: 47345)
+[2022-12-09 12:26:41 -0500] [47346] [INFO] Booting worker with pid: 47346
+[2022-12-09 12:26:41 -0500] [47347] [INFO] Booting worker with pid: 47347
+[2022-12-09 12:26:41 -0500] [47348] [INFO] Booting worker with pid: 47348
+[2022-12-09 12:26:42 -0500] [47346] [INFO] Worker exiting (pid: 47346)
+[2022-12-09 12:26:42 -0500] [47347] [INFO] Worker exiting (pid: 47347)
+[2022-12-09 12:26:42 -0500] [47348] [INFO] Worker exiting (pid: 47348)
+[2022-12-09 12:26:42 -0500] [47349] [INFO] Booting worker with pid: 47349
+[2022-12-09 12:26:42 -0500] [47350] [INFO] Booting worker with pid: 47350
+[2022-12-09 12:26:43 -0500] [47351] [INFO] Booting worker with pid: 47351
+[2022-12-09 12:26:43 -0500] [47349] [INFO] Worker exiting (pid: 47349)
+[2022-12-09 12:26:43 -0500] [47350] [INFO] Worker exiting (pid: 47350)
+[2022-12-09 12:26:43 -0500] [47351] [INFO] Worker exiting (pid: 47351)
+[2022-12-09 12:26:44 -0500] [47360] [INFO] Booting worker with pid: 47360
+[2022-12-09 12:26:44 -0500] [47361] [INFO] Booting worker with pid: 47361
+[2022-12-09 12:26:44 -0500] [47362] [INFO] Booting worker with pid: 47362
+[2022-12-09 12:26:44 -0500] [47360] [INFO] Worker exiting (pid: 47360)
+[2022-12-09 12:26:45 -0500] [47361] [INFO] Worker exiting (pid: 47361)
+[2022-12-09 12:26:45 -0500] [47362] [INFO] Worker exiting (pid: 47362)
+[2022-12-09 12:26:45 -0500] [47365] [INFO] Booting worker with pid: 47365
+[2022-12-09 12:26:45 -0500] [47366] [INFO] Booting worker with pid: 47366
+[2022-12-09 12:26:45 -0500] [47369] [INFO] Booting worker with pid: 47369
+[2022-12-09 12:26:46 -0500] [47365] [INFO] Worker exiting (pid: 47365)
+[2022-12-09 12:26:46 -0500] [47366] [INFO] Worker exiting (pid: 47366)
+[2022-12-09 12:26:46 -0500] [47369] [INFO] Worker exiting (pid: 47369)
+[2022-12-09 12:26:46 -0500] [47370] [INFO] Booting worker with pid: 47370
+[2022-12-09 12:26:46 -0500] [47371] [INFO] Booting worker with pid: 47371
+[2022-12-09 12:26:47 -0500] [47372] [INFO] Booting worker with pid: 47372
+[2022-12-09 12:26:47 -0500] [47370] [INFO] Worker exiting (pid: 47370)
+[2022-12-09 12:26:47 -0500] [47371] [INFO] Worker exiting (pid: 47371)
+[2022-12-09 12:26:47 -0500] [47373] [INFO] Booting worker with pid: 47373
+[2022-12-09 12:26:48 -0500] [47372] [INFO] Worker exiting (pid: 47372)
+[2022-12-09 12:26:48 -0500] [47374] [INFO] Booting worker with pid: 47374
+[2022-12-09 12:26:48 -0500] [47375] [INFO] Booting worker with pid: 47375
+[2022-12-09 12:26:48 -0500] [47373] [INFO] Worker exiting (pid: 47373)
+[2022-12-09 12:26:49 -0500] [47374] [INFO] Worker exiting (pid: 47374)
+[2022-12-09 12:26:49 -0500] [47376] [INFO] Booting worker with pid: 47376
+[2022-12-09 12:26:49 -0500] [47375] [INFO] Worker exiting (pid: 47375)
+[2022-12-09 12:26:49 -0500] [47377] [INFO] Booting worker with pid: 47377
+[2022-12-09 12:26:49 -0500] [47378] [INFO] Booting worker with pid: 47378
+[2022-12-09 12:26:50 -0500] [47376] [INFO] Worker exiting (pid: 47376)
+[2022-12-09 12:26:50 -0500] [47377] [INFO] Worker exiting (pid: 47377)
+[2022-12-09 12:26:50 -0500] [47379] [INFO] Booting worker with pid: 47379
+[2022-12-09 12:26:50 -0500] [47378] [INFO] Worker exiting (pid: 47378)
+[2022-12-09 12:26:50 -0500] [47380] [INFO] Booting worker with pid: 47380
+[2022-12-09 12:26:51 -0500] [47381] [INFO] Booting worker with pid: 47381
+[2022-12-09 12:26:51 -0500] [47379] [INFO] Worker exiting (pid: 47379)
+[2022-12-09 12:26:51 -0500] [47380] [INFO] Worker exiting (pid: 47380)
+[2022-12-09 12:26:52 -0500] [47383] [INFO] Booting worker with pid: 47383
+[2022-12-09 12:26:52 -0500] [47384] [INFO] Booting worker with pid: 47384
+[2022-12-09 12:26:52 -0500] [47381] [INFO] Worker exiting (pid: 47381)
+[2022-12-09 12:26:52 -0500] [47385] [INFO] Booting worker with pid: 47385
+[2022-12-09 12:26:52 -0500] [47383] [INFO] Worker exiting (pid: 47383)
+[2022-12-09 12:26:52 -0500] [47384] [INFO] Worker exiting (pid: 47384)
+[2022-12-09 12:26:53 -0500] [47386] [INFO] Booting worker with pid: 47386
+[2022-12-09 12:26:53 -0500] [47387] [INFO] Booting worker with pid: 47387
+[2022-12-09 12:26:53 -0500] [47385] [INFO] Worker exiting (pid: 47385)
+[2022-12-09 12:26:53 -0500] [47388] [INFO] Booting worker with pid: 47388
+[2022-12-09 12:26:54 -0500] [47386] [INFO] Worker exiting (pid: 47386)
+[2022-12-09 12:26:54 -0500] [47387] [INFO] Worker exiting (pid: 47387)
+[2022-12-09 12:26:54 -0500] [47392] [INFO] Booting worker with pid: 47392
+[2022-12-09 12:26:54 -0500] [47393] [INFO] Booting worker with pid: 47393
+[2022-12-09 12:26:54 -0500] [47388] [INFO] Worker exiting (pid: 47388)
+[2022-12-09 12:26:55 -0500] [47396] [INFO] Booting worker with pid: 47396
+[2022-12-09 12:26:55 -0500] [47392] [INFO] Worker exiting (pid: 47392)
+[2022-12-09 12:26:55 -0500] [47393] [INFO] Worker exiting (pid: 47393)
+[2022-12-09 12:26:55 -0500] [47400] [INFO] Booting worker with pid: 47400
+[2022-12-09 12:26:55 -0500] [47401] [INFO] Booting worker with pid: 47401
+[2022-12-09 12:26:55 -0500] [47396] [INFO] Worker exiting (pid: 47396)
+[2022-12-09 12:26:56 -0500] [47402] [INFO] Booting worker with pid: 47402
+[2022-12-09 12:26:56 -0500] [47400] [INFO] Worker exiting (pid: 47400)
+[2022-12-09 12:26:56 -0500] [47401] [INFO] Worker exiting (pid: 47401)
+[2022-12-09 12:26:56 -0500] [47403] [INFO] Booting worker with pid: 47403
+[2022-12-09 12:26:57 -0500] [47404] [INFO] Booting worker with pid: 47404
+[2022-12-09 12:26:57 -0500] [47402] [INFO] Worker exiting (pid: 47402)
+[2022-12-09 12:26:57 -0500] [47405] [INFO] Booting worker with pid: 47405
+[2022-12-09 12:26:57 -0500] [47403] [INFO] Worker exiting (pid: 47403)
+[2022-12-09 12:26:57 -0500] [47404] [INFO] Worker exiting (pid: 47404)
+[2022-12-09 12:26:58 -0500] [47406] [INFO] Booting worker with pid: 47406
+[2022-12-09 12:26:58 -0500] [47407] [INFO] Booting worker with pid: 47407
+[2022-12-09 12:26:58 -0500] [47405] [INFO] Worker exiting (pid: 47405)
+[2022-12-09 12:26:58 -0500] [47408] [INFO] Booting worker with pid: 47408
+[2022-12-09 12:26:59 -0500] [47406] [INFO] Worker exiting (pid: 47406)
+[2022-12-09 12:26:59 -0500] [47407] [INFO] Worker exiting (pid: 47407)
+[2022-12-09 12:26:59 -0500] [47409] [INFO] Booting worker with pid: 47409
+[2022-12-09 12:26:59 -0500] [47410] [INFO] Booting worker with pid: 47410
+[2022-12-09 12:26:59 -0500] [47408] [INFO] Worker exiting (pid: 47408)
+[2022-12-09 12:26:59 -0500] [47411] [INFO] Booting worker with pid: 47411
+[2022-12-09 12:27:00 -0500] [47409] [INFO] Worker exiting (pid: 47409)
+[2022-12-09 12:27:00 -0500] [47410] [INFO] Worker exiting (pid: 47410)
+[2022-12-09 12:27:00 -0500] [47412] [INFO] Booting worker with pid: 47412
+[2022-12-09 12:27:00 -0500] [47413] [INFO] Booting worker with pid: 47413
+[2022-12-09 12:27:00 -0500] [47411] [INFO] Worker exiting (pid: 47411)
+[2022-12-09 12:27:01 -0500] [47414] [INFO] Booting worker with pid: 47414
+[2022-12-09 12:27:01 -0500] [47412] [INFO] Worker exiting (pid: 47412)
+[2022-12-09 12:27:01 -0500] [47413] [INFO] Worker exiting (pid: 47413)
+[2022-12-09 12:27:01 -0500] [47415] [INFO] Booting worker with pid: 47415
+[2022-12-09 12:27:01 -0500] [47416] [INFO] Booting worker with pid: 47416
+[2022-12-09 12:27:02 -0500] [47414] [INFO] Worker exiting (pid: 47414)
+[2022-12-09 12:27:02 -0500] [47417] [INFO] Booting worker with pid: 47417
+[2022-12-09 12:27:02 -0500] [47415] [INFO] Worker exiting (pid: 47415)
+[2022-12-09 12:27:02 -0500] [47416] [INFO] Worker exiting (pid: 47416)
+[2022-12-09 12:27:03 -0500] [47418] [INFO] Booting worker with pid: 47418
+[2022-12-09 12:27:03 -0500] [47419] [INFO] Booting worker with pid: 47419
+[2022-12-09 12:27:03 -0500] [47417] [INFO] Worker exiting (pid: 47417)
+[2022-12-09 12:27:03 -0500] [47420] [INFO] Booting worker with pid: 47420
+[2022-12-09 12:27:03 -0500] [47418] [INFO] Worker exiting (pid: 47418)
+[2022-12-09 12:27:04 -0500] [47419] [INFO] Worker exiting (pid: 47419)
+[2022-12-09 12:27:04 -0500] [47421] [INFO] Booting worker with pid: 47421
+[2022-12-09 12:27:04 -0500] [47422] [INFO] Booting worker with pid: 47422
+[2022-12-09 12:27:04 -0500] [47420] [INFO] Worker exiting (pid: 47420)
+[2022-12-09 12:27:04 -0500] [47423] [INFO] Booting worker with pid: 47423
+[2022-12-09 12:27:05 -0500] [47421] [INFO] Worker exiting (pid: 47421)
+[2022-12-09 12:27:05 -0500] [47422] [INFO] Worker exiting (pid: 47422)
+[2022-12-09 12:27:05 -0500] [47424] [INFO] Booting worker with pid: 47424
+[2022-12-09 12:27:05 -0500] [47425] [INFO] Booting worker with pid: 47425
+[2022-12-09 12:27:05 -0500] [47423] [INFO] Worker exiting (pid: 47423)
+[2022-12-09 12:27:06 -0500] [47426] [INFO] Booting worker with pid: 47426
+[2022-12-09 12:27:06 -0500] [47424] [INFO] Worker exiting (pid: 47424)
+[2022-12-09 12:27:06 -0500] [47425] [INFO] Worker exiting (pid: 47425)
+[2022-12-09 12:27:06 -0500] [47427] [INFO] Booting worker with pid: 47427
+[2022-12-09 12:27:06 -0500] [47428] [INFO] Booting worker with pid: 47428
+[2022-12-09 12:27:06 -0500] [47426] [INFO] Worker exiting (pid: 47426)
+[2022-12-09 12:27:07 -0500] [47429] [INFO] Booting worker with pid: 47429
+[2022-12-09 12:27:07 -0500] [47427] [INFO] Worker exiting (pid: 47427)
+[2022-12-09 12:27:07 -0500] [47428] [INFO] Worker exiting (pid: 47428)
+[2022-12-09 12:27:07 -0500] [47430] [INFO] Booting worker with pid: 47430
+[2022-12-09 12:27:08 -0500] [47431] [INFO] Booting worker with pid: 47431
+[2022-12-09 12:27:08 -0500] [47429] [INFO] Worker exiting (pid: 47429)
+[2022-12-09 12:27:08 -0500] [47432] [INFO] Booting worker with pid: 47432
+[2022-12-09 12:27:08 -0500] [47430] [INFO] Worker exiting (pid: 47430)
+[2022-12-09 12:27:08 -0500] [47431] [INFO] Worker exiting (pid: 47431)
+[2022-12-09 12:27:09 -0500] [47433] [INFO] Booting worker with pid: 47433
+[2022-12-09 12:27:09 -0500] [47434] [INFO] Booting worker with pid: 47434
+[2022-12-09 12:27:09 -0500] [47432] [INFO] Worker exiting (pid: 47432)
+[2022-12-09 12:27:09 -0500] [47435] [INFO] Booting worker with pid: 47435
+[2022-12-09 12:27:10 -0500] [47433] [INFO] Worker exiting (pid: 47433)
+[2022-12-09 12:27:10 -0500] [47434] [INFO] Worker exiting (pid: 47434)
+[2022-12-09 12:27:10 -0500] [47436] [INFO] Booting worker with pid: 47436
+[2022-12-09 12:27:10 -0500] [47437] [INFO] Booting worker with pid: 47437
+[2022-12-09 12:27:10 -0500] [47435] [INFO] Worker exiting (pid: 47435)
+[2022-12-09 12:27:11 -0500] [47438] [INFO] Booting worker with pid: 47438
+[2022-12-09 12:27:11 -0500] [47436] [INFO] Worker exiting (pid: 47436)
+[2022-12-09 12:27:11 -0500] [47437] [INFO] Worker exiting (pid: 47437)
+[2022-12-09 12:27:11 -0500] [47439] [INFO] Booting worker with pid: 47439
+[2022-12-09 12:27:11 -0500] [47440] [INFO] Booting worker with pid: 47440
+[2022-12-09 12:27:11 -0500] [47438] [INFO] Worker exiting (pid: 47438)
+[2022-12-09 12:27:12 -0500] [47441] [INFO] Booting worker with pid: 47441
+[2022-12-09 12:27:12 -0500] [47439] [INFO] Worker exiting (pid: 47439)
+[2022-12-09 12:27:12 -0500] [47440] [INFO] Worker exiting (pid: 47440)
+[2022-12-09 12:27:12 -0500] [47443] [INFO] Booting worker with pid: 47443
+[2022-12-09 12:27:12 -0500] [47444] [INFO] Booting worker with pid: 47444
+[2022-12-09 12:27:13 -0500] [47441] [INFO] Worker exiting (pid: 47441)
+[2022-12-09 12:27:13 -0500] [47447] [INFO] Booting worker with pid: 47447
+[2022-12-09 12:27:13 -0500] [47443] [INFO] Worker exiting (pid: 47443)
+[2022-12-09 12:27:13 -0500] [47444] [INFO] Worker exiting (pid: 47444)
+[2022-12-09 12:27:14 -0500] [47449] [INFO] Booting worker with pid: 47449
+[2022-12-09 12:27:14 -0500] [47450] [INFO] Booting worker with pid: 47450
+[2022-12-09 12:27:14 -0500] [47447] [INFO] Worker exiting (pid: 47447)
+[2022-12-09 12:27:14 -0500] [47451] [INFO] Booting worker with pid: 47451
+[2022-12-09 12:27:14 -0500] [47449] [INFO] Worker exiting (pid: 47449)
+[2022-12-09 12:27:15 -0500] [47450] [INFO] Worker exiting (pid: 47450)
+[2022-12-09 12:27:15 -0500] [47452] [INFO] Booting worker with pid: 47452
+[2022-12-09 12:27:15 -0500] [47453] [INFO] Booting worker with pid: 47453
+[2022-12-09 12:27:15 -0500] [47451] [INFO] Worker exiting (pid: 47451)
+[2022-12-09 12:27:15 -0500] [47454] [INFO] Booting worker with pid: 47454
+[2022-12-09 12:27:16 -0500] [47452] [INFO] Worker exiting (pid: 47452)
+[2022-12-09 12:27:16 -0500] [47453] [INFO] Worker exiting (pid: 47453)
+[2022-12-09 12:27:16 -0500] [47456] [INFO] Booting worker with pid: 47456
+[2022-12-09 12:27:16 -0500] [47458] [INFO] Booting worker with pid: 47458
+[2022-12-09 12:27:16 -0500] [47454] [INFO] Worker exiting (pid: 47454)
+[2022-12-09 12:27:17 -0500] [47459] [INFO] Booting worker with pid: 47459
+[2022-12-09 12:27:17 -0500] [47456] [INFO] Worker exiting (pid: 47456)
+[2022-12-09 12:27:17 -0500] [47458] [INFO] Worker exiting (pid: 47458)
+[2022-12-09 12:27:17 -0500] [47461] [INFO] Booting worker with pid: 47461
+[2022-12-09 12:27:17 -0500] [47462] [INFO] Booting worker with pid: 47462
+[2022-12-09 12:27:18 -0500] [47459] [INFO] Worker exiting (pid: 47459)
+[2022-12-09 12:27:18 -0500] [47463] [INFO] Booting worker with pid: 47463
+[2022-12-09 12:27:18 -0500] [47461] [INFO] Worker exiting (pid: 47461)
+[2022-12-09 12:27:18 -0500] [47462] [INFO] Worker exiting (pid: 47462)
+[2022-12-09 12:27:18 -0500] [47464] [INFO] Booting worker with pid: 47464
+[2022-12-09 12:27:19 -0500] [47465] [INFO] Booting worker with pid: 47465
+[2022-12-09 12:27:19 -0500] [47463] [INFO] Worker exiting (pid: 47463)
+[2022-12-09 12:27:19 -0500] [47466] [INFO] Booting worker with pid: 47466
+[2022-12-09 12:27:19 -0500] [47464] [INFO] Worker exiting (pid: 47464)
+[2022-12-09 12:27:19 -0500] [47465] [INFO] Worker exiting (pid: 47465)
+[2022-12-09 12:27:20 -0500] [47467] [INFO] Booting worker with pid: 47467
+[2022-12-09 12:27:20 -0500] [47468] [INFO] Booting worker with pid: 47468
+[2022-12-09 12:27:20 -0500] [47466] [INFO] Worker exiting (pid: 47466)
+[2022-12-09 12:27:20 -0500] [47469] [INFO] Booting worker with pid: 47469
+[2022-12-09 12:27:21 -0500] [47467] [INFO] Worker exiting (pid: 47467)
+[2022-12-09 12:27:21 -0500] [47468] [INFO] Worker exiting (pid: 47468)
+[2022-12-09 12:27:21 -0500] [47470] [INFO] Booting worker with pid: 47470
+[2022-12-09 12:27:21 -0500] [47471] [INFO] Booting worker with pid: 47471
+[2022-12-09 12:27:21 -0500] [47469] [INFO] Worker exiting (pid: 47469)
+[2022-12-09 12:27:22 -0500] [47472] [INFO] Booting worker with pid: 47472
+[2022-12-09 12:27:22 -0500] [47470] [INFO] Worker exiting (pid: 47470)
+[2022-12-09 12:27:22 -0500] [47471] [INFO] Worker exiting (pid: 47471)
+[2022-12-09 12:27:22 -0500] [47473] [INFO] Booting worker with pid: 47473
+[2022-12-09 12:27:22 -0500] [47474] [INFO] Booting worker with pid: 47474
+[2022-12-09 12:27:23 -0500] [47472] [INFO] Worker exiting (pid: 47472)
+[2022-12-09 12:27:23 -0500] [47475] [INFO] Booting worker with pid: 47475
+[2022-12-09 12:27:23 -0500] [47473] [INFO] Worker exiting (pid: 47473)
+[2022-12-09 12:27:23 -0500] [47474] [INFO] Worker exiting (pid: 47474)
+[2022-12-09 12:27:23 -0500] [47476] [INFO] Booting worker with pid: 47476
+[2022-12-09 12:27:23 -0500] [47477] [INFO] Booting worker with pid: 47477
+[2022-12-09 12:27:24 -0500] [47475] [INFO] Worker exiting (pid: 47475)
+[2022-12-09 12:27:24 -0500] [47480] [INFO] Booting worker with pid: 47480
+[2022-12-09 12:27:24 -0500] [47476] [INFO] Worker exiting (pid: 47476)
+[2022-12-09 12:27:24 -0500] [47477] [INFO] Worker exiting (pid: 47477)
+[2022-12-09 12:27:25 -0500] [47481] [INFO] Booting worker with pid: 47481
+[2022-12-09 12:27:25 -0500] [47482] [INFO] Booting worker with pid: 47482
+[2022-12-09 12:27:25 -0500] [47480] [INFO] Worker exiting (pid: 47480)
+[2022-12-09 12:27:25 -0500] [47483] [INFO] Booting worker with pid: 47483
+[2022-12-09 12:27:25 -0500] [47481] [INFO] Worker exiting (pid: 47481)
+[2022-12-09 12:27:26 -0500] [47482] [INFO] Worker exiting (pid: 47482)
+[2022-12-09 12:27:26 -0500] [47484] [INFO] Booting worker with pid: 47484
+[2022-12-09 12:27:26 -0500] [47485] [INFO] Booting worker with pid: 47485
+[2022-12-09 12:27:26 -0500] [47483] [INFO] Worker exiting (pid: 47483)
+[2022-12-09 12:27:27 -0500] [47486] [INFO] Booting worker with pid: 47486
+[2022-12-09 12:27:27 -0500] [47484] [INFO] Worker exiting (pid: 47484)
+[2022-12-09 12:27:27 -0500] [47485] [INFO] Worker exiting (pid: 47485)
+[2022-12-09 12:27:27 -0500] [47487] [INFO] Booting worker with pid: 47487
+[2022-12-09 12:27:27 -0500] [47488] [INFO] Booting worker with pid: 47488
+[2022-12-09 12:27:27 -0500] [47486] [INFO] Worker exiting (pid: 47486)
+[2022-12-09 12:27:28 -0500] [47489] [INFO] Booting worker with pid: 47489
+[2022-12-09 12:27:28 -0500] [47487] [INFO] Worker exiting (pid: 47487)
+[2022-12-09 12:27:28 -0500] [47488] [INFO] Worker exiting (pid: 47488)
+[2022-12-09 12:27:28 -0500] [47490] [INFO] Booting worker with pid: 47490
+[2022-12-09 12:27:28 -0500] [47491] [INFO] Booting worker with pid: 47491
+[2022-12-09 12:27:29 -0500] [47489] [INFO] Worker exiting (pid: 47489)
+[2022-12-09 12:27:29 -0500] [47492] [INFO] Booting worker with pid: 47492
+[2022-12-09 12:27:29 -0500] [47490] [INFO] Worker exiting (pid: 47490)
+[2022-12-09 12:27:29 -0500] [47491] [INFO] Worker exiting (pid: 47491)
+[2022-12-09 12:27:30 -0500] [47493] [INFO] Booting worker with pid: 47493
+[2022-12-09 12:27:30 -0500] [47494] [INFO] Booting worker with pid: 47494
+[2022-12-09 12:27:30 -0500] [47492] [INFO] Worker exiting (pid: 47492)
+[2022-12-09 12:27:30 -0500] [47495] [INFO] Booting worker with pid: 47495
+[2022-12-09 12:27:30 -0500] [47493] [INFO] Worker exiting (pid: 47493)
+[2022-12-09 12:27:30 -0500] [47494] [INFO] Worker exiting (pid: 47494)
+[2022-12-09 12:27:31 -0500] [47496] [INFO] Booting worker with pid: 47496
+[2022-12-09 12:27:31 -0500] [47497] [INFO] Booting worker with pid: 47497
+[2022-12-09 12:27:31 -0500] [47495] [INFO] Worker exiting (pid: 47495)
+[2022-12-09 12:27:32 -0500] [47498] [INFO] Booting worker with pid: 47498
+[2022-12-09 12:27:32 -0500] [47496] [INFO] Worker exiting (pid: 47496)
+[2022-12-09 12:27:32 -0500] [47497] [INFO] Worker exiting (pid: 47497)
+[2022-12-09 12:27:32 -0500] [47499] [INFO] Booting worker with pid: 47499
+[2022-12-09 12:27:32 -0500] [47500] [INFO] Booting worker with pid: 47500
+[2022-12-09 12:27:32 -0500] [47498] [INFO] Worker exiting (pid: 47498)
+[2022-12-09 12:27:33 -0500] [47501] [INFO] Booting worker with pid: 47501
+[2022-12-09 12:27:33 -0500] [47499] [INFO] Worker exiting (pid: 47499)
+[2022-12-09 12:27:33 -0500] [47500] [INFO] Worker exiting (pid: 47500)
+[2022-12-09 12:27:33 -0500] [47502] [INFO] Booting worker with pid: 47502
+[2022-12-09 12:27:33 -0500] [47503] [INFO] Booting worker with pid: 47503
+[2022-12-09 12:27:34 -0500] [47501] [INFO] Worker exiting (pid: 47501)
+[2022-12-09 12:27:34 -0500] [47502] [INFO] Worker exiting (pid: 47502)
+[2022-12-09 12:27:34 -0500] [47504] [INFO] Booting worker with pid: 47504
+[2022-12-09 12:27:34 -0500] [47503] [INFO] Worker exiting (pid: 47503)
+[2022-12-09 12:27:34 -0500] [47505] [INFO] Booting worker with pid: 47505
+[2022-12-09 12:27:34 -0500] [47506] [INFO] Booting worker with pid: 47506
+[2022-12-09 12:27:35 -0500] [47504] [INFO] Worker exiting (pid: 47504)
+[2022-12-09 12:27:35 -0500] [47505] [INFO] Worker exiting (pid: 47505)
+[2022-12-09 12:27:35 -0500] [47507] [INFO] Booting worker with pid: 47507
+[2022-12-09 12:27:35 -0500] [47506] [INFO] Worker exiting (pid: 47506)
+[2022-12-09 12:27:36 -0500] [47508] [INFO] Booting worker with pid: 47508
+[2022-12-09 12:27:36 -0500] [47509] [INFO] Booting worker with pid: 47509
+[2022-12-09 12:27:36 -0500] [47507] [INFO] Worker exiting (pid: 47507)
+[2022-12-09 12:27:36 -0500] [47508] [INFO] Worker exiting (pid: 47508)
+[2022-12-09 12:27:36 -0500] [47510] [INFO] Booting worker with pid: 47510
+[2022-12-09 12:27:37 -0500] [47509] [INFO] Worker exiting (pid: 47509)
+[2022-12-09 12:27:37 -0500] [47511] [INFO] Booting worker with pid: 47511
+[2022-12-09 12:27:37 -0500] [47512] [INFO] Booting worker with pid: 47512
+[2022-12-09 12:27:37 -0500] [47510] [INFO] Worker exiting (pid: 47510)
+[2022-12-09 12:27:38 -0500] [47511] [INFO] Worker exiting (pid: 47511)
+[2022-12-09 12:27:38 -0500] [47513] [INFO] Booting worker with pid: 47513
+[2022-12-09 12:27:38 -0500] [47512] [INFO] Worker exiting (pid: 47512)
+[2022-12-09 12:27:38 -0500] [47514] [INFO] Booting worker with pid: 47514
+[2022-12-09 12:27:38 -0500] [47515] [INFO] Booting worker with pid: 47515
+[2022-12-09 12:27:39 -0500] [47513] [INFO] Worker exiting (pid: 47513)
+[2022-12-09 12:27:39 -0500] [47514] [INFO] Worker exiting (pid: 47514)
+[2022-12-09 12:27:39 -0500] [47516] [INFO] Booting worker with pid: 47516
+[2022-12-09 12:27:39 -0500] [47515] [INFO] Worker exiting (pid: 47515)
+[2022-12-09 12:27:39 -0500] [47517] [INFO] Booting worker with pid: 47517
+[2022-12-09 12:27:39 -0500] [47518] [INFO] Booting worker with pid: 47518
+[2022-12-09 12:27:40 -0500] [47516] [INFO] Worker exiting (pid: 47516)
+[2022-12-09 12:27:40 -0500] [47517] [INFO] Worker exiting (pid: 47517)
+[2022-12-09 12:27:40 -0500] [47519] [INFO] Booting worker with pid: 47519
+[2022-12-09 12:27:40 -0500] [47518] [INFO] Worker exiting (pid: 47518)
+[2022-12-09 12:27:40 -0500] [47520] [INFO] Booting worker with pid: 47520
+[2022-12-09 12:27:41 -0500] [47521] [INFO] Booting worker with pid: 47521
+[2022-12-09 12:27:41 -0500] [47519] [INFO] Worker exiting (pid: 47519)
+[2022-12-09 12:27:41 -0500] [47520] [INFO] Worker exiting (pid: 47520)
+[2022-12-09 12:27:41 -0500] [47522] [INFO] Booting worker with pid: 47522
+[2022-12-09 12:27:41 -0500] [47521] [INFO] Worker exiting (pid: 47521)
+[2022-12-09 12:27:42 -0500] [47523] [INFO] Booting worker with pid: 47523
+[2022-12-09 12:27:42 -0500] [47524] [INFO] Booting worker with pid: 47524
+[2022-12-09 12:27:42 -0500] [47522] [INFO] Worker exiting (pid: 47522)
+[2022-12-09 12:27:43 -0500] [47523] [INFO] Worker exiting (pid: 47523)
+[2022-12-09 12:27:43 -0500] [47525] [INFO] Booting worker with pid: 47525
+[2022-12-09 12:27:43 -0500] [47524] [INFO] Worker exiting (pid: 47524)
+[2022-12-09 12:27:43 -0500] [47526] [INFO] Booting worker with pid: 47526
+[2022-12-09 12:27:43 -0500] [47527] [INFO] Booting worker with pid: 47527
+[2022-12-09 12:27:43 -0500] [47525] [INFO] Worker exiting (pid: 47525)
+[2022-12-09 12:27:44 -0500] [47526] [INFO] Worker exiting (pid: 47526)
+[2022-12-09 12:27:44 -0500] [47528] [INFO] Booting worker with pid: 47528
+[2022-12-09 12:27:44 -0500] [47527] [INFO] Worker exiting (pid: 47527)
+[2022-12-09 12:27:44 -0500] [47529] [INFO] Booting worker with pid: 47529
+[2022-12-09 12:27:44 -0500] [47530] [INFO] Booting worker with pid: 47530
+[2022-12-09 12:27:45 -0500] [47528] [INFO] Worker exiting (pid: 47528)
+[2022-12-09 12:27:45 -0500] [47529] [INFO] Worker exiting (pid: 47529)
+[2022-12-09 12:27:45 -0500] [47531] [INFO] Booting worker with pid: 47531
+[2022-12-09 12:27:45 -0500] [47530] [INFO] Worker exiting (pid: 47530)
+[2022-12-09 12:27:45 -0500] [47532] [INFO] Booting worker with pid: 47532
+[2022-12-09 12:27:46 -0500] [47533] [INFO] Booting worker with pid: 47533
+[2022-12-09 12:27:46 -0500] [47531] [INFO] Worker exiting (pid: 47531)
+[2022-12-09 12:27:46 -0500] [47532] [INFO] Worker exiting (pid: 47532)
+[2022-12-09 12:27:46 -0500] [47534] [INFO] Booting worker with pid: 47534
+[2022-12-09 12:27:46 -0500] [47533] [INFO] Worker exiting (pid: 47533)
+[2022-12-09 12:27:47 -0500] [47535] [INFO] Booting worker with pid: 47535
+[2022-12-09 12:27:47 -0500] [47536] [INFO] Booting worker with pid: 47536
+[2022-12-09 12:27:47 -0500] [47534] [INFO] Worker exiting (pid: 47534)
+[2022-12-09 12:27:47 -0500] [47535] [INFO] Worker exiting (pid: 47535)
+[2022-12-09 12:27:48 -0500] [47537] [INFO] Booting worker with pid: 47537
+[2022-12-09 12:27:48 -0500] [47536] [INFO] Worker exiting (pid: 47536)
+[2022-12-09 12:27:48 -0500] [47538] [INFO] Booting worker with pid: 47538
+[2022-12-09 12:27:48 -0500] [47539] [INFO] Booting worker with pid: 47539
+[2022-12-09 12:27:48 -0500] [47537] [INFO] Worker exiting (pid: 47537)
+[2022-12-09 12:27:49 -0500] [47538] [INFO] Worker exiting (pid: 47538)
+[2022-12-09 12:27:49 -0500] [47540] [INFO] Booting worker with pid: 47540
+[2022-12-09 12:27:49 -0500] [47539] [INFO] Worker exiting (pid: 47539)
+[2022-12-09 12:27:49 -0500] [47541] [INFO] Booting worker with pid: 47541
+[2022-12-09 12:27:49 -0500] [47542] [INFO] Booting worker with pid: 47542
+[2022-12-09 12:27:50 -0500] [47540] [INFO] Worker exiting (pid: 47540)
+[2022-12-09 12:27:50 -0500] [47541] [INFO] Worker exiting (pid: 47541)
+[2022-12-09 12:27:50 -0500] [47543] [INFO] Booting worker with pid: 47543
+[2022-12-09 12:27:50 -0500] [47542] [INFO] Worker exiting (pid: 47542)
+[2022-12-09 12:27:50 -0500] [47544] [INFO] Booting worker with pid: 47544
+[2022-12-09 12:27:50 -0500] [47545] [INFO] Booting worker with pid: 47545
+[2022-12-09 12:27:51 -0500] [47543] [INFO] Worker exiting (pid: 47543)
+[2022-12-09 12:27:51 -0500] [47544] [INFO] Worker exiting (pid: 47544)
+[2022-12-09 12:27:51 -0500] [47546] [INFO] Booting worker with pid: 47546
+[2022-12-09 12:27:51 -0500] [47545] [INFO] Worker exiting (pid: 47545)
+[2022-12-09 12:27:51 -0500] [47547] [INFO] Booting worker with pid: 47547
+[2022-12-09 12:27:52 -0500] [47548] [INFO] Booting worker with pid: 47548
+[2022-12-09 12:27:52 -0500] [47546] [INFO] Worker exiting (pid: 47546)
+[2022-12-09 12:27:52 -0500] [47547] [INFO] Worker exiting (pid: 47547)
+[2022-12-09 12:27:52 -0500] [47549] [INFO] Booting worker with pid: 47549
+[2022-12-09 12:27:53 -0500] [47548] [INFO] Worker exiting (pid: 47548)
+[2022-12-09 12:27:53 -0500] [47550] [INFO] Booting worker with pid: 47550
+[2022-12-09 12:27:53 -0500] [47551] [INFO] Booting worker with pid: 47551
+[2022-12-09 12:27:53 -0500] [47549] [INFO] Worker exiting (pid: 47549)
+[2022-12-09 12:27:54 -0500] [47550] [INFO] Worker exiting (pid: 47550)
+[2022-12-09 12:27:54 -0500] [47554] [INFO] Booting worker with pid: 47554
+[2022-12-09 12:27:54 -0500] [47551] [INFO] Worker exiting (pid: 47551)
+[2022-12-09 12:27:54 -0500] [47555] [INFO] Booting worker with pid: 47555
+[2022-12-09 12:27:54 -0500] [47556] [INFO] Booting worker with pid: 47556
+[2022-12-09 12:27:55 -0500] [47554] [INFO] Worker exiting (pid: 47554)
+[2022-12-09 12:27:55 -0500] [47555] [INFO] Worker exiting (pid: 47555)
+[2022-12-09 12:27:55 -0500] [47557] [INFO] Booting worker with pid: 47557
+[2022-12-09 12:27:55 -0500] [47556] [INFO] Worker exiting (pid: 47556)
+[2022-12-09 12:27:55 -0500] [47558] [INFO] Booting worker with pid: 47558
+[2022-12-09 12:27:55 -0500] [47559] [INFO] Booting worker with pid: 47559
+[2022-12-09 12:27:56 -0500] [47557] [INFO] Worker exiting (pid: 47557)
+[2022-12-09 12:27:56 -0500] [47558] [INFO] Worker exiting (pid: 47558)
+[2022-12-09 12:27:56 -0500] [47560] [INFO] Booting worker with pid: 47560
+[2022-12-09 12:27:56 -0500] [47559] [INFO] Worker exiting (pid: 47559)
+[2022-12-09 12:27:56 -0500] [47561] [INFO] Booting worker with pid: 47561
+[2022-12-09 12:27:57 -0500] [47562] [INFO] Booting worker with pid: 47562
+[2022-12-09 12:27:57 -0500] [47560] [INFO] Worker exiting (pid: 47560)
+[2022-12-09 12:27:57 -0500] [47561] [INFO] Worker exiting (pid: 47561)
+[2022-12-09 12:27:57 -0500] [47563] [INFO] Booting worker with pid: 47563
+[2022-12-09 12:27:57 -0500] [47562] [INFO] Worker exiting (pid: 47562)
+[2022-12-09 12:27:58 -0500] [47564] [INFO] Booting worker with pid: 47564
+[2022-12-09 12:27:58 -0500] [47565] [INFO] Booting worker with pid: 47565
+[2022-12-09 12:27:58 -0500] [47563] [INFO] Worker exiting (pid: 47563)
+[2022-12-09 12:27:58 -0500] [47564] [INFO] Worker exiting (pid: 47564)
+[2022-12-09 12:27:59 -0500] [47568] [INFO] Booting worker with pid: 47568
+[2022-12-09 12:27:59 -0500] [47565] [INFO] Worker exiting (pid: 47565)
+[2022-12-09 12:27:59 -0500] [47569] [INFO] Booting worker with pid: 47569
+[2022-12-09 12:27:59 -0500] [47570] [INFO] Booting worker with pid: 47570
+[2022-12-09 12:27:59 -0500] [47568] [INFO] Worker exiting (pid: 47568)
+[2022-12-09 12:28:00 -0500] [47569] [INFO] Worker exiting (pid: 47569)
+[2022-12-09 12:28:00 -0500] [47571] [INFO] Booting worker with pid: 47571
+[2022-12-09 12:28:00 -0500] [47570] [INFO] Worker exiting (pid: 47570)
+[2022-12-09 12:28:00 -0500] [47572] [INFO] Booting worker with pid: 47572
+[2022-12-09 12:28:00 -0500] [47573] [INFO] Booting worker with pid: 47573
+[2022-12-09 12:28:01 -0500] [47571] [INFO] Worker exiting (pid: 47571)
+[2022-12-09 12:28:01 -0500] [47572] [INFO] Worker exiting (pid: 47572)
+[2022-12-09 12:28:01 -0500] [47574] [INFO] Booting worker with pid: 47574
+[2022-12-09 12:28:01 -0500] [47573] [INFO] Worker exiting (pid: 47573)
+[2022-12-09 12:28:01 -0500] [47575] [INFO] Booting worker with pid: 47575
+[2022-12-09 12:28:01 -0500] [47576] [INFO] Booting worker with pid: 47576
+[2022-12-09 12:28:02 -0500] [47574] [INFO] Worker exiting (pid: 47574)
+[2022-12-09 12:28:02 -0500] [47575] [INFO] Worker exiting (pid: 47575)
+[2022-12-09 12:28:02 -0500] [47580] [INFO] Booting worker with pid: 47580
+[2022-12-09 12:28:02 -0500] [47576] [INFO] Worker exiting (pid: 47576)
+[2022-12-09 12:28:02 -0500] [47584] [INFO] Booting worker with pid: 47584
+[2022-12-09 12:28:03 -0500] [47587] [INFO] Booting worker with pid: 47587
+[2022-12-09 12:28:03 -0500] [47580] [INFO] Worker exiting (pid: 47580)
+[2022-12-09 12:28:03 -0500] [47584] [INFO] Worker exiting (pid: 47584)
+[2022-12-09 12:28:04 -0500] [47590] [INFO] Booting worker with pid: 47590
+[2022-12-09 12:28:04 -0500] [47587] [INFO] Worker exiting (pid: 47587)
+[2022-12-09 12:28:04 -0500] [47592] [INFO] Booting worker with pid: 47592
+[2022-12-09 12:28:04 -0500] [47594] [INFO] Booting worker with pid: 47594
+[2022-12-09 12:28:05 -0500] [47590] [INFO] Worker exiting (pid: 47590)
+[2022-12-09 12:28:05 -0500] [47592] [INFO] Worker exiting (pid: 47592)
+[2022-12-09 12:28:05 -0500] [47595] [INFO] Booting worker with pid: 47595
+[2022-12-09 12:28:05 -0500] [47594] [INFO] Worker exiting (pid: 47594)
+[2022-12-09 12:28:05 -0500] [47596] [INFO] Booting worker with pid: 47596
+[2022-12-09 12:28:05 -0500] [47597] [INFO] Booting worker with pid: 47597
+[2022-12-09 12:28:06 -0500] [47595] [INFO] Worker exiting (pid: 47595)
+[2022-12-09 12:28:06 -0500] [47596] [INFO] Worker exiting (pid: 47596)
+[2022-12-09 12:28:06 -0500] [47598] [INFO] Booting worker with pid: 47598
+[2022-12-09 12:28:06 -0500] [47597] [INFO] Worker exiting (pid: 47597)
+[2022-12-09 12:28:06 -0500] [47599] [INFO] Booting worker with pid: 47599
+[2022-12-09 12:28:07 -0500] [47600] [INFO] Booting worker with pid: 47600
+[2022-12-09 12:28:07 -0500] [47598] [INFO] Worker exiting (pid: 47598)
+[2022-12-09 12:28:07 -0500] [47599] [INFO] Worker exiting (pid: 47599)
+[2022-12-09 12:28:08 -0500] [47601] [INFO] Booting worker with pid: 47601
+[2022-12-09 12:28:08 -0500] [47600] [INFO] Worker exiting (pid: 47600)
+[2022-12-09 12:28:08 -0500] [47602] [INFO] Booting worker with pid: 47602
+[2022-12-09 12:28:08 -0500] [47603] [INFO] Booting worker with pid: 47603
+[2022-12-09 12:28:08 -0500] [47601] [INFO] Worker exiting (pid: 47601)
+[2022-12-09 12:28:09 -0500] [47602] [INFO] Worker exiting (pid: 47602)
+[2022-12-09 12:28:09 -0500] [47604] [INFO] Booting worker with pid: 47604
+[2022-12-09 12:28:09 -0500] [47603] [INFO] Worker exiting (pid: 47603)
+[2022-12-09 12:28:09 -0500] [47605] [INFO] Booting worker with pid: 47605
+[2022-12-09 12:28:09 -0500] [47606] [INFO] Booting worker with pid: 47606
+[2022-12-09 12:28:10 -0500] [47604] [INFO] Worker exiting (pid: 47604)
+[2022-12-09 12:28:10 -0500] [47605] [INFO] Worker exiting (pid: 47605)
+[2022-12-09 12:28:10 -0500] [47607] [INFO] Booting worker with pid: 47607
+[2022-12-09 12:28:10 -0500] [47606] [INFO] Worker exiting (pid: 47606)
+[2022-12-09 12:28:11 -0500] [47608] [INFO] Booting worker with pid: 47608
+[2022-12-09 12:28:11 -0500] [47609] [INFO] Booting worker with pid: 47609
+[2022-12-09 12:28:11 -0500] [47607] [INFO] Worker exiting (pid: 47607)
+[2022-12-09 12:28:12 -0500] [47608] [INFO] Worker exiting (pid: 47608)
+[2022-12-09 12:28:12 -0500] [47610] [INFO] Booting worker with pid: 47610
+[2022-12-09 12:28:12 -0500] [47609] [INFO] Worker exiting (pid: 47609)
+[2022-12-09 12:28:12 -0500] [47611] [INFO] Booting worker with pid: 47611
+[2022-12-09 12:28:12 -0500] [47612] [INFO] Booting worker with pid: 47612
+[2022-12-09 12:28:12 -0500] [47610] [INFO] Worker exiting (pid: 47610)
+[2022-12-09 12:28:13 -0500] [47611] [INFO] Worker exiting (pid: 47611)
+[2022-12-09 12:28:13 -0500] [47613] [INFO] Booting worker with pid: 47613
+[2022-12-09 12:28:13 -0500] [47612] [INFO] Worker exiting (pid: 47612)
+[2022-12-09 12:28:13 -0500] [47614] [INFO] Booting worker with pid: 47614
+[2022-12-09 12:28:13 -0500] [47615] [INFO] Booting worker with pid: 47615
+[2022-12-09 12:28:14 -0500] [47613] [INFO] Worker exiting (pid: 47613)
+[2022-12-09 12:28:14 -0500] [47614] [INFO] Worker exiting (pid: 47614)
+[2022-12-09 12:28:14 -0500] [47618] [INFO] Booting worker with pid: 47618
+[2022-12-09 12:28:14 -0500] [47615] [INFO] Worker exiting (pid: 47615)
+[2022-12-09 12:28:14 -0500] [47619] [INFO] Booting worker with pid: 47619
+[2022-12-09 12:28:15 -0500] [47620] [INFO] Booting worker with pid: 47620
+[2022-12-09 12:28:15 -0500] [47618] [INFO] Worker exiting (pid: 47618)
+[2022-12-09 12:28:15 -0500] [47619] [INFO] Worker exiting (pid: 47619)
+[2022-12-09 12:28:15 -0500] [47621] [INFO] Booting worker with pid: 47621
+[2022-12-09 12:28:15 -0500] [47620] [INFO] Worker exiting (pid: 47620)
+[2022-12-09 12:28:16 -0500] [47622] [INFO] Booting worker with pid: 47622
+[2022-12-09 12:28:16 -0500] [47623] [INFO] Booting worker with pid: 47623
+[2022-12-09 12:28:16 -0500] [47621] [INFO] Worker exiting (pid: 47621)
+[2022-12-09 12:28:16 -0500] [47622] [INFO] Worker exiting (pid: 47622)
+[2022-12-09 12:28:16 -0500] [47624] [INFO] Booting worker with pid: 47624
+[2022-12-09 12:28:17 -0500] [47623] [INFO] Worker exiting (pid: 47623)
+[2022-12-09 12:28:17 -0500] [47625] [INFO] Booting worker with pid: 47625
+[2022-12-09 12:28:17 -0500] [47626] [INFO] Booting worker with pid: 47626
+[2022-12-09 12:28:17 -0500] [47624] [INFO] Worker exiting (pid: 47624)
+[2022-12-09 12:28:18 -0500] [47625] [INFO] Worker exiting (pid: 47625)
+[2022-12-09 12:28:18 -0500] [47627] [INFO] Booting worker with pid: 47627
+[2022-12-09 12:28:18 -0500] [47626] [INFO] Worker exiting (pid: 47626)
+[2022-12-09 12:28:18 -0500] [47628] [INFO] Booting worker with pid: 47628
+[2022-12-09 12:28:18 -0500] [47629] [INFO] Booting worker with pid: 47629
+[2022-12-09 12:28:19 -0500] [47627] [INFO] Worker exiting (pid: 47627)
+[2022-12-09 12:28:19 -0500] [47628] [INFO] Worker exiting (pid: 47628)
+[2022-12-09 12:28:19 -0500] [47630] [INFO] Booting worker with pid: 47630
+[2022-12-09 12:28:19 -0500] [47629] [INFO] Worker exiting (pid: 47629)
+[2022-12-09 12:28:19 -0500] [47631] [INFO] Booting worker with pid: 47631
+[2022-12-09 12:28:19 -0500] [47632] [INFO] Booting worker with pid: 47632
+[2022-12-09 12:28:20 -0500] [47630] [INFO] Worker exiting (pid: 47630)
+[2022-12-09 12:28:20 -0500] [47631] [INFO] Worker exiting (pid: 47631)
+[2022-12-09 12:28:20 -0500] [47633] [INFO] Booting worker with pid: 47633
+[2022-12-09 12:28:20 -0500] [47632] [INFO] Worker exiting (pid: 47632)
+[2022-12-09 12:28:21 -0500] [47634] [INFO] Booting worker with pid: 47634
+[2022-12-09 12:28:21 -0500] [47635] [INFO] Booting worker with pid: 47635
+[2022-12-09 12:28:21 -0500] [47633] [INFO] Worker exiting (pid: 47633)
+[2022-12-09 12:28:21 -0500] [47634] [INFO] Worker exiting (pid: 47634)
+[2022-12-09 12:28:21 -0500] [47638] [INFO] Booting worker with pid: 47638
+[2022-12-09 12:28:22 -0500] [47635] [INFO] Worker exiting (pid: 47635)
+[2022-12-09 12:28:22 -0500] [47639] [INFO] Booting worker with pid: 47639
+[2022-12-09 12:28:22 -0500] [47640] [INFO] Booting worker with pid: 47640
+[2022-12-09 12:28:22 -0500] [47638] [INFO] Worker exiting (pid: 47638)
+[2022-12-09 12:28:23 -0500] [47639] [INFO] Worker exiting (pid: 47639)
+[2022-12-09 12:28:23 -0500] [47641] [INFO] Booting worker with pid: 47641
+[2022-12-09 12:28:23 -0500] [47640] [INFO] Worker exiting (pid: 47640)
+[2022-12-09 12:28:23 -0500] [47642] [INFO] Booting worker with pid: 47642
+[2022-12-09 12:28:23 -0500] [47643] [INFO] Booting worker with pid: 47643
+[2022-12-09 12:28:24 -0500] [47641] [INFO] Worker exiting (pid: 47641)
+[2022-12-09 12:28:24 -0500] [47642] [INFO] Worker exiting (pid: 47642)
+[2022-12-09 12:28:24 -0500] [47644] [INFO] Booting worker with pid: 47644
+[2022-12-09 12:28:24 -0500] [47643] [INFO] Worker exiting (pid: 47643)
+[2022-12-09 12:28:24 -0500] [47645] [INFO] Booting worker with pid: 47645
+[2022-12-09 12:28:24 -0500] [47646] [INFO] Booting worker with pid: 47646
+[2022-12-09 12:28:25 -0500] [47644] [INFO] Worker exiting (pid: 47644)
+[2022-12-09 12:28:25 -0500] [47645] [INFO] Worker exiting (pid: 47645)
+[2022-12-09 12:28:25 -0500] [47647] [INFO] Booting worker with pid: 47647
+[2022-12-09 12:28:25 -0500] [47646] [INFO] Worker exiting (pid: 47646)
+[2022-12-09 12:28:25 -0500] [47648] [INFO] Booting worker with pid: 47648
+[2022-12-09 12:28:26 -0500] [47649] [INFO] Booting worker with pid: 47649
+[2022-12-09 12:28:26 -0500] [47647] [INFO] Worker exiting (pid: 47647)
+[2022-12-09 12:28:26 -0500] [47648] [INFO] Worker exiting (pid: 47648)
+[2022-12-09 12:28:26 -0500] [47650] [INFO] Booting worker with pid: 47650
+[2022-12-09 12:28:26 -0500] [47649] [INFO] Worker exiting (pid: 47649)
+[2022-12-09 12:28:27 -0500] [47651] [INFO] Booting worker with pid: 47651
+[2022-12-09 12:28:27 -0500] [47652] [INFO] Booting worker with pid: 47652
+[2022-12-09 12:28:27 -0500] [47650] [INFO] Worker exiting (pid: 47650)
+[2022-12-09 12:28:28 -0500] [47651] [INFO] Worker exiting (pid: 47651)
+[2022-12-09 12:28:28 -0500] [47653] [INFO] Booting worker with pid: 47653
+[2022-12-09 12:28:28 -0500] [47652] [INFO] Worker exiting (pid: 47652)
+[2022-12-09 12:28:28 -0500] [47654] [INFO] Booting worker with pid: 47654
+[2022-12-09 12:28:28 -0500] [47655] [INFO] Booting worker with pid: 47655
+[2022-12-09 12:28:28 -0500] [47653] [INFO] Worker exiting (pid: 47653)
+[2022-12-09 12:28:29 -0500] [47654] [INFO] Worker exiting (pid: 47654)
+[2022-12-09 12:28:29 -0500] [47656] [INFO] Booting worker with pid: 47656
+[2022-12-09 12:28:29 -0500] [47655] [INFO] Worker exiting (pid: 47655)
+[2022-12-09 12:28:29 -0500] [47657] [INFO] Booting worker with pid: 47657
+[2022-12-09 12:28:29 -0500] [47658] [INFO] Booting worker with pid: 47658
+[2022-12-09 12:28:30 -0500] [47656] [INFO] Worker exiting (pid: 47656)
+[2022-12-09 12:28:30 -0500] [47657] [INFO] Worker exiting (pid: 47657)
+[2022-12-09 12:28:30 -0500] [47659] [INFO] Booting worker with pid: 47659
+[2022-12-09 12:28:30 -0500] [47658] [INFO] Worker exiting (pid: 47658)
+[2022-12-09 12:28:30 -0500] [47660] [INFO] Booting worker with pid: 47660
+[2022-12-09 12:28:31 -0500] [47661] [INFO] Booting worker with pid: 47661
+[2022-12-09 12:28:31 -0500] [47659] [INFO] Worker exiting (pid: 47659)
+[2022-12-09 12:28:31 -0500] [47660] [INFO] Worker exiting (pid: 47660)
+[2022-12-09 12:28:31 -0500] [47662] [INFO] Booting worker with pid: 47662
+[2022-12-09 12:28:31 -0500] [47661] [INFO] Worker exiting (pid: 47661)
+[2022-12-09 12:28:32 -0500] [47663] [INFO] Booting worker with pid: 47663
+[2022-12-09 12:28:32 -0500] [47666] [INFO] Booting worker with pid: 47666
+[2022-12-09 12:28:32 -0500] [47662] [INFO] Worker exiting (pid: 47662)
+[2022-12-09 12:28:32 -0500] [47663] [INFO] Worker exiting (pid: 47663)
+[2022-12-09 12:28:33 -0500] [47667] [INFO] Booting worker with pid: 47667
+[2022-12-09 12:28:33 -0500] [47666] [INFO] Worker exiting (pid: 47666)
+[2022-12-09 12:28:33 -0500] [47668] [INFO] Booting worker with pid: 47668
+[2022-12-09 12:28:33 -0500] [47669] [INFO] Booting worker with pid: 47669
+[2022-12-09 12:28:33 -0500] [47667] [INFO] Worker exiting (pid: 47667)
+[2022-12-09 12:28:34 -0500] [47668] [INFO] Worker exiting (pid: 47668)
+[2022-12-09 12:28:34 -0500] [47670] [INFO] Booting worker with pid: 47670
+[2022-12-09 12:28:34 -0500] [47669] [INFO] Worker exiting (pid: 47669)
+[2022-12-09 12:28:34 -0500] [47671] [INFO] Booting worker with pid: 47671
+[2022-12-09 12:28:34 -0500] [47672] [INFO] Booting worker with pid: 47672
+[2022-12-09 12:28:35 -0500] [47670] [INFO] Worker exiting (pid: 47670)
+[2022-12-09 12:28:35 -0500] [47671] [INFO] Worker exiting (pid: 47671)
+[2022-12-09 12:28:35 -0500] [47673] [INFO] Booting worker with pid: 47673
+[2022-12-09 12:28:35 -0500] [47672] [INFO] Worker exiting (pid: 47672)
+[2022-12-09 12:28:35 -0500] [47674] [INFO] Booting worker with pid: 47674
+[2022-12-09 12:28:35 -0500] [47675] [INFO] Booting worker with pid: 47675
+[2022-12-09 12:28:36 -0500] [47673] [INFO] Worker exiting (pid: 47673)
+[2022-12-09 12:28:36 -0500] [47674] [INFO] Worker exiting (pid: 47674)
+[2022-12-09 12:28:36 -0500] [47676] [INFO] Booting worker with pid: 47676
+[2022-12-09 12:28:36 -0500] [47675] [INFO] Worker exiting (pid: 47675)
+[2022-12-09 12:28:37 -0500] [47677] [INFO] Booting worker with pid: 47677
+[2022-12-09 12:28:37 -0500] [47678] [INFO] Booting worker with pid: 47678
+[2022-12-09 12:28:37 -0500] [47676] [INFO] Worker exiting (pid: 47676)
+[2022-12-09 12:28:37 -0500] [47677] [INFO] Worker exiting (pid: 47677)
+[2022-12-09 12:28:38 -0500] [47679] [INFO] Booting worker with pid: 47679
+[2022-12-09 12:28:38 -0500] [47678] [INFO] Worker exiting (pid: 47678)
+[2022-12-09 12:28:38 -0500] [47680] [INFO] Booting worker with pid: 47680
+[2022-12-09 12:28:38 -0500] [47681] [INFO] Booting worker with pid: 47681
+[2022-12-09 12:28:38 -0500] [47679] [INFO] Worker exiting (pid: 47679)
+[2022-12-09 12:28:39 -0500] [47680] [INFO] Worker exiting (pid: 47680)
+[2022-12-09 12:28:39 -0500] [47682] [INFO] Booting worker with pid: 47682
+[2022-12-09 12:28:39 -0500] [47681] [INFO] Worker exiting (pid: 47681)
+[2022-12-09 12:28:39 -0500] [47683] [INFO] Booting worker with pid: 47683
+[2022-12-09 12:28:39 -0500] [47684] [INFO] Booting worker with pid: 47684
+[2022-12-09 12:28:40 -0500] [47682] [INFO] Worker exiting (pid: 47682)
+[2022-12-09 12:28:40 -0500] [47683] [INFO] Worker exiting (pid: 47683)
+[2022-12-09 12:28:40 -0500] [47685] [INFO] Booting worker with pid: 47685
+[2022-12-09 12:28:40 -0500] [47684] [INFO] Worker exiting (pid: 47684)
+[2022-12-09 12:28:40 -0500] [47686] [INFO] Booting worker with pid: 47686
+[2022-12-09 12:28:40 -0500] [47687] [INFO] Booting worker with pid: 47687
+[2022-12-09 12:28:41 -0500] [47685] [INFO] Worker exiting (pid: 47685)
+[2022-12-09 12:28:41 -0500] [47686] [INFO] Worker exiting (pid: 47686)
+[2022-12-09 12:28:41 -0500] [47690] [INFO] Booting worker with pid: 47690
+[2022-12-09 12:28:41 -0500] [47687] [INFO] Worker exiting (pid: 47687)
+[2022-12-09 12:28:41 -0500] [47691] [INFO] Booting worker with pid: 47691
+[2022-12-09 12:28:42 -0500] [47692] [INFO] Booting worker with pid: 47692
+[2022-12-09 12:28:42 -0500] [47690] [INFO] Worker exiting (pid: 47690)
+[2022-12-09 12:28:42 -0500] [47691] [INFO] Worker exiting (pid: 47691)
+[2022-12-09 12:28:42 -0500] [47693] [INFO] Booting worker with pid: 47693
+[2022-12-09 12:28:43 -0500] [47692] [INFO] Worker exiting (pid: 47692)
+[2022-12-09 12:28:43 -0500] [47696] [INFO] Booting worker with pid: 47696
+[2022-12-09 12:28:43 -0500] [47697] [INFO] Booting worker with pid: 47697
+[2022-12-09 12:28:43 -0500] [47693] [INFO] Worker exiting (pid: 47693)
+[2022-12-09 12:28:44 -0500] [47696] [INFO] Worker exiting (pid: 47696)
+[2022-12-09 12:28:44 -0500] [47698] [INFO] Booting worker with pid: 47698
+[2022-12-09 12:28:44 -0500] [47697] [INFO] Worker exiting (pid: 47697)
+[2022-12-09 12:28:44 -0500] [47699] [INFO] Booting worker with pid: 47699
+[2022-12-09 12:28:44 -0500] [47700] [INFO] Booting worker with pid: 47700
+[2022-12-09 12:28:45 -0500] [47698] [INFO] Worker exiting (pid: 47698)
+[2022-12-09 12:28:45 -0500] [47699] [INFO] Worker exiting (pid: 47699)
+[2022-12-09 12:28:45 -0500] [47701] [INFO] Booting worker with pid: 47701
+[2022-12-09 12:28:45 -0500] [47700] [INFO] Worker exiting (pid: 47700)
+[2022-12-09 12:28:45 -0500] [47702] [INFO] Booting worker with pid: 47702
+[2022-12-09 12:28:45 -0500] [47703] [INFO] Booting worker with pid: 47703
+[2022-12-09 12:28:46 -0500] [47701] [INFO] Worker exiting (pid: 47701)
+[2022-12-09 12:28:46 -0500] [47702] [INFO] Worker exiting (pid: 47702)
+[2022-12-09 12:28:46 -0500] [47704] [INFO] Booting worker with pid: 47704
+[2022-12-09 12:28:46 -0500] [47703] [INFO] Worker exiting (pid: 47703)
+[2022-12-09 12:28:46 -0500] [47705] [INFO] Booting worker with pid: 47705
+[2022-12-09 12:28:47 -0500] [47706] [INFO] Booting worker with pid: 47706
+[2022-12-09 12:28:47 -0500] [47704] [INFO] Worker exiting (pid: 47704)
+[2022-12-09 12:28:47 -0500] [47705] [INFO] Worker exiting (pid: 47705)
+[2022-12-09 12:28:47 -0500] [47707] [INFO] Booting worker with pid: 47707
+[2022-12-09 12:28:48 -0500] [47706] [INFO] Worker exiting (pid: 47706)
+[2022-12-09 12:28:48 -0500] [47708] [INFO] Booting worker with pid: 47708
+[2022-12-09 12:28:48 -0500] [47709] [INFO] Booting worker with pid: 47709
+[2022-12-09 12:28:48 -0500] [47707] [INFO] Worker exiting (pid: 47707)
+[2022-12-09 12:28:48 -0500] [47708] [INFO] Worker exiting (pid: 47708)
+[2022-12-09 12:28:49 -0500] [47710] [INFO] Booting worker with pid: 47710
+[2022-12-09 12:28:49 -0500] [47709] [INFO] Worker exiting (pid: 47709)
+[2022-12-09 12:28:49 -0500] [47711] [INFO] Booting worker with pid: 47711
+[2022-12-09 12:28:49 -0500] [47712] [INFO] Booting worker with pid: 47712
+[2022-12-09 12:28:50 -0500] [47710] [INFO] Worker exiting (pid: 47710)
+[2022-12-09 12:28:50 -0500] [47711] [INFO] Worker exiting (pid: 47711)
+[2022-12-09 12:28:50 -0500] [47713] [INFO] Booting worker with pid: 47713
+[2022-12-09 12:28:50 -0500] [47712] [INFO] Worker exiting (pid: 47712)
+[2022-12-09 12:28:50 -0500] [47714] [INFO] Booting worker with pid: 47714
+[2022-12-09 12:28:50 -0500] [47715] [INFO] Booting worker with pid: 47715
+[2022-12-09 12:28:51 -0500] [47713] [INFO] Worker exiting (pid: 47713)
+[2022-12-09 12:28:51 -0500] [47714] [INFO] Worker exiting (pid: 47714)
+[2022-12-09 12:28:51 -0500] [47716] [INFO] Booting worker with pid: 47716
+[2022-12-09 12:28:51 -0500] [47715] [INFO] Worker exiting (pid: 47715)
+[2022-12-09 12:28:51 -0500] [47717] [INFO] Booting worker with pid: 47717
+[2022-12-09 12:28:52 -0500] [47718] [INFO] Booting worker with pid: 47718
+[2022-12-09 12:28:52 -0500] [47716] [INFO] Worker exiting (pid: 47716)
+[2022-12-09 12:28:52 -0500] [47717] [INFO] Worker exiting (pid: 47717)
+[2022-12-09 12:28:52 -0500] [47719] [INFO] Booting worker with pid: 47719
+[2022-12-09 12:28:52 -0500] [47718] [INFO] Worker exiting (pid: 47718)
+[2022-12-09 12:28:53 -0500] [47720] [INFO] Booting worker with pid: 47720
+[2022-12-09 12:28:53 -0500] [47721] [INFO] Booting worker with pid: 47721
+[2022-12-09 12:28:53 -0500] [47719] [INFO] Worker exiting (pid: 47719)
+[2022-12-09 12:28:53 -0500] [47720] [INFO] Worker exiting (pid: 47720)
+[2022-12-09 12:28:54 -0500] [47724] [INFO] Booting worker with pid: 47724
+[2022-12-09 12:28:54 -0500] [47721] [INFO] Worker exiting (pid: 47721)
+[2022-12-09 12:28:54 -0500] [47725] [INFO] Booting worker with pid: 47725
+[2022-12-09 12:28:54 -0500] [47726] [INFO] Booting worker with pid: 47726
+[2022-12-09 12:28:54 -0500] [47724] [INFO] Worker exiting (pid: 47724)
+[2022-12-09 12:28:55 -0500] [47725] [INFO] Worker exiting (pid: 47725)
+[2022-12-09 12:28:55 -0500] [47727] [INFO] Booting worker with pid: 47727
+[2022-12-09 12:28:55 -0500] [47726] [INFO] Worker exiting (pid: 47726)
+[2022-12-09 12:28:55 -0500] [47728] [INFO] Booting worker with pid: 47728
+[2022-12-09 12:28:55 -0500] [47729] [INFO] Booting worker with pid: 47729
+[2022-12-09 12:28:56 -0500] [47727] [INFO] Worker exiting (pid: 47727)
+[2022-12-09 12:28:56 -0500] [47728] [INFO] Worker exiting (pid: 47728)
+[2022-12-09 12:28:56 -0500] [47730] [INFO] Booting worker with pid: 47730
+[2022-12-09 12:28:56 -0500] [47729] [INFO] Worker exiting (pid: 47729)
+[2022-12-09 12:28:56 -0500] [47731] [INFO] Booting worker with pid: 47731
+[2022-12-09 12:28:57 -0500] [47732] [INFO] Booting worker with pid: 47732
+[2022-12-09 12:28:57 -0500] [47730] [INFO] Worker exiting (pid: 47730)
+[2022-12-09 12:28:57 -0500] [47731] [INFO] Worker exiting (pid: 47731)
+[2022-12-09 12:28:57 -0500] [47733] [INFO] Booting worker with pid: 47733
+[2022-12-09 12:28:57 -0500] [47732] [INFO] Worker exiting (pid: 47732)
+[2022-12-09 12:28:57 -0500] [47734] [INFO] Booting worker with pid: 47734
+[2022-12-09 12:28:58 -0500] [47735] [INFO] Booting worker with pid: 47735
+[2022-12-09 12:28:58 -0500] [47733] [INFO] Worker exiting (pid: 47733)
+[2022-12-09 12:28:58 -0500] [47734] [INFO] Worker exiting (pid: 47734)
+[2022-12-09 12:28:59 -0500] [47736] [INFO] Booting worker with pid: 47736
+[2022-12-09 12:28:59 -0500] [47735] [INFO] Worker exiting (pid: 47735)
+[2022-12-09 12:28:59 -0500] [47737] [INFO] Booting worker with pid: 47737
+[2022-12-09 12:28:59 -0500] [47738] [INFO] Booting worker with pid: 47738
+[2022-12-09 12:28:59 -0500] [47736] [INFO] Worker exiting (pid: 47736)
+[2022-12-09 12:29:00 -0500] [47737] [INFO] Worker exiting (pid: 47737)
+[2022-12-09 12:29:00 -0500] [47741] [INFO] Booting worker with pid: 47741
+[2022-12-09 12:29:00 -0500] [47738] [INFO] Worker exiting (pid: 47738)
+[2022-12-09 12:29:00 -0500] [47742] [INFO] Booting worker with pid: 47742
+[2022-12-09 12:29:00 -0500] [47743] [INFO] Booting worker with pid: 47743
+[2022-12-09 12:29:01 -0500] [47741] [INFO] Worker exiting (pid: 47741)
+[2022-12-09 12:29:01 -0500] [47742] [INFO] Worker exiting (pid: 47742)
+[2022-12-09 12:29:01 -0500] [47744] [INFO] Booting worker with pid: 47744
+[2022-12-09 12:29:01 -0500] [47743] [INFO] Worker exiting (pid: 47743)
+[2022-12-09 12:29:01 -0500] [47745] [INFO] Booting worker with pid: 47745
+[2022-12-09 12:29:02 -0500] [47746] [INFO] Booting worker with pid: 47746
+[2022-12-09 12:29:02 -0500] [47744] [INFO] Worker exiting (pid: 47744)
+[2022-12-09 12:29:02 -0500] [47745] [INFO] Worker exiting (pid: 47745)
+[2022-12-09 12:29:02 -0500] [47747] [INFO] Booting worker with pid: 47747
+[2022-12-09 12:29:02 -0500] [47746] [INFO] Worker exiting (pid: 47746)
+[2022-12-09 12:29:02 -0500] [47748] [INFO] Booting worker with pid: 47748
+[2022-12-09 12:29:03 -0500] [47749] [INFO] Booting worker with pid: 47749
+[2022-12-09 12:29:03 -0500] [47747] [INFO] Worker exiting (pid: 47747)
+[2022-12-09 12:29:03 -0500] [47748] [INFO] Worker exiting (pid: 47748)
+[2022-12-09 12:29:03 -0500] [47750] [INFO] Booting worker with pid: 47750
+[2022-12-09 12:29:04 -0500] [47749] [INFO] Worker exiting (pid: 47749)
+[2022-12-09 12:29:04 -0500] [47751] [INFO] Booting worker with pid: 47751
+[2022-12-09 12:29:04 -0500] [47752] [INFO] Booting worker with pid: 47752
+[2022-12-09 12:29:04 -0500] [47750] [INFO] Worker exiting (pid: 47750)
+[2022-12-09 12:29:05 -0500] [47751] [INFO] Worker exiting (pid: 47751)
+[2022-12-09 12:29:05 -0500] [47755] [INFO] Booting worker with pid: 47755
+[2022-12-09 12:29:05 -0500] [47752] [INFO] Worker exiting (pid: 47752)
+[2022-12-09 12:29:05 -0500] [47756] [INFO] Booting worker with pid: 47756
+[2022-12-09 12:29:05 -0500] [47757] [INFO] Booting worker with pid: 47757
+[2022-12-09 12:29:06 -0500] [47755] [INFO] Worker exiting (pid: 47755)
+[2022-12-09 12:29:06 -0500] [47756] [INFO] Worker exiting (pid: 47756)
+[2022-12-09 12:29:06 -0500] [47758] [INFO] Booting worker with pid: 47758
+[2022-12-09 12:29:06 -0500] [47757] [INFO] Worker exiting (pid: 47757)
+[2022-12-09 12:29:06 -0500] [47759] [INFO] Booting worker with pid: 47759
+[2022-12-09 12:29:07 -0500] [47762] [INFO] Booting worker with pid: 47762
+[2022-12-09 12:29:07 -0500] [47758] [INFO] Worker exiting (pid: 47758)
+[2022-12-09 12:29:07 -0500] [47759] [INFO] Worker exiting (pid: 47759)
+[2022-12-09 12:29:07 -0500] [47763] [INFO] Booting worker with pid: 47763
+[2022-12-09 12:29:07 -0500] [47762] [INFO] Worker exiting (pid: 47762)
+[2022-12-09 12:29:07 -0500] [47764] [INFO] Booting worker with pid: 47764
+[2022-12-09 12:29:08 -0500] [47765] [INFO] Booting worker with pid: 47765
+[2022-12-09 12:29:08 -0500] [47763] [INFO] Worker exiting (pid: 47763)
+[2022-12-09 12:29:08 -0500] [47764] [INFO] Worker exiting (pid: 47764)
+[2022-12-09 12:29:08 -0500] [47767] [INFO] Booting worker with pid: 47767
+[2022-12-09 12:29:09 -0500] [47769] [INFO] Booting worker with pid: 47769
+[2022-12-09 12:29:09 -0500] [47765] [INFO] Worker exiting (pid: 47765)
+[2022-12-09 12:29:09 -0500] [47770] [INFO] Booting worker with pid: 47770
+[2022-12-09 12:29:09 -0500] [47767] [INFO] Worker exiting (pid: 47767)
+[2022-12-09 12:29:09 -0500] [47769] [INFO] Worker exiting (pid: 47769)
+[2022-12-09 12:29:10 -0500] [47771] [INFO] Booting worker with pid: 47771
+[2022-12-09 12:29:10 -0500] [47772] [INFO] Booting worker with pid: 47772
+[2022-12-09 12:29:10 -0500] [47770] [INFO] Worker exiting (pid: 47770)
+[2022-12-09 12:29:10 -0500] [47773] [INFO] Booting worker with pid: 47773
+[2022-12-09 12:29:10 -0500] [47771] [INFO] Worker exiting (pid: 47771)
+[2022-12-09 12:29:11 -0500] [47772] [INFO] Worker exiting (pid: 47772)
+[2022-12-09 12:29:11 -0500] [47774] [INFO] Booting worker with pid: 47774
+[2022-12-09 12:29:11 -0500] [47775] [INFO] Booting worker with pid: 47775
+[2022-12-09 12:29:11 -0500] [47773] [INFO] Worker exiting (pid: 47773)
+[2022-12-09 12:29:11 -0500] [47776] [INFO] Booting worker with pid: 47776
+[2022-12-09 12:29:12 -0500] [47774] [INFO] Worker exiting (pid: 47774)
+[2022-12-09 12:29:12 -0500] [47775] [INFO] Worker exiting (pid: 47775)
+[2022-12-09 12:29:12 -0500] [47777] [INFO] Booting worker with pid: 47777
+[2022-12-09 12:29:12 -0500] [47778] [INFO] Booting worker with pid: 47778
+[2022-12-09 12:29:12 -0500] [47776] [INFO] Worker exiting (pid: 47776)
+[2022-12-09 12:29:13 -0500] [47779] [INFO] Booting worker with pid: 47779
+[2022-12-09 12:29:13 -0500] [47777] [INFO] Worker exiting (pid: 47777)
+[2022-12-09 12:29:13 -0500] [47778] [INFO] Worker exiting (pid: 47778)
+[2022-12-09 12:29:13 -0500] [47780] [INFO] Booting worker with pid: 47780
+[2022-12-09 12:29:13 -0500] [47781] [INFO] Booting worker with pid: 47781
+[2022-12-09 12:29:14 -0500] [47779] [INFO] Worker exiting (pid: 47779)
+[2022-12-09 12:29:14 -0500] [47782] [INFO] Booting worker with pid: 47782
+[2022-12-09 12:29:14 -0500] [47780] [INFO] Worker exiting (pid: 47780)
+[2022-12-09 12:29:14 -0500] [47781] [INFO] Worker exiting (pid: 47781)
+[2022-12-09 12:29:15 -0500] [47783] [INFO] Booting worker with pid: 47783
+[2022-12-09 12:29:15 -0500] [47784] [INFO] Booting worker with pid: 47784
+[2022-12-09 12:29:15 -0500] [47782] [INFO] Worker exiting (pid: 47782)
+[2022-12-09 12:29:15 -0500] [47785] [INFO] Booting worker with pid: 47785
+[2022-12-09 12:29:15 -0500] [47783] [INFO] Worker exiting (pid: 47783)
+[2022-12-09 12:29:16 -0500] [47784] [INFO] Worker exiting (pid: 47784)
+[2022-12-09 12:29:16 -0500] [47786] [INFO] Booting worker with pid: 47786
+[2022-12-09 12:29:16 -0500] [47787] [INFO] Booting worker with pid: 47787
+[2022-12-09 12:29:16 -0500] [47785] [INFO] Worker exiting (pid: 47785)
+[2022-12-09 12:29:16 -0500] [47788] [INFO] Booting worker with pid: 47788
+[2022-12-09 12:29:17 -0500] [47786] [INFO] Worker exiting (pid: 47786)
+[2022-12-09 12:29:17 -0500] [47787] [INFO] Worker exiting (pid: 47787)
+[2022-12-09 12:29:17 -0500] [47789] [INFO] Booting worker with pid: 47789
+[2022-12-09 12:29:17 -0500] [47790] [INFO] Booting worker with pid: 47790
+[2022-12-09 12:29:17 -0500] [47788] [INFO] Worker exiting (pid: 47788)
+[2022-12-09 12:29:18 -0500] [47791] [INFO] Booting worker with pid: 47791
+[2022-12-09 12:29:18 -0500] [47789] [INFO] Worker exiting (pid: 47789)
+[2022-12-09 12:29:18 -0500] [47790] [INFO] Worker exiting (pid: 47790)
+[2022-12-09 12:29:18 -0500] [47792] [INFO] Booting worker with pid: 47792
+[2022-12-09 12:29:18 -0500] [47793] [INFO] Booting worker with pid: 47793
+[2022-12-09 12:29:18 -0500] [47791] [INFO] Worker exiting (pid: 47791)
+[2022-12-09 12:29:19 -0500] [47794] [INFO] Booting worker with pid: 47794
+[2022-12-09 12:29:19 -0500] [47792] [INFO] Worker exiting (pid: 47792)
+[2022-12-09 12:29:19 -0500] [47793] [INFO] Worker exiting (pid: 47793)
+[2022-12-09 12:29:19 -0500] [47795] [INFO] Booting worker with pid: 47795
+[2022-12-09 12:29:20 -0500] [47796] [INFO] Booting worker with pid: 47796
+[2022-12-09 12:29:20 -0500] [47794] [INFO] Worker exiting (pid: 47794)
+[2022-12-09 12:29:20 -0500] [47797] [INFO] Booting worker with pid: 47797
+[2022-12-09 12:29:20 -0500] [47795] [INFO] Worker exiting (pid: 47795)
+[2022-12-09 12:29:20 -0500] [47796] [INFO] Worker exiting (pid: 47796)
+[2022-12-09 12:29:21 -0500] [47798] [INFO] Booting worker with pid: 47798
+[2022-12-09 12:29:21 -0500] [47799] [INFO] Booting worker with pid: 47799
+[2022-12-09 12:29:21 -0500] [47797] [INFO] Worker exiting (pid: 47797)
+[2022-12-09 12:29:21 -0500] [47800] [INFO] Booting worker with pid: 47800
+[2022-12-09 12:29:21 -0500] [47798] [INFO] Worker exiting (pid: 47798)
+[2022-12-09 12:29:22 -0500] [47799] [INFO] Worker exiting (pid: 47799)
+[2022-12-09 12:29:22 -0500] [47801] [INFO] Booting worker with pid: 47801
+[2022-12-09 12:29:22 -0500] [47802] [INFO] Booting worker with pid: 47802
+[2022-12-09 12:29:22 -0500] [47800] [INFO] Worker exiting (pid: 47800)
+[2022-12-09 12:29:23 -0500] [47811] [INFO] Booting worker with pid: 47811
+[2022-12-09 12:29:23 -0500] [47801] [INFO] Worker exiting (pid: 47801)
+[2022-12-09 12:29:23 -0500] [47802] [INFO] Worker exiting (pid: 47802)
+[2022-12-09 12:29:23 -0500] [47815] [INFO] Booting worker with pid: 47815
+[2022-12-09 12:29:23 -0500] [47817] [INFO] Booting worker with pid: 47817
+[2022-12-09 12:29:23 -0500] [47811] [INFO] Worker exiting (pid: 47811)
+[2022-12-09 12:29:24 -0500] [47818] [INFO] Booting worker with pid: 47818
+[2022-12-09 12:29:24 -0500] [47815] [INFO] Worker exiting (pid: 47815)
+[2022-12-09 12:29:24 -0500] [47817] [INFO] Worker exiting (pid: 47817)
+[2022-12-09 12:29:25 -0500] [47819] [INFO] Booting worker with pid: 47819
+[2022-12-09 12:29:25 -0500] [47820] [INFO] Booting worker with pid: 47820
+[2022-12-09 12:29:25 -0500] [47818] [INFO] Worker exiting (pid: 47818)
+[2022-12-09 12:29:25 -0500] [47821] [INFO] Booting worker with pid: 47821
+[2022-12-09 12:29:25 -0500] [47819] [INFO] Worker exiting (pid: 47819)
+[2022-12-09 12:29:26 -0500] [47820] [INFO] Worker exiting (pid: 47820)
+[2022-12-09 12:29:26 -0500] [47822] [INFO] Booting worker with pid: 47822
+[2022-12-09 12:29:26 -0500] [47823] [INFO] Booting worker with pid: 47823
+[2022-12-09 12:29:26 -0500] [47821] [INFO] Worker exiting (pid: 47821)
+[2022-12-09 12:29:27 -0500] [47824] [INFO] Booting worker with pid: 47824
+[2022-12-09 12:29:27 -0500] [47822] [INFO] Worker exiting (pid: 47822)
+[2022-12-09 12:29:27 -0500] [47823] [INFO] Worker exiting (pid: 47823)
+[2022-12-09 12:29:27 -0500] [47825] [INFO] Booting worker with pid: 47825
+[2022-12-09 12:29:27 -0500] [47826] [INFO] Booting worker with pid: 47826
+[2022-12-09 12:29:28 -0500] [47824] [INFO] Worker exiting (pid: 47824)
+[2022-12-09 12:29:28 -0500] [47827] [INFO] Booting worker with pid: 47827
+[2022-12-09 12:29:28 -0500] [47825] [INFO] Worker exiting (pid: 47825)
+[2022-12-09 12:29:28 -0500] [47826] [INFO] Worker exiting (pid: 47826)
+[2022-12-09 12:29:28 -0500] [47828] [INFO] Booting worker with pid: 47828
+[2022-12-09 12:29:29 -0500] [47829] [INFO] Booting worker with pid: 47829
+[2022-12-09 12:29:29 -0500] [47827] [INFO] Worker exiting (pid: 47827)
+[2022-12-09 12:29:29 -0500] [47830] [INFO] Booting worker with pid: 47830
+[2022-12-09 12:29:29 -0500] [47828] [INFO] Worker exiting (pid: 47828)
+[2022-12-09 12:29:30 -0500] [47829] [INFO] Worker exiting (pid: 47829)
+[2022-12-09 12:29:30 -0500] [47831] [INFO] Booting worker with pid: 47831
+[2022-12-09 12:29:30 -0500] [47832] [INFO] Booting worker with pid: 47832
+[2022-12-09 12:29:30 -0500] [47830] [INFO] Worker exiting (pid: 47830)
+[2022-12-09 12:29:31 -0500] [47833] [INFO] Booting worker with pid: 47833
+[2022-12-09 12:29:31 -0500] [47831] [INFO] Worker exiting (pid: 47831)
+[2022-12-09 12:29:31 -0500] [47832] [INFO] Worker exiting (pid: 47832)
+[2022-12-09 12:29:31 -0500] [47834] [INFO] Booting worker with pid: 47834
+[2022-12-09 12:29:31 -0500] [47835] [INFO] Booting worker with pid: 47835
+[2022-12-09 12:29:32 -0500] [47833] [INFO] Worker exiting (pid: 47833)
+[2022-12-09 12:29:32 -0500] [47836] [INFO] Booting worker with pid: 47836
+[2022-12-09 12:29:32 -0500] [47834] [INFO] Worker exiting (pid: 47834)
+[2022-12-09 12:29:32 -0500] [47835] [INFO] Worker exiting (pid: 47835)
+[2022-12-09 12:29:32 -0500] [47837] [INFO] Booting worker with pid: 47837
+[2022-12-09 12:29:33 -0500] [47838] [INFO] Booting worker with pid: 47838
+[2022-12-09 12:29:33 -0500] [47836] [INFO] Worker exiting (pid: 47836)
+[2022-12-09 12:29:33 -0500] [47839] [INFO] Booting worker with pid: 47839
+[2022-12-09 12:29:33 -0500] [47837] [INFO] Worker exiting (pid: 47837)
+[2022-12-09 12:29:34 -0500] [47838] [INFO] Worker exiting (pid: 47838)
+[2022-12-09 12:29:34 -0500] [47840] [INFO] Booting worker with pid: 47840
+[2022-12-09 12:29:34 -0500] [47841] [INFO] Booting worker with pid: 47841
+[2022-12-09 12:29:34 -0500] [47839] [INFO] Worker exiting (pid: 47839)
+[2022-12-09 12:29:34 -0500] [47842] [INFO] Booting worker with pid: 47842
+[2022-12-09 12:29:34 -0500] [47840] [INFO] Worker exiting (pid: 47840)
+[2022-12-09 12:29:35 -0500] [47841] [INFO] Worker exiting (pid: 47841)
+[2022-12-09 12:29:35 -0500] [47843] [INFO] Booting worker with pid: 47843
+[2022-12-09 12:29:35 -0500] [47844] [INFO] Booting worker with pid: 47844
+[2022-12-09 12:29:35 -0500] [47842] [INFO] Worker exiting (pid: 47842)
+[2022-12-09 12:29:36 -0500] [47845] [INFO] Booting worker with pid: 47845
+[2022-12-09 12:29:36 -0500] [47843] [INFO] Worker exiting (pid: 47843)
+[2022-12-09 12:29:36 -0500] [47844] [INFO] Worker exiting (pid: 47844)
+[2022-12-09 12:29:36 -0500] [47846] [INFO] Booting worker with pid: 47846
+[2022-12-09 12:29:36 -0500] [47847] [INFO] Booting worker with pid: 47847
+[2022-12-09 12:29:36 -0500] [47845] [INFO] Worker exiting (pid: 47845)
+[2022-12-09 12:29:37 -0500] [47848] [INFO] Booting worker with pid: 47848
+[2022-12-09 12:29:37 -0500] [47846] [INFO] Worker exiting (pid: 47846)
+[2022-12-09 12:29:37 -0500] [47847] [INFO] Worker exiting (pid: 47847)
+[2022-12-09 12:29:37 -0500] [47849] [INFO] Booting worker with pid: 47849
+[2022-12-09 12:29:38 -0500] [47850] [INFO] Booting worker with pid: 47850
+[2022-12-09 12:29:38 -0500] [47848] [INFO] Worker exiting (pid: 47848)
+[2022-12-09 12:29:38 -0500] [47851] [INFO] Booting worker with pid: 47851
+[2022-12-09 12:29:38 -0500] [47849] [INFO] Worker exiting (pid: 47849)
+[2022-12-09 12:29:38 -0500] [47850] [INFO] Worker exiting (pid: 47850)
+[2022-12-09 12:29:38 -0500] [47852] [INFO] Booting worker with pid: 47852
+[2022-12-09 12:29:39 -0500] [47853] [INFO] Booting worker with pid: 47853
+[2022-12-09 12:29:39 -0500] [47851] [INFO] Worker exiting (pid: 47851)
+[2022-12-09 12:29:39 -0500] [47854] [INFO] Booting worker with pid: 47854
+[2022-12-09 12:29:39 -0500] [47852] [INFO] Worker exiting (pid: 47852)
+[2022-12-09 12:29:40 -0500] [47853] [INFO] Worker exiting (pid: 47853)
+[2022-12-09 12:29:40 -0500] [47855] [INFO] Booting worker with pid: 47855
+[2022-12-09 12:29:40 -0500] [47856] [INFO] Booting worker with pid: 47856
+[2022-12-09 12:29:40 -0500] [47854] [INFO] Worker exiting (pid: 47854)
+[2022-12-09 12:29:41 -0500] [47857] [INFO] Booting worker with pid: 47857
+[2022-12-09 12:29:41 -0500] [47855] [INFO] Worker exiting (pid: 47855)
+[2022-12-09 12:29:41 -0500] [47856] [INFO] Worker exiting (pid: 47856)
+[2022-12-09 12:29:41 -0500] [47858] [INFO] Booting worker with pid: 47858
+[2022-12-09 12:29:41 -0500] [47859] [INFO] Booting worker with pid: 47859
+[2022-12-09 12:29:41 -0500] [47857] [INFO] Worker exiting (pid: 47857)
+[2022-12-09 12:29:42 -0500] [47860] [INFO] Booting worker with pid: 47860
+[2022-12-09 12:29:42 -0500] [47858] [INFO] Worker exiting (pid: 47858)
+[2022-12-09 12:29:42 -0500] [47859] [INFO] Worker exiting (pid: 47859)
+[2022-12-09 12:29:42 -0500] [47861] [INFO] Booting worker with pid: 47861
+[2022-12-09 12:29:42 -0500] [47862] [INFO] Booting worker with pid: 47862
+[2022-12-09 12:29:43 -0500] [47860] [INFO] Worker exiting (pid: 47860)
+[2022-12-09 12:29:43 -0500] [47863] [INFO] Booting worker with pid: 47863
+[2022-12-09 12:29:43 -0500] [47861] [INFO] Worker exiting (pid: 47861)
+[2022-12-09 12:29:43 -0500] [47862] [INFO] Worker exiting (pid: 47862)
+[2022-12-09 12:29:43 -0500] [47864] [INFO] Booting worker with pid: 47864
+[2022-12-09 12:29:44 -0500] [47865] [INFO] Booting worker with pid: 47865
+[2022-12-09 12:29:44 -0500] [47863] [INFO] Worker exiting (pid: 47863)
+[2022-12-09 12:29:44 -0500] [47866] [INFO] Booting worker with pid: 47866
+[2022-12-09 12:29:44 -0500] [47864] [INFO] Worker exiting (pid: 47864)
+[2022-12-09 12:29:45 -0500] [47865] [INFO] Worker exiting (pid: 47865)
+[2022-12-09 12:29:45 -0500] [47867] [INFO] Booting worker with pid: 47867
+[2022-12-09 12:29:45 -0500] [47868] [INFO] Booting worker with pid: 47868
+[2022-12-09 12:29:45 -0500] [47866] [INFO] Worker exiting (pid: 47866)
+[2022-12-09 12:29:45 -0500] [47869] [INFO] Booting worker with pid: 47869
+[2022-12-09 12:29:45 -0500] [47867] [INFO] Worker exiting (pid: 47867)
+[2022-12-09 12:29:46 -0500] [47868] [INFO] Worker exiting (pid: 47868)
+[2022-12-09 12:29:46 -0500] [47870] [INFO] Booting worker with pid: 47870
+[2022-12-09 12:29:46 -0500] [47871] [INFO] Booting worker with pid: 47871
+[2022-12-09 12:29:46 -0500] [47869] [INFO] Worker exiting (pid: 47869)
+[2022-12-09 12:29:47 -0500] [47872] [INFO] Booting worker with pid: 47872
+[2022-12-09 12:29:47 -0500] [47870] [INFO] Worker exiting (pid: 47870)
+[2022-12-09 12:29:47 -0500] [47871] [INFO] Worker exiting (pid: 47871)
+[2022-12-09 12:29:47 -0500] [47873] [INFO] Booting worker with pid: 47873
+[2022-12-09 12:29:47 -0500] [47874] [INFO] Booting worker with pid: 47874
+[2022-12-09 12:29:48 -0500] [47872] [INFO] Worker exiting (pid: 47872)
+[2022-12-09 12:29:48 -0500] [47875] [INFO] Booting worker with pid: 47875
+[2022-12-09 12:29:48 -0500] [47873] [INFO] Worker exiting (pid: 47873)
+[2022-12-09 12:29:48 -0500] [47874] [INFO] Worker exiting (pid: 47874)
+[2022-12-09 12:29:48 -0500] [47876] [INFO] Booting worker with pid: 47876
+[2022-12-09 12:29:49 -0500] [47877] [INFO] Booting worker with pid: 47877
+[2022-12-09 12:29:49 -0500] [47875] [INFO] Worker exiting (pid: 47875)
+[2022-12-09 12:29:49 -0500] [47878] [INFO] Booting worker with pid: 47878
+[2022-12-09 12:29:49 -0500] [47876] [INFO] Worker exiting (pid: 47876)
+[2022-12-09 12:29:49 -0500] [47877] [INFO] Worker exiting (pid: 47877)
+[2022-12-09 12:29:50 -0500] [47879] [INFO] Booting worker with pid: 47879
+[2022-12-09 12:29:50 -0500] [47880] [INFO] Booting worker with pid: 47880
+[2022-12-09 12:29:50 -0500] [47878] [INFO] Worker exiting (pid: 47878)
+[2022-12-09 12:29:50 -0500] [47881] [INFO] Booting worker with pid: 47881
+[2022-12-09 12:29:50 -0500] [47879] [INFO] Worker exiting (pid: 47879)
+[2022-12-09 12:29:51 -0500] [47880] [INFO] Worker exiting (pid: 47880)
+[2022-12-09 12:29:51 -0500] [47882] [INFO] Booting worker with pid: 47882
+[2022-12-09 12:29:51 -0500] [47883] [INFO] Booting worker with pid: 47883
+[2022-12-09 12:29:51 -0500] [47881] [INFO] Worker exiting (pid: 47881)
+[2022-12-09 12:29:52 -0500] [47884] [INFO] Booting worker with pid: 47884
+[2022-12-09 12:29:52 -0500] [47882] [INFO] Worker exiting (pid: 47882)
+[2022-12-09 12:29:52 -0500] [47883] [INFO] Worker exiting (pid: 47883)
+[2022-12-09 12:29:52 -0500] [47885] [INFO] Booting worker with pid: 47885
+[2022-12-09 12:29:52 -0500] [47886] [INFO] Booting worker with pid: 47886
+[2022-12-09 12:29:52 -0500] [47884] [INFO] Worker exiting (pid: 47884)
+[2022-12-09 12:29:53 -0500] [47887] [INFO] Booting worker with pid: 47887
+[2022-12-09 12:29:53 -0500] [47885] [INFO] Worker exiting (pid: 47885)
+[2022-12-09 12:29:53 -0500] [47886] [INFO] Worker exiting (pid: 47886)
+[2022-12-09 12:29:53 -0500] [47888] [INFO] Booting worker with pid: 47888
+[2022-12-09 12:29:53 -0500] [47889] [INFO] Booting worker with pid: 47889
+[2022-12-09 12:29:54 -0500] [47887] [INFO] Worker exiting (pid: 47887)
+[2022-12-09 12:29:54 -0500] [47890] [INFO] Booting worker with pid: 47890
+[2022-12-09 12:29:54 -0500] [47888] [INFO] Worker exiting (pid: 47888)
+[2022-12-09 12:29:54 -0500] [47889] [INFO] Worker exiting (pid: 47889)
+[2022-12-09 12:29:54 -0500] [47891] [INFO] Booting worker with pid: 47891
+[2022-12-09 12:29:55 -0500] [47892] [INFO] Booting worker with pid: 47892
+[2022-12-09 12:29:55 -0500] [47890] [INFO] Worker exiting (pid: 47890)
+[2022-12-09 12:29:55 -0500] [47893] [INFO] Booting worker with pid: 47893
+[2022-12-09 12:29:55 -0500] [47891] [INFO] Worker exiting (pid: 47891)
+[2022-12-09 12:29:56 -0500] [47892] [INFO] Worker exiting (pid: 47892)
+[2022-12-09 12:29:56 -0500] [47894] [INFO] Booting worker with pid: 47894
+[2022-12-09 12:29:56 -0500] [47895] [INFO] Booting worker with pid: 47895
+[2022-12-09 12:29:56 -0500] [47893] [INFO] Worker exiting (pid: 47893)
+[2022-12-09 12:29:56 -0500] [47896] [INFO] Booting worker with pid: 47896
+[2022-12-09 12:29:57 -0500] [47894] [INFO] Worker exiting (pid: 47894)
+[2022-12-09 12:29:57 -0500] [47895] [INFO] Worker exiting (pid: 47895)
+[2022-12-09 12:29:57 -0500] [47897] [INFO] Booting worker with pid: 47897
+[2022-12-09 12:29:57 -0500] [47898] [INFO] Booting worker with pid: 47898
+[2022-12-09 12:29:57 -0500] [47896] [INFO] Worker exiting (pid: 47896)
+[2022-12-09 12:29:58 -0500] [47899] [INFO] Booting worker with pid: 47899
+[2022-12-09 12:29:58 -0500] [47897] [INFO] Worker exiting (pid: 47897)
+[2022-12-09 12:29:58 -0500] [47898] [INFO] Worker exiting (pid: 47898)
+[2022-12-09 12:29:58 -0500] [47900] [INFO] Booting worker with pid: 47900
+[2022-12-09 12:29:58 -0500] [47901] [INFO] Booting worker with pid: 47901
+[2022-12-09 12:29:59 -0500] [47899] [INFO] Worker exiting (pid: 47899)
+[2022-12-09 12:29:59 -0500] [47902] [INFO] Booting worker with pid: 47902
+[2022-12-09 12:29:59 -0500] [47900] [INFO] Worker exiting (pid: 47900)
+[2022-12-09 12:29:59 -0500] [47901] [INFO] Worker exiting (pid: 47901)
+[2022-12-09 12:29:59 -0500] [47903] [INFO] Booting worker with pid: 47903
+[2022-12-09 12:30:00 -0500] [47904] [INFO] Booting worker with pid: 47904
+[2022-12-09 12:30:00 -0500] [47902] [INFO] Worker exiting (pid: 47902)
+[2022-12-09 12:30:00 -0500] [47905] [INFO] Booting worker with pid: 47905
+[2022-12-09 12:30:00 -0500] [47903] [INFO] Worker exiting (pid: 47903)
+[2022-12-09 12:30:00 -0500] [47904] [INFO] Worker exiting (pid: 47904)
+[2022-12-09 12:30:01 -0500] [47906] [INFO] Booting worker with pid: 47906
+[2022-12-09 12:30:01 -0500] [47907] [INFO] Booting worker with pid: 47907
+[2022-12-09 12:30:01 -0500] [47905] [INFO] Worker exiting (pid: 47905)
+[2022-12-09 12:30:02 -0500] [47929] [INFO] Booting worker with pid: 47929
+[2022-12-09 12:30:02 -0500] [47906] [INFO] Worker exiting (pid: 47906)
+[2022-12-09 12:30:02 -0500] [47907] [INFO] Worker exiting (pid: 47907)
+[2022-12-09 12:30:02 -0500] [47930] [INFO] Booting worker with pid: 47930
+[2022-12-09 12:30:02 -0500] [47931] [INFO] Booting worker with pid: 47931
+[2022-12-09 12:30:02 -0500] [47929] [INFO] Worker exiting (pid: 47929)
+[2022-12-09 12:30:03 -0500] [47932] [INFO] Booting worker with pid: 47932
+[2022-12-09 12:30:03 -0500] [47930] [INFO] Worker exiting (pid: 47930)
+[2022-12-09 12:30:03 -0500] [47931] [INFO] Worker exiting (pid: 47931)
+[2022-12-09 12:30:03 -0500] [47933] [INFO] Booting worker with pid: 47933
+[2022-12-09 12:30:03 -0500] [47934] [INFO] Booting worker with pid: 47934
+[2022-12-09 12:30:04 -0500] [47932] [INFO] Worker exiting (pid: 47932)
+[2022-12-09 12:30:04 -0500] [47935] [INFO] Booting worker with pid: 47935
+[2022-12-09 12:30:04 -0500] [47933] [INFO] Worker exiting (pid: 47933)
+[2022-12-09 12:30:04 -0500] [47934] [INFO] Worker exiting (pid: 47934)
+[2022-12-09 12:30:04 -0500] [47936] [INFO] Booting worker with pid: 47936
+[2022-12-09 12:30:05 -0500] [47937] [INFO] Booting worker with pid: 47937
+[2022-12-09 12:30:05 -0500] [47935] [INFO] Worker exiting (pid: 47935)
+[2022-12-09 12:30:05 -0500] [47939] [INFO] Booting worker with pid: 47939
+[2022-12-09 12:30:05 -0500] [47936] [INFO] Worker exiting (pid: 47936)
+[2022-12-09 12:30:06 -0500] [47937] [INFO] Worker exiting (pid: 47937)
+[2022-12-09 12:30:06 -0500] [47940] [INFO] Booting worker with pid: 47940
+[2022-12-09 12:30:06 -0500] [47941] [INFO] Booting worker with pid: 47941
+[2022-12-09 12:30:06 -0500] [47939] [INFO] Worker exiting (pid: 47939)
+[2022-12-09 12:30:07 -0500] [47943] [INFO] Booting worker with pid: 47943
+[2022-12-09 12:30:07 -0500] [47940] [INFO] Worker exiting (pid: 47940)
+[2022-12-09 12:30:07 -0500] [47941] [INFO] Worker exiting (pid: 47941)
+[2022-12-09 12:30:07 -0500] [47944] [INFO] Booting worker with pid: 47944
+[2022-12-09 12:30:07 -0500] [47945] [INFO] Booting worker with pid: 47945
+[2022-12-09 12:30:07 -0500] [47943] [INFO] Worker exiting (pid: 47943)
+[2022-12-09 12:30:08 -0500] [47944] [INFO] Worker exiting (pid: 47944)
+[2022-12-09 12:30:08 -0500] [47946] [INFO] Booting worker with pid: 47946
+[2022-12-09 12:30:08 -0500] [47945] [INFO] Worker exiting (pid: 47945)
+[2022-12-09 12:30:08 -0500] [47947] [INFO] Booting worker with pid: 47947
+[2022-12-09 12:30:08 -0500] [47948] [INFO] Booting worker with pid: 47948
+[2022-12-09 12:30:09 -0500] [47946] [INFO] Worker exiting (pid: 47946)
+[2022-12-09 12:30:09 -0500] [47947] [INFO] Worker exiting (pid: 47947)
+[2022-12-09 12:30:09 -0500] [47951] [INFO] Booting worker with pid: 47951
+[2022-12-09 12:30:09 -0500] [47948] [INFO] Worker exiting (pid: 47948)
+[2022-12-09 12:30:09 -0500] [47952] [INFO] Booting worker with pid: 47952
+[2022-12-09 12:30:10 -0500] [47953] [INFO] Booting worker with pid: 47953
+[2022-12-09 12:30:10 -0500] [47951] [INFO] Worker exiting (pid: 47951)
+[2022-12-09 12:30:10 -0500] [47952] [INFO] Worker exiting (pid: 47952)
+[2022-12-09 12:30:10 -0500] [47954] [INFO] Booting worker with pid: 47954
+[2022-12-09 12:30:11 -0500] [47953] [INFO] Worker exiting (pid: 47953)
+[2022-12-09 12:30:11 -0500] [47955] [INFO] Booting worker with pid: 47955
+[2022-12-09 12:30:11 -0500] [47956] [INFO] Booting worker with pid: 47956
+[2022-12-09 12:30:11 -0500] [47954] [INFO] Worker exiting (pid: 47954)
+[2022-12-09 12:30:12 -0500] [47955] [INFO] Worker exiting (pid: 47955)
+[2022-12-09 12:30:12 -0500] [47957] [INFO] Booting worker with pid: 47957
+[2022-12-09 12:30:12 -0500] [47956] [INFO] Worker exiting (pid: 47956)
+[2022-12-09 12:30:12 -0500] [47958] [INFO] Booting worker with pid: 47958
+[2022-12-09 12:30:12 -0500] [47959] [INFO] Booting worker with pid: 47959
+[2022-12-09 12:30:12 -0500] [47957] [INFO] Worker exiting (pid: 47957)
+[2022-12-09 12:30:13 -0500] [47958] [INFO] Worker exiting (pid: 47958)
+[2022-12-09 12:30:13 -0500] [47960] [INFO] Booting worker with pid: 47960
+[2022-12-09 12:30:13 -0500] [47959] [INFO] Worker exiting (pid: 47959)
+[2022-12-09 12:30:13 -0500] [47961] [INFO] Booting worker with pid: 47961
+[2022-12-09 12:30:13 -0500] [47962] [INFO] Booting worker with pid: 47962
+[2022-12-09 12:30:14 -0500] [47960] [INFO] Worker exiting (pid: 47960)
+[2022-12-09 12:30:14 -0500] [47961] [INFO] Worker exiting (pid: 47961)
+[2022-12-09 12:30:14 -0500] [47963] [INFO] Booting worker with pid: 47963
+[2022-12-09 12:30:14 -0500] [47962] [INFO] Worker exiting (pid: 47962)
+[2022-12-09 12:30:14 -0500] [47964] [INFO] Booting worker with pid: 47964
+[2022-12-09 12:30:15 -0500] [47965] [INFO] Booting worker with pid: 47965
+[2022-12-09 12:30:15 -0500] [47963] [INFO] Worker exiting (pid: 47963)
+[2022-12-09 12:30:15 -0500] [47964] [INFO] Worker exiting (pid: 47964)
+[2022-12-09 12:30:15 -0500] [47966] [INFO] Booting worker with pid: 47966
+[2022-12-09 12:30:15 -0500] [47965] [INFO] Worker exiting (pid: 47965)
+[2022-12-09 12:30:16 -0500] [47969] [INFO] Booting worker with pid: 47969
+[2022-12-09 12:30:16 -0500] [47972] [INFO] Booting worker with pid: 47972
+[2022-12-09 12:30:16 -0500] [47966] [INFO] Worker exiting (pid: 47966)
+[2022-12-09 12:30:16 -0500] [47969] [INFO] Worker exiting (pid: 47969)
+[2022-12-09 12:30:17 -0500] [47975] [INFO] Booting worker with pid: 47975
+[2022-12-09 12:30:17 -0500] [47972] [INFO] Worker exiting (pid: 47972)
+[2022-12-09 12:30:17 -0500] [47976] [INFO] Booting worker with pid: 47976
+[2022-12-09 12:30:17 -0500] [47977] [INFO] Booting worker with pid: 47977
+[2022-12-09 12:30:17 -0500] [47975] [INFO] Worker exiting (pid: 47975)
+[2022-12-09 12:30:18 -0500] [47976] [INFO] Worker exiting (pid: 47976)
+[2022-12-09 12:30:18 -0500] [47978] [INFO] Booting worker with pid: 47978
+[2022-12-09 12:30:18 -0500] [47977] [INFO] Worker exiting (pid: 47977)
+[2022-12-09 12:30:18 -0500] [47979] [INFO] Booting worker with pid: 47979
+[2022-12-09 12:30:18 -0500] [47980] [INFO] Booting worker with pid: 47980
+[2022-12-09 12:30:19 -0500] [47978] [INFO] Worker exiting (pid: 47978)
+[2022-12-09 12:30:19 -0500] [47979] [INFO] Worker exiting (pid: 47979)
+[2022-12-09 12:30:19 -0500] [47981] [INFO] Booting worker with pid: 47981
+[2022-12-09 12:30:19 -0500] [47980] [INFO] Worker exiting (pid: 47980)
+[2022-12-09 12:30:19 -0500] [47982] [INFO] Booting worker with pid: 47982
+[2022-12-09 12:30:20 -0500] [47983] [INFO] Booting worker with pid: 47983
+[2022-12-09 12:30:20 -0500] [47981] [INFO] Worker exiting (pid: 47981)
+[2022-12-09 12:30:20 -0500] [47982] [INFO] Worker exiting (pid: 47982)
+[2022-12-09 12:30:20 -0500] [47984] [INFO] Booting worker with pid: 47984
+[2022-12-09 12:30:20 -0500] [47983] [INFO] Worker exiting (pid: 47983)
+[2022-12-09 12:30:21 -0500] [47985] [INFO] Booting worker with pid: 47985
+[2022-12-09 12:30:21 -0500] [47986] [INFO] Booting worker with pid: 47986
+[2022-12-09 12:30:21 -0500] [47984] [INFO] Worker exiting (pid: 47984)
+[2022-12-09 12:30:21 -0500] [47985] [INFO] Worker exiting (pid: 47985)
+[2022-12-09 12:30:22 -0500] [47987] [INFO] Booting worker with pid: 47987
+[2022-12-09 12:30:22 -0500] [47986] [INFO] Worker exiting (pid: 47986)
+[2022-12-09 12:30:22 -0500] [47988] [INFO] Booting worker with pid: 47988
+[2022-12-09 12:30:22 -0500] [47989] [INFO] Booting worker with pid: 47989
+[2022-12-09 12:30:22 -0500] [47987] [INFO] Worker exiting (pid: 47987)
+[2022-12-09 12:30:23 -0500] [47988] [INFO] Worker exiting (pid: 47988)
+[2022-12-09 12:30:23 -0500] [47992] [INFO] Booting worker with pid: 47992
+[2022-12-09 12:30:23 -0500] [47989] [INFO] Worker exiting (pid: 47989)
+[2022-12-09 12:30:23 -0500] [47993] [INFO] Booting worker with pid: 47993
+[2022-12-09 12:30:23 -0500] [47994] [INFO] Booting worker with pid: 47994
+[2022-12-09 12:30:24 -0500] [47992] [INFO] Worker exiting (pid: 47992)
+[2022-12-09 12:30:24 -0500] [47993] [INFO] Worker exiting (pid: 47993)
+[2022-12-09 12:30:24 -0500] [47997] [INFO] Booting worker with pid: 47997
+[2022-12-09 12:30:24 -0500] [47994] [INFO] Worker exiting (pid: 47994)
+[2022-12-09 12:30:24 -0500] [47998] [INFO] Booting worker with pid: 47998
+[2022-12-09 12:30:25 -0500] [48002] [INFO] Booting worker with pid: 48002
+[2022-12-09 12:30:25 -0500] [47997] [INFO] Worker exiting (pid: 47997)
+[2022-12-09 12:30:25 -0500] [47998] [INFO] Worker exiting (pid: 47998)
+[2022-12-09 12:30:25 -0500] [48006] [INFO] Booting worker with pid: 48006
+[2022-12-09 12:30:25 -0500] [48002] [INFO] Worker exiting (pid: 48002)
+[2022-12-09 12:30:26 -0500] [48008] [INFO] Booting worker with pid: 48008
+[2022-12-09 12:30:26 -0500] [48028] [INFO] Booting worker with pid: 48028
+[2022-12-09 12:30:26 -0500] [48006] [INFO] Worker exiting (pid: 48006)
+[2022-12-09 12:30:26 -0500] [48008] [INFO] Worker exiting (pid: 48008)
+[2022-12-09 12:30:27 -0500] [48030] [INFO] Booting worker with pid: 48030
+[2022-12-09 12:30:27 -0500] [48028] [INFO] Worker exiting (pid: 48028)
+[2022-12-09 12:30:27 -0500] [48033] [INFO] Booting worker with pid: 48033
+[2022-12-09 12:30:27 -0500] [48035] [INFO] Booting worker with pid: 48035
+[2022-12-09 12:30:27 -0500] [48030] [INFO] Worker exiting (pid: 48030)
+[2022-12-09 12:30:28 -0500] [48033] [INFO] Worker exiting (pid: 48033)
+[2022-12-09 12:30:28 -0500] [48036] [INFO] Booting worker with pid: 48036
+[2022-12-09 12:30:28 -0500] [48035] [INFO] Worker exiting (pid: 48035)
+[2022-12-09 12:30:28 -0500] [48037] [INFO] Booting worker with pid: 48037
+[2022-12-09 12:30:28 -0500] [48038] [INFO] Booting worker with pid: 48038
+[2022-12-09 12:30:29 -0500] [48036] [INFO] Worker exiting (pid: 48036)
+[2022-12-09 12:30:29 -0500] [48037] [INFO] Worker exiting (pid: 48037)
+[2022-12-09 12:30:29 -0500] [48043] [INFO] Booting worker with pid: 48043
+[2022-12-09 12:30:29 -0500] [48038] [INFO] Worker exiting (pid: 48038)
+[2022-12-09 12:30:29 -0500] [48045] [INFO] Booting worker with pid: 48045
+[2022-12-09 12:30:30 -0500] [48046] [INFO] Booting worker with pid: 48046
+[2022-12-09 12:30:30 -0500] [48043] [INFO] Worker exiting (pid: 48043)
+[2022-12-09 12:30:30 -0500] [48045] [INFO] Worker exiting (pid: 48045)
+[2022-12-09 12:30:30 -0500] [48062] [INFO] Booting worker with pid: 48062
+[2022-12-09 12:30:31 -0500] [48046] [INFO] Worker exiting (pid: 48046)
+[2022-12-09 12:30:31 -0500] [48065] [INFO] Booting worker with pid: 48065
+[2022-12-09 12:30:31 -0500] [48066] [INFO] Booting worker with pid: 48066
+[2022-12-09 12:30:31 -0500] [48062] [INFO] Worker exiting (pid: 48062)
+[2022-12-09 12:30:31 -0500] [48065] [INFO] Worker exiting (pid: 48065)
+[2022-12-09 12:30:32 -0500] [48067] [INFO] Booting worker with pid: 48067
+[2022-12-09 12:30:32 -0500] [48066] [INFO] Worker exiting (pid: 48066)
+[2022-12-09 12:30:32 -0500] [48068] [INFO] Booting worker with pid: 48068
+[2022-12-09 12:30:32 -0500] [48069] [INFO] Booting worker with pid: 48069
+[2022-12-09 12:30:32 -0500] [48067] [INFO] Worker exiting (pid: 48067)
+[2022-12-09 12:30:33 -0500] [48068] [INFO] Worker exiting (pid: 48068)
+[2022-12-09 12:30:33 -0500] [48070] [INFO] Booting worker with pid: 48070
+[2022-12-09 12:30:33 -0500] [48069] [INFO] Worker exiting (pid: 48069)
+[2022-12-09 12:30:33 -0500] [48071] [INFO] Booting worker with pid: 48071
+[2022-12-09 12:30:33 -0500] [48072] [INFO] Booting worker with pid: 48072
+[2022-12-09 12:30:34 -0500] [48070] [INFO] Worker exiting (pid: 48070)
+[2022-12-09 12:30:34 -0500] [48071] [INFO] Worker exiting (pid: 48071)
+[2022-12-09 12:30:34 -0500] [48073] [INFO] Booting worker with pid: 48073
+[2022-12-09 12:30:34 -0500] [48072] [INFO] Worker exiting (pid: 48072)
+[2022-12-09 12:30:34 -0500] [48074] [INFO] Booting worker with pid: 48074
+[2022-12-09 12:30:35 -0500] [48075] [INFO] Booting worker with pid: 48075
+[2022-12-09 12:30:35 -0500] [48073] [INFO] Worker exiting (pid: 48073)
+[2022-12-09 12:30:35 -0500] [48074] [INFO] Worker exiting (pid: 48074)
+[2022-12-09 12:30:35 -0500] [48078] [INFO] Booting worker with pid: 48078
+[2022-12-09 12:30:35 -0500] [48075] [INFO] Worker exiting (pid: 48075)
+[2022-12-09 12:30:35 -0500] [48079] [INFO] Booting worker with pid: 48079
+[2022-12-09 12:30:36 -0500] [48080] [INFO] Booting worker with pid: 48080
+[2022-12-09 12:30:36 -0500] [48078] [INFO] Worker exiting (pid: 48078)
+[2022-12-09 12:30:36 -0500] [48079] [INFO] Worker exiting (pid: 48079)
+[2022-12-09 12:30:36 -0500] [48081] [INFO] Booting worker with pid: 48081
+[2022-12-09 12:30:37 -0500] [48080] [INFO] Worker exiting (pid: 48080)
+[2022-12-09 12:30:37 -0500] [48082] [INFO] Booting worker with pid: 48082
+[2022-12-09 12:30:37 -0500] [48083] [INFO] Booting worker with pid: 48083
+[2022-12-09 12:30:37 -0500] [48081] [INFO] Worker exiting (pid: 48081)
+[2022-12-09 12:30:38 -0500] [48082] [INFO] Worker exiting (pid: 48082)
+[2022-12-09 12:30:38 -0500] [48084] [INFO] Booting worker with pid: 48084
+[2022-12-09 12:30:38 -0500] [48083] [INFO] Worker exiting (pid: 48083)
+[2022-12-09 12:30:38 -0500] [48085] [INFO] Booting worker with pid: 48085
+[2022-12-09 12:30:38 -0500] [48086] [INFO] Booting worker with pid: 48086
+[2022-12-09 12:30:39 -0500] [48084] [INFO] Worker exiting (pid: 48084)
+[2022-12-09 12:30:39 -0500] [48085] [INFO] Worker exiting (pid: 48085)
+[2022-12-09 12:30:39 -0500] [48095] [INFO] Booting worker with pid: 48095
+[2022-12-09 12:30:39 -0500] [48086] [INFO] Worker exiting (pid: 48086)
+[2022-12-09 12:30:39 -0500] [48096] [INFO] Booting worker with pid: 48096
+[2022-12-09 12:30:40 -0500] [48097] [INFO] Booting worker with pid: 48097
+[2022-12-09 12:30:40 -0500] [48095] [INFO] Worker exiting (pid: 48095)
+[2022-12-09 12:30:40 -0500] [48096] [INFO] Worker exiting (pid: 48096)
+[2022-12-09 12:30:40 -0500] [48098] [INFO] Booting worker with pid: 48098
+[2022-12-09 12:30:41 -0500] [48099] [INFO] Booting worker with pid: 48099
+[2022-12-09 12:30:41 -0500] [48097] [INFO] Worker exiting (pid: 48097)
+[2022-12-09 12:30:41 -0500] [48102] [INFO] Booting worker with pid: 48102
+[2022-12-09 12:30:41 -0500] [48098] [INFO] Worker exiting (pid: 48098)
+[2022-12-09 12:30:41 -0500] [48099] [INFO] Worker exiting (pid: 48099)
+[2022-12-09 12:30:42 -0500] [48105] [INFO] Booting worker with pid: 48105
+[2022-12-09 12:30:42 -0500] [48106] [INFO] Booting worker with pid: 48106
+[2022-12-09 12:30:42 -0500] [48102] [INFO] Worker exiting (pid: 48102)
+[2022-12-09 12:30:42 -0500] [48107] [INFO] Booting worker with pid: 48107
+[2022-12-09 12:30:42 -0500] [48105] [INFO] Worker exiting (pid: 48105)
+[2022-12-09 12:30:43 -0500] [48106] [INFO] Worker exiting (pid: 48106)
+[2022-12-09 12:30:43 -0500] [48108] [INFO] Booting worker with pid: 48108
+[2022-12-09 12:30:43 -0500] [48109] [INFO] Booting worker with pid: 48109
+[2022-12-09 12:30:43 -0500] [48107] [INFO] Worker exiting (pid: 48107)
+[2022-12-09 12:30:44 -0500] [48110] [INFO] Booting worker with pid: 48110
+[2022-12-09 12:30:44 -0500] [48108] [INFO] Worker exiting (pid: 48108)
+[2022-12-09 12:30:44 -0500] [48113] [INFO] Booting worker with pid: 48113
+[2022-12-09 12:30:44 -0500] [48109] [INFO] Worker exiting (pid: 48109)
+[2022-12-09 12:30:44 -0500] [48110] [INFO] Worker exiting (pid: 48110)
+[2022-12-09 12:30:45 -0500] [48114] [INFO] Booting worker with pid: 48114
+[2022-12-09 12:30:45 -0500] [48115] [INFO] Booting worker with pid: 48115
+[2022-12-09 12:30:45 -0500] [48113] [INFO] Worker exiting (pid: 48113)
+[2022-12-09 12:30:45 -0500] [48116] [INFO] Booting worker with pid: 48116
+[2022-12-09 12:30:45 -0500] [48114] [INFO] Worker exiting (pid: 48114)
+[2022-12-09 12:30:46 -0500] [48115] [INFO] Worker exiting (pid: 48115)
+[2022-12-09 12:30:46 -0500] [48117] [INFO] Booting worker with pid: 48117
+[2022-12-09 12:30:46 -0500] [48118] [INFO] Booting worker with pid: 48118
+[2022-12-09 12:30:46 -0500] [48116] [INFO] Worker exiting (pid: 48116)
+[2022-12-09 12:30:47 -0500] [48119] [INFO] Booting worker with pid: 48119
+[2022-12-09 12:30:47 -0500] [48117] [INFO] Worker exiting (pid: 48117)
+[2022-12-09 12:30:47 -0500] [48118] [INFO] Worker exiting (pid: 48118)
+[2022-12-09 12:30:47 -0500] [48120] [INFO] Booting worker with pid: 48120
+[2022-12-09 12:30:47 -0500] [48121] [INFO] Booting worker with pid: 48121
+[2022-12-09 12:30:48 -0500] [48119] [INFO] Worker exiting (pid: 48119)
+[2022-12-09 12:30:48 -0500] [48122] [INFO] Booting worker with pid: 48122
+[2022-12-09 12:30:48 -0500] [48120] [INFO] Worker exiting (pid: 48120)
+[2022-12-09 12:30:48 -0500] [48121] [INFO] Worker exiting (pid: 48121)
+[2022-12-09 12:30:49 -0500] [48123] [INFO] Booting worker with pid: 48123
+[2022-12-09 12:30:49 -0500] [48124] [INFO] Booting worker with pid: 48124
+[2022-12-09 12:30:49 -0500] [48122] [INFO] Worker exiting (pid: 48122)
+[2022-12-09 12:30:49 -0500] [48125] [INFO] Booting worker with pid: 48125
+[2022-12-09 12:30:49 -0500] [48123] [INFO] Worker exiting (pid: 48123)
+[2022-12-09 12:30:50 -0500] [48124] [INFO] Worker exiting (pid: 48124)
+[2022-12-09 12:30:50 -0500] [48126] [INFO] Booting worker with pid: 48126
+[2022-12-09 12:30:50 -0500] [48127] [INFO] Booting worker with pid: 48127
+[2022-12-09 12:30:50 -0500] [48125] [INFO] Worker exiting (pid: 48125)
+[2022-12-09 12:30:51 -0500] [48128] [INFO] Booting worker with pid: 48128
+[2022-12-09 12:30:51 -0500] [48126] [INFO] Worker exiting (pid: 48126)
+[2022-12-09 12:30:51 -0500] [48127] [INFO] Worker exiting (pid: 48127)
+[2022-12-09 12:30:51 -0500] [48129] [INFO] Booting worker with pid: 48129
+[2022-12-09 12:30:51 -0500] [48130] [INFO] Booting worker with pid: 48130
+[2022-12-09 12:30:51 -0500] [48128] [INFO] Worker exiting (pid: 48128)
+[2022-12-09 12:30:52 -0500] [48131] [INFO] Booting worker with pid: 48131
+[2022-12-09 12:30:52 -0500] [48129] [INFO] Worker exiting (pid: 48129)
+[2022-12-09 12:30:52 -0500] [48130] [INFO] Worker exiting (pid: 48130)
+[2022-12-09 12:30:52 -0500] [48132] [INFO] Booting worker with pid: 48132
+[2022-12-09 12:30:52 -0500] [48133] [INFO] Booting worker with pid: 48133
+[2022-12-09 12:30:53 -0500] [48131] [INFO] Worker exiting (pid: 48131)
+[2022-12-09 12:30:53 -0500] [48134] [INFO] Booting worker with pid: 48134
+[2022-12-09 12:30:53 -0500] [48132] [INFO] Worker exiting (pid: 48132)
+[2022-12-09 12:30:53 -0500] [48133] [INFO] Worker exiting (pid: 48133)
+[2022-12-09 12:30:53 -0500] [48135] [INFO] Booting worker with pid: 48135
+[2022-12-09 12:30:54 -0500] [48136] [INFO] Booting worker with pid: 48136
+[2022-12-09 12:30:54 -0500] [48134] [INFO] Worker exiting (pid: 48134)
+[2022-12-09 12:30:54 -0500] [48137] [INFO] Booting worker with pid: 48137
+[2022-12-09 12:30:54 -0500] [48135] [INFO] Worker exiting (pid: 48135)
+[2022-12-09 12:30:54 -0500] [48136] [INFO] Worker exiting (pid: 48136)
+[2022-12-09 12:30:55 -0500] [48138] [INFO] Booting worker with pid: 48138
+[2022-12-09 12:30:55 -0500] [48139] [INFO] Booting worker with pid: 48139
+[2022-12-09 12:30:55 -0500] [48137] [INFO] Worker exiting (pid: 48137)
+[2022-12-09 12:30:55 -0500] [48140] [INFO] Booting worker with pid: 48140
+[2022-12-09 12:30:56 -0500] [48138] [INFO] Worker exiting (pid: 48138)
+[2022-12-09 12:30:56 -0500] [48139] [INFO] Worker exiting (pid: 48139)
+[2022-12-09 12:30:56 -0500] [48141] [INFO] Booting worker with pid: 48141
+[2022-12-09 12:30:56 -0500] [48142] [INFO] Booting worker with pid: 48142
+[2022-12-09 12:30:56 -0500] [48140] [INFO] Worker exiting (pid: 48140)
+[2022-12-09 12:30:57 -0500] [48143] [INFO] Booting worker with pid: 48143
+[2022-12-09 12:30:57 -0500] [48141] [INFO] Worker exiting (pid: 48141)
+[2022-12-09 12:30:57 -0500] [48142] [INFO] Worker exiting (pid: 48142)
+[2022-12-09 12:30:57 -0500] [48144] [INFO] Booting worker with pid: 48144
+[2022-12-09 12:30:57 -0500] [48145] [INFO] Booting worker with pid: 48145
+[2022-12-09 12:30:58 -0500] [48143] [INFO] Worker exiting (pid: 48143)
+[2022-12-09 12:30:58 -0500] [48146] [INFO] Booting worker with pid: 48146
+[2022-12-09 12:30:58 -0500] [48144] [INFO] Worker exiting (pid: 48144)
+[2022-12-09 12:30:58 -0500] [48145] [INFO] Worker exiting (pid: 48145)
+[2022-12-09 12:30:58 -0500] [48147] [INFO] Booting worker with pid: 48147
+[2022-12-09 12:30:58 -0500] [48148] [INFO] Booting worker with pid: 48148
+[2022-12-09 12:30:59 -0500] [48146] [INFO] Worker exiting (pid: 48146)
+[2022-12-09 12:30:59 -0500] [48149] [INFO] Booting worker with pid: 48149
+[2022-12-09 12:30:59 -0500] [48147] [INFO] Worker exiting (pid: 48147)
+[2022-12-09 12:30:59 -0500] [48148] [INFO] Worker exiting (pid: 48148)
+[2022-12-09 12:31:00 -0500] [48150] [INFO] Booting worker with pid: 48150
+[2022-12-09 12:31:00 -0500] [48151] [INFO] Booting worker with pid: 48151
+[2022-12-09 12:31:00 -0500] [48149] [INFO] Worker exiting (pid: 48149)
+[2022-12-09 12:31:00 -0500] [48152] [INFO] Booting worker with pid: 48152
+[2022-12-09 12:31:00 -0500] [48150] [INFO] Worker exiting (pid: 48150)
+[2022-12-09 12:31:01 -0500] [48151] [INFO] Worker exiting (pid: 48151)
+[2022-12-09 12:31:01 -0500] [48154] [INFO] Booting worker with pid: 48154
+[2022-12-09 12:31:01 -0500] [48155] [INFO] Booting worker with pid: 48155
+[2022-12-09 12:31:01 -0500] [48152] [INFO] Worker exiting (pid: 48152)
+[2022-12-09 12:31:02 -0500] [48156] [INFO] Booting worker with pid: 48156
+[2022-12-09 12:31:02 -0500] [48154] [INFO] Worker exiting (pid: 48154)
+[2022-12-09 12:31:02 -0500] [48155] [INFO] Worker exiting (pid: 48155)
+[2022-12-09 12:31:02 -0500] [48157] [INFO] Booting worker with pid: 48157
+[2022-12-09 12:31:02 -0500] [48158] [INFO] Booting worker with pid: 48158
+[2022-12-09 12:31:02 -0500] [48156] [INFO] Worker exiting (pid: 48156)
+[2022-12-09 12:31:03 -0500] [48157] [INFO] Worker exiting (pid: 48157)
+[2022-12-09 12:31:03 -0500] [48159] [INFO] Booting worker with pid: 48159
+[2022-12-09 12:31:03 -0500] [48158] [INFO] Worker exiting (pid: 48158)
+[2022-12-09 12:31:03 -0500] [48160] [INFO] Booting worker with pid: 48160
+[2022-12-09 12:31:03 -0500] [48161] [INFO] Booting worker with pid: 48161
+[2022-12-09 12:31:04 -0500] [48159] [INFO] Worker exiting (pid: 48159)
+[2022-12-09 12:31:04 -0500] [48160] [INFO] Worker exiting (pid: 48160)
+[2022-12-09 12:31:04 -0500] [48162] [INFO] Booting worker with pid: 48162
+[2022-12-09 12:31:04 -0500] [48161] [INFO] Worker exiting (pid: 48161)
+[2022-12-09 12:31:04 -0500] [48163] [INFO] Booting worker with pid: 48163
+[2022-12-09 12:31:05 -0500] [48164] [INFO] Booting worker with pid: 48164
+[2022-12-09 12:31:05 -0500] [48162] [INFO] Worker exiting (pid: 48162)
+[2022-12-09 12:31:05 -0500] [48163] [INFO] Worker exiting (pid: 48163)
+[2022-12-09 12:31:05 -0500] [48165] [INFO] Booting worker with pid: 48165
+[2022-12-09 12:31:05 -0500] [48164] [INFO] Worker exiting (pid: 48164)
+[2022-12-09 12:31:06 -0500] [48166] [INFO] Booting worker with pid: 48166
+[2022-12-09 12:31:06 -0500] [48167] [INFO] Booting worker with pid: 48167
+[2022-12-09 12:31:06 -0500] [48165] [INFO] Worker exiting (pid: 48165)
+[2022-12-09 12:31:07 -0500] [48166] [INFO] Worker exiting (pid: 48166)
+[2022-12-09 12:31:07 -0500] [48168] [INFO] Booting worker with pid: 48168
+[2022-12-09 12:31:07 -0500] [48167] [INFO] Worker exiting (pid: 48167)
+[2022-12-09 12:31:07 -0500] [48169] [INFO] Booting worker with pid: 48169
+[2022-12-09 12:31:07 -0500] [48170] [INFO] Booting worker with pid: 48170
+[2022-12-09 12:31:07 -0500] [48168] [INFO] Worker exiting (pid: 48168)
+[2022-12-09 12:31:08 -0500] [48169] [INFO] Worker exiting (pid: 48169)
+[2022-12-09 12:31:08 -0500] [48171] [INFO] Booting worker with pid: 48171
+[2022-12-09 12:31:08 -0500] [48170] [INFO] Worker exiting (pid: 48170)
+[2022-12-09 12:31:08 -0500] [48172] [INFO] Booting worker with pid: 48172
+[2022-12-09 12:31:08 -0500] [48173] [INFO] Booting worker with pid: 48173
+[2022-12-09 12:31:09 -0500] [48171] [INFO] Worker exiting (pid: 48171)
+[2022-12-09 12:31:09 -0500] [48172] [INFO] Worker exiting (pid: 48172)
+[2022-12-09 12:31:09 -0500] [48174] [INFO] Booting worker with pid: 48174
+[2022-12-09 12:31:09 -0500] [48173] [INFO] Worker exiting (pid: 48173)
+[2022-12-09 12:31:09 -0500] [48175] [INFO] Booting worker with pid: 48175
+[2022-12-09 12:31:09 -0500] [48176] [INFO] Booting worker with pid: 48176
+[2022-12-09 12:31:10 -0500] [48174] [INFO] Worker exiting (pid: 48174)
+[2022-12-09 12:31:10 -0500] [48175] [INFO] Worker exiting (pid: 48175)
+[2022-12-09 12:31:10 -0500] [48179] [INFO] Booting worker with pid: 48179
+[2022-12-09 12:31:10 -0500] [48176] [INFO] Worker exiting (pid: 48176)
+[2022-12-09 12:31:11 -0500] [48180] [INFO] Booting worker with pid: 48180
+[2022-12-09 12:31:11 -0500] [48181] [INFO] Booting worker with pid: 48181
+[2022-12-09 12:31:11 -0500] [48179] [INFO] Worker exiting (pid: 48179)
+[2022-12-09 12:31:11 -0500] [48180] [INFO] Worker exiting (pid: 48180)
+[2022-12-09 12:31:11 -0500] [48182] [INFO] Booting worker with pid: 48182
+[2022-12-09 12:31:12 -0500] [48181] [INFO] Worker exiting (pid: 48181)
+[2022-12-09 12:31:12 -0500] [48183] [INFO] Booting worker with pid: 48183
+[2022-12-09 12:31:12 -0500] [48184] [INFO] Booting worker with pid: 48184
+[2022-12-09 12:31:12 -0500] [48182] [INFO] Worker exiting (pid: 48182)
+[2022-12-09 12:31:13 -0500] [48183] [INFO] Worker exiting (pid: 48183)
+[2022-12-09 12:31:13 -0500] [48186] [INFO] Booting worker with pid: 48186
+[2022-12-09 12:31:13 -0500] [48184] [INFO] Worker exiting (pid: 48184)
+[2022-12-09 12:31:13 -0500] [48187] [INFO] Booting worker with pid: 48187
+[2022-12-09 12:31:13 -0500] [48188] [INFO] Booting worker with pid: 48188
+[2022-12-09 12:31:14 -0500] [48186] [INFO] Worker exiting (pid: 48186)
+[2022-12-09 12:31:14 -0500] [48187] [INFO] Worker exiting (pid: 48187)
+[2022-12-09 12:31:14 -0500] [48189] [INFO] Booting worker with pid: 48189
+[2022-12-09 12:31:14 -0500] [48188] [INFO] Worker exiting (pid: 48188)
+[2022-12-09 12:31:14 -0500] [48190] [INFO] Booting worker with pid: 48190
+[2022-12-09 12:31:14 -0500] [48191] [INFO] Booting worker with pid: 48191
+[2022-12-09 12:31:15 -0500] [48189] [INFO] Worker exiting (pid: 48189)
+[2022-12-09 12:31:15 -0500] [48190] [INFO] Worker exiting (pid: 48190)
+[2022-12-09 12:31:15 -0500] [48192] [INFO] Booting worker with pid: 48192
+[2022-12-09 12:31:15 -0500] [48191] [INFO] Worker exiting (pid: 48191)
+[2022-12-09 12:31:15 -0500] [48193] [INFO] Booting worker with pid: 48193
+[2022-12-09 12:31:16 -0500] [48194] [INFO] Booting worker with pid: 48194
+[2022-12-09 12:31:16 -0500] [48192] [INFO] Worker exiting (pid: 48192)
+[2022-12-09 12:31:16 -0500] [48193] [INFO] Worker exiting (pid: 48193)
+[2022-12-09 12:31:16 -0500] [48195] [INFO] Booting worker with pid: 48195
+[2022-12-09 12:31:16 -0500] [48194] [INFO] Worker exiting (pid: 48194)
+[2022-12-09 12:31:17 -0500] [48196] [INFO] Booting worker with pid: 48196
+[2022-12-09 12:31:17 -0500] [48198] [INFO] Booting worker with pid: 48198
+[2022-12-09 12:31:17 -0500] [48195] [INFO] Worker exiting (pid: 48195)
+[2022-12-09 12:31:18 -0500] [48196] [INFO] Worker exiting (pid: 48196)
+[2022-12-09 12:31:18 -0500] [48200] [INFO] Booting worker with pid: 48200
+[2022-12-09 12:31:18 -0500] [48198] [INFO] Worker exiting (pid: 48198)
+[2022-12-09 12:31:18 -0500] [48201] [INFO] Booting worker with pid: 48201
+[2022-12-09 12:31:18 -0500] [48202] [INFO] Booting worker with pid: 48202
+[2022-12-09 12:31:18 -0500] [48200] [INFO] Worker exiting (pid: 48200)
+[2022-12-09 12:31:19 -0500] [48201] [INFO] Worker exiting (pid: 48201)
+[2022-12-09 12:31:19 -0500] [48203] [INFO] Booting worker with pid: 48203
+[2022-12-09 12:31:19 -0500] [48202] [INFO] Worker exiting (pid: 48202)
+[2022-12-09 12:31:19 -0500] [48204] [INFO] Booting worker with pid: 48204
+[2022-12-09 12:31:19 -0500] [48205] [INFO] Booting worker with pid: 48205
+[2022-12-09 12:31:20 -0500] [48203] [INFO] Worker exiting (pid: 48203)
+[2022-12-09 12:31:20 -0500] [48204] [INFO] Worker exiting (pid: 48204)
+[2022-12-09 12:31:20 -0500] [48207] [INFO] Booting worker with pid: 48207
+[2022-12-09 12:31:20 -0500] [48205] [INFO] Worker exiting (pid: 48205)
+[2022-12-09 12:31:20 -0500] [48209] [INFO] Booting worker with pid: 48209
+[2022-12-09 12:31:21 -0500] [48210] [INFO] Booting worker with pid: 48210
+[2022-12-09 12:31:21 -0500] [48207] [INFO] Worker exiting (pid: 48207)
+[2022-12-09 12:31:21 -0500] [48209] [INFO] Worker exiting (pid: 48209)
+[2022-12-09 12:31:21 -0500] [48211] [INFO] Booting worker with pid: 48211
+[2022-12-09 12:31:21 -0500] [48210] [INFO] Worker exiting (pid: 48210)
+[2022-12-09 12:31:22 -0500] [48212] [INFO] Booting worker with pid: 48212
+[2022-12-09 12:31:22 -0500] [48213] [INFO] Booting worker with pid: 48213
+[2022-12-09 12:31:22 -0500] [48211] [INFO] Worker exiting (pid: 48211)
+[2022-12-09 12:31:22 -0500] [48212] [INFO] Worker exiting (pid: 48212)
+[2022-12-09 12:31:23 -0500] [48214] [INFO] Booting worker with pid: 48214
+[2022-12-09 12:31:23 -0500] [48213] [INFO] Worker exiting (pid: 48213)
+[2022-12-09 12:31:23 -0500] [48215] [INFO] Booting worker with pid: 48215
+[2022-12-09 12:31:23 -0500] [48216] [INFO] Booting worker with pid: 48216
+[2022-12-09 12:31:23 -0500] [48214] [INFO] Worker exiting (pid: 48214)
+[2022-12-09 12:31:24 -0500] [48215] [INFO] Worker exiting (pid: 48215)
+[2022-12-09 12:31:24 -0500] [48217] [INFO] Booting worker with pid: 48217
+[2022-12-09 12:31:24 -0500] [48216] [INFO] Worker exiting (pid: 48216)
+[2022-12-09 12:31:24 -0500] [48218] [INFO] Booting worker with pid: 48218
+[2022-12-09 12:31:24 -0500] [48219] [INFO] Booting worker with pid: 48219
+[2022-12-09 12:31:25 -0500] [48217] [INFO] Worker exiting (pid: 48217)
+[2022-12-09 12:31:25 -0500] [48218] [INFO] Worker exiting (pid: 48218)
+[2022-12-09 12:31:25 -0500] [48222] [INFO] Booting worker with pid: 48222
+[2022-12-09 12:31:25 -0500] [48219] [INFO] Worker exiting (pid: 48219)
+[2022-12-09 12:31:25 -0500] [48223] [INFO] Booting worker with pid: 48223
+[2022-12-09 12:31:25 -0500] [48224] [INFO] Booting worker with pid: 48224
+[2022-12-09 12:31:26 -0500] [48222] [INFO] Worker exiting (pid: 48222)
+[2022-12-09 12:31:26 -0500] [48223] [INFO] Worker exiting (pid: 48223)
+[2022-12-09 12:31:26 -0500] [48225] [INFO] Booting worker with pid: 48225
+[2022-12-09 12:31:26 -0500] [48224] [INFO] Worker exiting (pid: 48224)
+[2022-12-09 12:31:27 -0500] [48226] [INFO] Booting worker with pid: 48226
+[2022-12-09 12:31:27 -0500] [48227] [INFO] Booting worker with pid: 48227
+[2022-12-09 12:31:27 -0500] [48225] [INFO] Worker exiting (pid: 48225)
+[2022-12-09 12:31:27 -0500] [48226] [INFO] Worker exiting (pid: 48226)
+[2022-12-09 12:31:27 -0500] [48228] [INFO] Booting worker with pid: 48228
+[2022-12-09 12:31:28 -0500] [48227] [INFO] Worker exiting (pid: 48227)
+[2022-12-09 12:31:28 -0500] [48229] [INFO] Booting worker with pid: 48229
+[2022-12-09 12:31:28 -0500] [48230] [INFO] Booting worker with pid: 48230
+[2022-12-09 12:31:28 -0500] [48228] [INFO] Worker exiting (pid: 48228)
+[2022-12-09 12:31:29 -0500] [48229] [INFO] Worker exiting (pid: 48229)
+[2022-12-09 12:31:29 -0500] [48231] [INFO] Booting worker with pid: 48231
+[2022-12-09 12:31:29 -0500] [48230] [INFO] Worker exiting (pid: 48230)
+[2022-12-09 12:31:29 -0500] [48232] [INFO] Booting worker with pid: 48232
+[2022-12-09 12:31:29 -0500] [48233] [INFO] Booting worker with pid: 48233
+[2022-12-09 12:31:30 -0500] [48231] [INFO] Worker exiting (pid: 48231)
+[2022-12-09 12:31:30 -0500] [48232] [INFO] Worker exiting (pid: 48232)
+[2022-12-09 12:31:30 -0500] [48234] [INFO] Booting worker with pid: 48234
+[2022-12-09 12:31:30 -0500] [48233] [INFO] Worker exiting (pid: 48233)
+[2022-12-09 12:31:30 -0500] [48235] [INFO] Booting worker with pid: 48235
+[2022-12-09 12:31:30 -0500] [48236] [INFO] Booting worker with pid: 48236
+[2022-12-09 12:31:31 -0500] [48234] [INFO] Worker exiting (pid: 48234)
+[2022-12-09 12:31:31 -0500] [48235] [INFO] Worker exiting (pid: 48235)
+[2022-12-09 12:31:31 -0500] [48237] [INFO] Booting worker with pid: 48237
+[2022-12-09 12:31:31 -0500] [48236] [INFO] Worker exiting (pid: 48236)
+[2022-12-09 12:31:31 -0500] [48238] [INFO] Booting worker with pid: 48238
+[2022-12-09 12:31:32 -0500] [48239] [INFO] Booting worker with pid: 48239
+[2022-12-09 12:31:32 -0500] [48237] [INFO] Worker exiting (pid: 48237)
+[2022-12-09 12:31:32 -0500] [48238] [INFO] Worker exiting (pid: 48238)
+[2022-12-09 12:31:32 -0500] [48240] [INFO] Booting worker with pid: 48240
+[2022-12-09 12:31:32 -0500] [48239] [INFO] Worker exiting (pid: 48239)
+[2022-12-09 12:31:33 -0500] [48241] [INFO] Booting worker with pid: 48241
+[2022-12-09 12:31:33 -0500] [48242] [INFO] Booting worker with pid: 48242
+[2022-12-09 12:31:33 -0500] [48240] [INFO] Worker exiting (pid: 48240)
+[2022-12-09 12:31:33 -0500] [48241] [INFO] Worker exiting (pid: 48241)
+[2022-12-09 12:31:34 -0500] [48245] [INFO] Booting worker with pid: 48245
+[2022-12-09 12:31:34 -0500] [48242] [INFO] Worker exiting (pid: 48242)
+[2022-12-09 12:31:34 -0500] [48246] [INFO] Booting worker with pid: 48246
+[2022-12-09 12:31:34 -0500] [48247] [INFO] Booting worker with pid: 48247
+[2022-12-09 12:31:34 -0500] [48245] [INFO] Worker exiting (pid: 48245)
+[2022-12-09 12:31:35 -0500] [48246] [INFO] Worker exiting (pid: 48246)
+[2022-12-09 12:31:35 -0500] [48248] [INFO] Booting worker with pid: 48248
+[2022-12-09 12:31:35 -0500] [48247] [INFO] Worker exiting (pid: 48247)
+[2022-12-09 12:31:35 -0500] [48249] [INFO] Booting worker with pid: 48249
+[2022-12-09 12:31:35 -0500] [48250] [INFO] Booting worker with pid: 48250
+[2022-12-09 12:31:36 -0500] [48248] [INFO] Worker exiting (pid: 48248)
+[2022-12-09 12:31:36 -0500] [48249] [INFO] Worker exiting (pid: 48249)
+[2022-12-09 12:31:36 -0500] [48251] [INFO] Booting worker with pid: 48251
+[2022-12-09 12:31:36 -0500] [48250] [INFO] Worker exiting (pid: 48250)
+[2022-12-09 12:31:36 -0500] [48252] [INFO] Booting worker with pid: 48252
+[2022-12-09 12:31:37 -0500] [48253] [INFO] Booting worker with pid: 48253
+[2022-12-09 12:31:37 -0500] [48251] [INFO] Worker exiting (pid: 48251)
+[2022-12-09 12:31:37 -0500] [48252] [INFO] Worker exiting (pid: 48252)
+[2022-12-09 12:31:37 -0500] [48254] [INFO] Booting worker with pid: 48254
+[2022-12-09 12:31:37 -0500] [48253] [INFO] Worker exiting (pid: 48253)
+[2022-12-09 12:31:37 -0500] [48255] [INFO] Booting worker with pid: 48255
+[2022-12-09 12:31:38 -0500] [48256] [INFO] Booting worker with pid: 48256
+[2022-12-09 12:31:38 -0500] [48254] [INFO] Worker exiting (pid: 48254)
+[2022-12-09 12:31:38 -0500] [48255] [INFO] Worker exiting (pid: 48255)
+[2022-12-09 12:31:38 -0500] [48257] [INFO] Booting worker with pid: 48257
+[2022-12-09 12:31:39 -0500] [48256] [INFO] Worker exiting (pid: 48256)
+[2022-12-09 12:31:39 -0500] [48258] [INFO] Booting worker with pid: 48258
+[2022-12-09 12:31:39 -0500] [48259] [INFO] Booting worker with pid: 48259
+[2022-12-09 12:31:39 -0500] [48257] [INFO] Worker exiting (pid: 48257)
+[2022-12-09 12:31:40 -0500] [48258] [INFO] Worker exiting (pid: 48258)
+[2022-12-09 12:31:40 -0500] [48260] [INFO] Booting worker with pid: 48260
+[2022-12-09 12:31:40 -0500] [48259] [INFO] Worker exiting (pid: 48259)
+[2022-12-09 12:31:40 -0500] [48261] [INFO] Booting worker with pid: 48261
+[2022-12-09 12:31:40 -0500] [48262] [INFO] Booting worker with pid: 48262
+[2022-12-09 12:31:41 -0500] [48260] [INFO] Worker exiting (pid: 48260)
+[2022-12-09 12:31:41 -0500] [48261] [INFO] Worker exiting (pid: 48261)
+[2022-12-09 12:31:41 -0500] [48263] [INFO] Booting worker with pid: 48263
+[2022-12-09 12:31:41 -0500] [48262] [INFO] Worker exiting (pid: 48262)
+[2022-12-09 12:31:41 -0500] [48264] [INFO] Booting worker with pid: 48264
+[2022-12-09 12:31:41 -0500] [48265] [INFO] Booting worker with pid: 48265
+[2022-12-09 12:31:42 -0500] [48263] [INFO] Worker exiting (pid: 48263)
+[2022-12-09 12:31:42 -0500] [48264] [INFO] Worker exiting (pid: 48264)
+[2022-12-09 12:31:42 -0500] [48268] [INFO] Booting worker with pid: 48268
+[2022-12-09 12:31:42 -0500] [48265] [INFO] Worker exiting (pid: 48265)
+[2022-12-09 12:31:42 -0500] [48269] [INFO] Booting worker with pid: 48269
+[2022-12-09 12:31:43 -0500] [48270] [INFO] Booting worker with pid: 48270
+[2022-12-09 12:31:43 -0500] [48268] [INFO] Worker exiting (pid: 48268)
+[2022-12-09 12:31:43 -0500] [48269] [INFO] Worker exiting (pid: 48269)
+[2022-12-09 12:31:43 -0500] [48271] [INFO] Booting worker with pid: 48271
+[2022-12-09 12:31:44 -0500] [48270] [INFO] Worker exiting (pid: 48270)
+[2022-12-09 12:31:44 -0500] [48272] [INFO] Booting worker with pid: 48272
+[2022-12-09 12:31:44 -0500] [48273] [INFO] Booting worker with pid: 48273
+[2022-12-09 12:31:44 -0500] [48271] [INFO] Worker exiting (pid: 48271)
+[2022-12-09 12:31:44 -0500] [48272] [INFO] Worker exiting (pid: 48272)
+[2022-12-09 12:31:45 -0500] [48274] [INFO] Booting worker with pid: 48274
+[2022-12-09 12:31:45 -0500] [48273] [INFO] Worker exiting (pid: 48273)
+[2022-12-09 12:31:45 -0500] [48275] [INFO] Booting worker with pid: 48275
+[2022-12-09 12:31:45 -0500] [48276] [INFO] Booting worker with pid: 48276
+[2022-12-09 12:31:45 -0500] [48274] [INFO] Worker exiting (pid: 48274)
+[2022-12-09 12:31:46 -0500] [48275] [INFO] Worker exiting (pid: 48275)
+[2022-12-09 12:31:46 -0500] [48277] [INFO] Booting worker with pid: 48277
+[2022-12-09 12:31:46 -0500] [48276] [INFO] Worker exiting (pid: 48276)
+[2022-12-09 12:31:46 -0500] [48278] [INFO] Booting worker with pid: 48278
+[2022-12-09 12:31:46 -0500] [48279] [INFO] Booting worker with pid: 48279
+[2022-12-09 12:31:47 -0500] [48277] [INFO] Worker exiting (pid: 48277)
+[2022-12-09 12:31:47 -0500] [48278] [INFO] Worker exiting (pid: 48278)
+[2022-12-09 12:31:47 -0500] [48280] [INFO] Booting worker with pid: 48280
+[2022-12-09 12:31:47 -0500] [48279] [INFO] Worker exiting (pid: 48279)
+[2022-12-09 12:31:47 -0500] [48281] [INFO] Booting worker with pid: 48281
+[2022-12-09 12:31:48 -0500] [48282] [INFO] Booting worker with pid: 48282
+[2022-12-09 12:31:48 -0500] [48280] [INFO] Worker exiting (pid: 48280)
+[2022-12-09 12:31:48 -0500] [48281] [INFO] Worker exiting (pid: 48281)
+[2022-12-09 12:31:48 -0500] [48283] [INFO] Booting worker with pid: 48283
+[2022-12-09 12:31:48 -0500] [48282] [INFO] Worker exiting (pid: 48282)
+[2022-12-09 12:31:49 -0500] [48284] [INFO] Booting worker with pid: 48284
+[2022-12-09 12:31:49 -0500] [48285] [INFO] Booting worker with pid: 48285
+[2022-12-09 12:31:49 -0500] [48283] [INFO] Worker exiting (pid: 48283)
+[2022-12-09 12:31:49 -0500] [48284] [INFO] Worker exiting (pid: 48284)
+[2022-12-09 12:31:50 -0500] [48286] [INFO] Booting worker with pid: 48286
+[2022-12-09 12:31:50 -0500] [48285] [INFO] Worker exiting (pid: 48285)
+[2022-12-09 12:31:50 -0500] [48287] [INFO] Booting worker with pid: 48287
+[2022-12-09 12:31:50 -0500] [48288] [INFO] Booting worker with pid: 48288
+[2022-12-09 12:31:50 -0500] [48286] [INFO] Worker exiting (pid: 48286)
+[2022-12-09 12:31:51 -0500] [48287] [INFO] Worker exiting (pid: 48287)
+[2022-12-09 12:31:51 -0500] [48289] [INFO] Booting worker with pid: 48289
+[2022-12-09 12:31:51 -0500] [48288] [INFO] Worker exiting (pid: 48288)
+[2022-12-09 12:31:51 -0500] [48290] [INFO] Booting worker with pid: 48290
+[2022-12-09 12:31:51 -0500] [48291] [INFO] Booting worker with pid: 48291
+[2022-12-09 12:31:52 -0500] [48289] [INFO] Worker exiting (pid: 48289)
+[2022-12-09 12:31:52 -0500] [48290] [INFO] Worker exiting (pid: 48290)
+[2022-12-09 12:31:52 -0500] [48294] [INFO] Booting worker with pid: 48294
+[2022-12-09 12:31:52 -0500] [48291] [INFO] Worker exiting (pid: 48291)
+[2022-12-09 12:31:52 -0500] [48295] [INFO] Booting worker with pid: 48295
+[2022-12-09 12:31:53 -0500] [48296] [INFO] Booting worker with pid: 48296
+[2022-12-09 12:31:53 -0500] [48294] [INFO] Worker exiting (pid: 48294)
+[2022-12-09 12:31:53 -0500] [48295] [INFO] Worker exiting (pid: 48295)
+[2022-12-09 12:31:53 -0500] [48299] [INFO] Booting worker with pid: 48299
+[2022-12-09 12:31:53 -0500] [48300] [INFO] Booting worker with pid: 48300
+[2022-12-09 12:31:53 -0500] [48296] [INFO] Worker exiting (pid: 48296)
+[2022-12-09 12:31:54 -0500] [48301] [INFO] Booting worker with pid: 48301
+[2022-12-09 12:31:54 -0500] [48299] [INFO] Worker exiting (pid: 48299)
+[2022-12-09 12:31:54 -0500] [48300] [INFO] Worker exiting (pid: 48300)
+[2022-12-09 12:31:55 -0500] [48302] [INFO] Booting worker with pid: 48302
+[2022-12-09 12:31:55 -0500] [48303] [INFO] Booting worker with pid: 48303
+[2022-12-09 12:31:55 -0500] [48301] [INFO] Worker exiting (pid: 48301)
+[2022-12-09 12:31:55 -0500] [48304] [INFO] Booting worker with pid: 48304
+[2022-12-09 12:31:55 -0500] [48302] [INFO] Worker exiting (pid: 48302)
+[2022-12-09 12:31:56 -0500] [48303] [INFO] Worker exiting (pid: 48303)
+[2022-12-09 12:31:56 -0500] [48313] [INFO] Booting worker with pid: 48313
+[2022-12-09 12:31:56 -0500] [48314] [INFO] Booting worker with pid: 48314
+[2022-12-09 12:31:56 -0500] [48304] [INFO] Worker exiting (pid: 48304)
+[2022-12-09 12:31:56 -0500] [48315] [INFO] Booting worker with pid: 48315
+[2022-12-09 12:31:57 -0500] [48313] [INFO] Worker exiting (pid: 48313)
+[2022-12-09 12:31:57 -0500] [48314] [INFO] Worker exiting (pid: 48314)
+[2022-12-09 12:31:57 -0500] [48320] [INFO] Booting worker with pid: 48320
+[2022-12-09 12:31:57 -0500] [48321] [INFO] Booting worker with pid: 48321
+[2022-12-09 12:31:57 -0500] [48315] [INFO] Worker exiting (pid: 48315)
+[2022-12-09 12:31:58 -0500] [48322] [INFO] Booting worker with pid: 48322
+[2022-12-09 12:31:58 -0500] [48320] [INFO] Worker exiting (pid: 48320)
+[2022-12-09 12:31:58 -0500] [48321] [INFO] Worker exiting (pid: 48321)
+[2022-12-09 12:31:59 -0500] [48323] [INFO] Booting worker with pid: 48323
+[2022-12-09 12:31:59 -0500] [48324] [INFO] Booting worker with pid: 48324
+[2022-12-09 12:31:59 -0500] [48322] [INFO] Worker exiting (pid: 48322)
+[2022-12-09 12:31:59 -0500] [48325] [INFO] Booting worker with pid: 48325
+[2022-12-09 12:31:59 -0500] [48323] [INFO] Worker exiting (pid: 48323)
+[2022-12-09 12:31:59 -0500] [48324] [INFO] Worker exiting (pid: 48324)
+[2022-12-09 12:32:00 -0500] [48326] [INFO] Booting worker with pid: 48326
+[2022-12-09 12:32:00 -0500] [48327] [INFO] Booting worker with pid: 48327
+[2022-12-09 12:32:00 -0500] [48325] [INFO] Worker exiting (pid: 48325)
+[2022-12-09 12:32:00 -0500] [48328] [INFO] Booting worker with pid: 48328
+[2022-12-09 12:32:01 -0500] [48326] [INFO] Worker exiting (pid: 48326)
+[2022-12-09 12:32:01 -0500] [48327] [INFO] Worker exiting (pid: 48327)
+[2022-12-09 12:32:01 -0500] [48329] [INFO] Booting worker with pid: 48329
+[2022-12-09 12:32:01 -0500] [48330] [INFO] Booting worker with pid: 48330
+[2022-12-09 12:32:01 -0500] [48328] [INFO] Worker exiting (pid: 48328)
+[2022-12-09 12:32:02 -0500] [48331] [INFO] Booting worker with pid: 48331
+[2022-12-09 12:32:02 -0500] [48329] [INFO] Worker exiting (pid: 48329)
+[2022-12-09 12:32:02 -0500] [48330] [INFO] Worker exiting (pid: 48330)
+[2022-12-09 12:32:02 -0500] [48332] [INFO] Booting worker with pid: 48332
+[2022-12-09 12:32:02 -0500] [48333] [INFO] Booting worker with pid: 48333
+[2022-12-09 12:32:03 -0500] [48331] [INFO] Worker exiting (pid: 48331)
+[2022-12-09 12:32:03 -0500] [48334] [INFO] Booting worker with pid: 48334
+[2022-12-09 12:32:03 -0500] [48333] [INFO] Worker exiting (pid: 48333)
+[2022-12-09 12:32:03 -0500] [48332] [INFO] Worker exiting (pid: 48332)
+[2022-12-09 12:32:04 -0500] [48336] [INFO] Booting worker with pid: 48336
+[2022-12-09 12:32:04 -0500] [48337] [INFO] Booting worker with pid: 48337
+[2022-12-09 12:32:04 -0500] [48334] [INFO] Worker exiting (pid: 48334)
+[2022-12-09 12:32:04 -0500] [48338] [INFO] Booting worker with pid: 48338
+[2022-12-09 12:32:05 -0500] [48336] [INFO] Worker exiting (pid: 48336)
+[2022-12-09 12:32:05 -0500] [48337] [INFO] Worker exiting (pid: 48337)
+[2022-12-09 12:32:05 -0500] [48339] [INFO] Booting worker with pid: 48339
+[2022-12-09 12:32:05 -0500] [48340] [INFO] Booting worker with pid: 48340
+[2022-12-09 12:32:05 -0500] [48338] [INFO] Worker exiting (pid: 48338)
+[2022-12-09 12:32:06 -0500] [48341] [INFO] Booting worker with pid: 48341
+[2022-12-09 12:32:06 -0500] [48339] [INFO] Worker exiting (pid: 48339)
+[2022-12-09 12:32:06 -0500] [48340] [INFO] Worker exiting (pid: 48340)
+[2022-12-09 12:32:06 -0500] [48342] [INFO] Booting worker with pid: 48342
+[2022-12-09 12:32:06 -0500] [48343] [INFO] Booting worker with pid: 48343
+[2022-12-09 12:32:06 -0500] [48341] [INFO] Worker exiting (pid: 48341)
+[2022-12-09 12:32:07 -0500] [48344] [INFO] Booting worker with pid: 48344
+[2022-12-09 12:32:07 -0500] [48342] [INFO] Worker exiting (pid: 48342)
+[2022-12-09 12:32:07 -0500] [48343] [INFO] Worker exiting (pid: 48343)
+[2022-12-09 12:32:08 -0500] [48345] [INFO] Booting worker with pid: 48345
+[2022-12-09 12:32:08 -0500] [48346] [INFO] Booting worker with pid: 48346
+[2022-12-09 12:32:08 -0500] [48344] [INFO] Worker exiting (pid: 48344)
+[2022-12-09 12:32:08 -0500] [48347] [INFO] Booting worker with pid: 48347
+[2022-12-09 12:32:08 -0500] [48345] [INFO] Worker exiting (pid: 48345)
+[2022-12-09 12:32:08 -0500] [48346] [INFO] Worker exiting (pid: 48346)
+[2022-12-09 12:32:09 -0500] [48348] [INFO] Booting worker with pid: 48348
+[2022-12-09 12:32:09 -0500] [48349] [INFO] Booting worker with pid: 48349
+[2022-12-09 12:32:09 -0500] [48347] [INFO] Worker exiting (pid: 48347)
+[2022-12-09 12:32:09 -0500] [48350] [INFO] Booting worker with pid: 48350
+[2022-12-09 12:32:10 -0500] [48348] [INFO] Worker exiting (pid: 48348)
+[2022-12-09 12:32:10 -0500] [48349] [INFO] Worker exiting (pid: 48349)
+[2022-12-09 12:32:10 -0500] [48351] [INFO] Booting worker with pid: 48351
+[2022-12-09 12:32:10 -0500] [48352] [INFO] Booting worker with pid: 48352
+[2022-12-09 12:32:10 -0500] [48350] [INFO] Worker exiting (pid: 48350)
+[2022-12-09 12:32:11 -0500] [48353] [INFO] Booting worker with pid: 48353
+[2022-12-09 12:32:11 -0500] [48351] [INFO] Worker exiting (pid: 48351)
+[2022-12-09 12:32:11 -0500] [48352] [INFO] Worker exiting (pid: 48352)
+[2022-12-09 12:32:11 -0500] [48354] [INFO] Booting worker with pid: 48354
+[2022-12-09 12:32:11 -0500] [48355] [INFO] Booting worker with pid: 48355
+[2022-12-09 12:32:11 -0500] [48353] [INFO] Worker exiting (pid: 48353)
+[2022-12-09 12:32:12 -0500] [48356] [INFO] Booting worker with pid: 48356
+[2022-12-09 12:32:12 -0500] [48354] [INFO] Worker exiting (pid: 48354)
+[2022-12-09 12:32:12 -0500] [48355] [INFO] Worker exiting (pid: 48355)
+[2022-12-09 12:32:12 -0500] [48357] [INFO] Booting worker with pid: 48357
+[2022-12-09 12:32:12 -0500] [48358] [INFO] Booting worker with pid: 48358
+[2022-12-09 12:32:13 -0500] [48356] [INFO] Worker exiting (pid: 48356)
+[2022-12-09 12:32:13 -0500] [48359] [INFO] Booting worker with pid: 48359
+[2022-12-09 12:32:13 -0500] [48357] [INFO] Worker exiting (pid: 48357)
+[2022-12-09 12:32:13 -0500] [48358] [INFO] Worker exiting (pid: 48358)
+[2022-12-09 12:32:14 -0500] [48362] [INFO] Booting worker with pid: 48362
+[2022-12-09 12:32:14 -0500] [48363] [INFO] Booting worker with pid: 48363
+[2022-12-09 12:32:14 -0500] [48359] [INFO] Worker exiting (pid: 48359)
+[2022-12-09 12:32:14 -0500] [48364] [INFO] Booting worker with pid: 48364
+[2022-12-09 12:32:14 -0500] [48362] [INFO] Worker exiting (pid: 48362)
+[2022-12-09 12:32:15 -0500] [48363] [INFO] Worker exiting (pid: 48363)
+[2022-12-09 12:32:15 -0500] [48365] [INFO] Booting worker with pid: 48365
+[2022-12-09 12:32:15 -0500] [48366] [INFO] Booting worker with pid: 48366
+[2022-12-09 12:32:15 -0500] [48364] [INFO] Worker exiting (pid: 48364)
+[2022-12-09 12:32:15 -0500] [48367] [INFO] Booting worker with pid: 48367
+[2022-12-09 12:32:16 -0500] [48365] [INFO] Worker exiting (pid: 48365)
+[2022-12-09 12:32:16 -0500] [48366] [INFO] Worker exiting (pid: 48366)
+[2022-12-09 12:32:16 -0500] [48368] [INFO] Booting worker with pid: 48368
+[2022-12-09 12:32:16 -0500] [48369] [INFO] Booting worker with pid: 48369
+[2022-12-09 12:32:16 -0500] [48367] [INFO] Worker exiting (pid: 48367)
+[2022-12-09 12:32:17 -0500] [48370] [INFO] Booting worker with pid: 48370
+[2022-12-09 12:32:17 -0500] [48368] [INFO] Worker exiting (pid: 48368)
+[2022-12-09 12:32:17 -0500] [48369] [INFO] Worker exiting (pid: 48369)
+[2022-12-09 12:32:17 -0500] [48371] [INFO] Booting worker with pid: 48371
+[2022-12-09 12:32:17 -0500] [48372] [INFO] Booting worker with pid: 48372
+[2022-12-09 12:32:18 -0500] [48370] [INFO] Worker exiting (pid: 48370)
+[2022-12-09 12:32:18 -0500] [48375] [INFO] Booting worker with pid: 48375
+[2022-12-09 12:32:18 -0500] [48371] [INFO] Worker exiting (pid: 48371)
+[2022-12-09 12:32:18 -0500] [48372] [INFO] Worker exiting (pid: 48372)
+[2022-12-09 12:32:19 -0500] [48376] [INFO] Booting worker with pid: 48376
+[2022-12-09 12:32:19 -0500] [48377] [INFO] Booting worker with pid: 48377
+[2022-12-09 12:32:19 -0500] [48375] [INFO] Worker exiting (pid: 48375)
+[2022-12-09 12:32:19 -0500] [48378] [INFO] Booting worker with pid: 48378
+[2022-12-09 12:32:19 -0500] [48376] [INFO] Worker exiting (pid: 48376)
+[2022-12-09 12:32:19 -0500] [48377] [INFO] Worker exiting (pid: 48377)
+[2022-12-09 12:32:20 -0500] [48379] [INFO] Booting worker with pid: 48379
+[2022-12-09 12:32:20 -0500] [48380] [INFO] Booting worker with pid: 48380
+[2022-12-09 12:32:20 -0500] [48378] [INFO] Worker exiting (pid: 48378)
+[2022-12-09 12:32:20 -0500] [48381] [INFO] Booting worker with pid: 48381
+[2022-12-09 12:32:21 -0500] [48379] [INFO] Worker exiting (pid: 48379)
+[2022-12-09 12:32:21 -0500] [48380] [INFO] Worker exiting (pid: 48380)
+[2022-12-09 12:32:21 -0500] [48382] [INFO] Booting worker with pid: 48382
+[2022-12-09 12:32:21 -0500] [48383] [INFO] Booting worker with pid: 48383
+[2022-12-09 12:32:21 -0500] [48381] [INFO] Worker exiting (pid: 48381)
+[2022-12-09 12:32:22 -0500] [48384] [INFO] Booting worker with pid: 48384
+[2022-12-09 12:32:22 -0500] [48382] [INFO] Worker exiting (pid: 48382)
+[2022-12-09 12:32:22 -0500] [48383] [INFO] Worker exiting (pid: 48383)
+[2022-12-09 12:32:22 -0500] [48385] [INFO] Booting worker with pid: 48385
+[2022-12-09 12:32:22 -0500] [48386] [INFO] Booting worker with pid: 48386
+[2022-12-09 12:32:23 -0500] [48384] [INFO] Worker exiting (pid: 48384)
+[2022-12-09 12:32:23 -0500] [48387] [INFO] Booting worker with pid: 48387
+[2022-12-09 12:32:23 -0500] [48385] [INFO] Worker exiting (pid: 48385)
+[2022-12-09 12:32:23 -0500] [48386] [INFO] Worker exiting (pid: 48386)
+[2022-12-09 12:32:23 -0500] [48388] [INFO] Booting worker with pid: 48388
+[2022-12-09 12:32:24 -0500] [48389] [INFO] Booting worker with pid: 48389
+[2022-12-09 12:32:24 -0500] [48387] [INFO] Worker exiting (pid: 48387)
+[2022-12-09 12:32:24 -0500] [48390] [INFO] Booting worker with pid: 48390
+[2022-12-09 12:32:24 -0500] [48388] [INFO] Worker exiting (pid: 48388)
+[2022-12-09 12:32:24 -0500] [48389] [INFO] Worker exiting (pid: 48389)
+[2022-12-09 12:32:25 -0500] [48391] [INFO] Booting worker with pid: 48391
+[2022-12-09 12:32:25 -0500] [48392] [INFO] Booting worker with pid: 48392
+[2022-12-09 12:32:25 -0500] [48390] [INFO] Worker exiting (pid: 48390)
+[2022-12-09 12:32:25 -0500] [48393] [INFO] Booting worker with pid: 48393
+[2022-12-09 12:32:26 -0500] [48391] [INFO] Worker exiting (pid: 48391)
+[2022-12-09 12:32:26 -0500] [48392] [INFO] Worker exiting (pid: 48392)
+[2022-12-09 12:32:26 -0500] [48394] [INFO] Booting worker with pid: 48394
+[2022-12-09 12:32:26 -0500] [48395] [INFO] Booting worker with pid: 48395
+[2022-12-09 12:32:26 -0500] [48393] [INFO] Worker exiting (pid: 48393)
+[2022-12-09 12:32:27 -0500] [48396] [INFO] Booting worker with pid: 48396
+[2022-12-09 12:32:27 -0500] [48394] [INFO] Worker exiting (pid: 48394)
+[2022-12-09 12:32:27 -0500] [48395] [INFO] Worker exiting (pid: 48395)
+[2022-12-09 12:32:27 -0500] [48399] [INFO] Booting worker with pid: 48399
+[2022-12-09 12:32:27 -0500] [48400] [INFO] Booting worker with pid: 48400
+[2022-12-09 12:32:28 -0500] [48396] [INFO] Worker exiting (pid: 48396)
+[2022-12-09 12:32:28 -0500] [48401] [INFO] Booting worker with pid: 48401
+[2022-12-09 12:32:28 -0500] [48399] [INFO] Worker exiting (pid: 48399)
+[2022-12-09 12:32:28 -0500] [48400] [INFO] Worker exiting (pid: 48400)
+[2022-12-09 12:32:28 -0500] [48402] [INFO] Booting worker with pid: 48402
+[2022-12-09 12:32:28 -0500] [48403] [INFO] Booting worker with pid: 48403
+[2022-12-09 12:32:29 -0500] [48401] [INFO] Worker exiting (pid: 48401)
+[2022-12-09 12:32:29 -0500] [48404] [INFO] Booting worker with pid: 48404
+[2022-12-09 12:32:29 -0500] [48402] [INFO] Worker exiting (pid: 48402)
+[2022-12-09 12:32:29 -0500] [48403] [INFO] Worker exiting (pid: 48403)
+[2022-12-09 12:32:30 -0500] [48405] [INFO] Booting worker with pid: 48405
+[2022-12-09 12:32:30 -0500] [48406] [INFO] Booting worker with pid: 48406
+[2022-12-09 12:32:30 -0500] [48404] [INFO] Worker exiting (pid: 48404)
+[2022-12-09 12:32:30 -0500] [48407] [INFO] Booting worker with pid: 48407
+[2022-12-09 12:32:30 -0500] [48405] [INFO] Worker exiting (pid: 48405)
+[2022-12-09 12:32:31 -0500] [48406] [INFO] Worker exiting (pid: 48406)
+[2022-12-09 12:32:31 -0500] [48408] [INFO] Booting worker with pid: 48408
+[2022-12-09 12:32:31 -0500] [48409] [INFO] Booting worker with pid: 48409
+[2022-12-09 12:32:31 -0500] [48407] [INFO] Worker exiting (pid: 48407)
+[2022-12-09 12:32:32 -0500] [48410] [INFO] Booting worker with pid: 48410
+[2022-12-09 12:32:32 -0500] [48408] [INFO] Worker exiting (pid: 48408)
+[2022-12-09 12:32:32 -0500] [48409] [INFO] Worker exiting (pid: 48409)
+[2022-12-09 12:32:32 -0500] [48411] [INFO] Booting worker with pid: 48411
+[2022-12-09 12:32:32 -0500] [48412] [INFO] Booting worker with pid: 48412
+[2022-12-09 12:32:32 -0500] [48410] [INFO] Worker exiting (pid: 48410)
+[2022-12-09 12:32:33 -0500] [48415] [INFO] Booting worker with pid: 48415
+[2022-12-09 12:32:33 -0500] [48411] [INFO] Worker exiting (pid: 48411)
+[2022-12-09 12:32:33 -0500] [48412] [INFO] Worker exiting (pid: 48412)
+[2022-12-09 12:32:33 -0500] [48416] [INFO] Booting worker with pid: 48416
+[2022-12-09 12:32:33 -0500] [48417] [INFO] Booting worker with pid: 48417
+[2022-12-09 12:32:34 -0500] [48415] [INFO] Worker exiting (pid: 48415)
+[2022-12-09 12:32:34 -0500] [48418] [INFO] Booting worker with pid: 48418
+[2022-12-09 12:32:34 -0500] [48416] [INFO] Worker exiting (pid: 48416)
+[2022-12-09 12:32:34 -0500] [48417] [INFO] Worker exiting (pid: 48417)
+[2022-12-09 12:32:35 -0500] [48419] [INFO] Booting worker with pid: 48419
+[2022-12-09 12:32:35 -0500] [48420] [INFO] Booting worker with pid: 48420
+[2022-12-09 12:32:35 -0500] [48418] [INFO] Worker exiting (pid: 48418)
+[2022-12-09 12:32:35 -0500] [48421] [INFO] Booting worker with pid: 48421
+[2022-12-09 12:32:35 -0500] [48419] [INFO] Worker exiting (pid: 48419)
+[2022-12-09 12:32:35 -0500] [48420] [INFO] Worker exiting (pid: 48420)
+[2022-12-09 12:32:36 -0500] [48422] [INFO] Booting worker with pid: 48422
+[2022-12-09 12:32:36 -0500] [48423] [INFO] Booting worker with pid: 48423
+[2022-12-09 12:32:36 -0500] [48421] [INFO] Worker exiting (pid: 48421)
+[2022-12-09 12:32:37 -0500] [48424] [INFO] Booting worker with pid: 48424
+[2022-12-09 12:32:37 -0500] [48422] [INFO] Worker exiting (pid: 48422)
+[2022-12-09 12:32:37 -0500] [48423] [INFO] Worker exiting (pid: 48423)
+[2022-12-09 12:32:37 -0500] [48425] [INFO] Booting worker with pid: 48425
+[2022-12-09 12:32:37 -0500] [48426] [INFO] Booting worker with pid: 48426
+[2022-12-09 12:32:37 -0500] [48424] [INFO] Worker exiting (pid: 48424)
+[2022-12-09 12:32:38 -0500] [48427] [INFO] Booting worker with pid: 48427
+[2022-12-09 12:32:38 -0500] [48425] [INFO] Worker exiting (pid: 48425)
+[2022-12-09 12:32:38 -0500] [48426] [INFO] Worker exiting (pid: 48426)
+[2022-12-09 12:32:38 -0500] [48428] [INFO] Booting worker with pid: 48428
+[2022-12-09 12:32:38 -0500] [48429] [INFO] Booting worker with pid: 48429
+[2022-12-09 12:32:39 -0500] [48427] [INFO] Worker exiting (pid: 48427)
+[2022-12-09 12:32:39 -0500] [48430] [INFO] Booting worker with pid: 48430
+[2022-12-09 12:32:39 -0500] [48428] [INFO] Worker exiting (pid: 48428)
+[2022-12-09 12:32:39 -0500] [48429] [INFO] Worker exiting (pid: 48429)
+[2022-12-09 12:32:39 -0500] [48431] [INFO] Booting worker with pid: 48431
+[2022-12-09 12:32:40 -0500] [48432] [INFO] Booting worker with pid: 48432
+[2022-12-09 12:32:40 -0500] [48430] [INFO] Worker exiting (pid: 48430)
+[2022-12-09 12:32:40 -0500] [48433] [INFO] Booting worker with pid: 48433
+[2022-12-09 12:32:40 -0500] [48431] [INFO] Worker exiting (pid: 48431)
+[2022-12-09 12:32:40 -0500] [48432] [INFO] Worker exiting (pid: 48432)
+[2022-12-09 12:32:41 -0500] [48434] [INFO] Booting worker with pid: 48434
+[2022-12-09 12:32:41 -0500] [48435] [INFO] Booting worker with pid: 48435
+[2022-12-09 12:32:41 -0500] [48433] [INFO] Worker exiting (pid: 48433)
+[2022-12-09 12:32:41 -0500] [48436] [INFO] Booting worker with pid: 48436
+[2022-12-09 12:32:41 -0500] [48434] [INFO] Worker exiting (pid: 48434)
+[2022-12-09 12:32:42 -0500] [48435] [INFO] Worker exiting (pid: 48435)
+[2022-12-09 12:32:42 -0500] [48437] [INFO] Booting worker with pid: 48437
+[2022-12-09 12:32:42 -0500] [48438] [INFO] Booting worker with pid: 48438
+[2022-12-09 12:32:42 -0500] [48436] [INFO] Worker exiting (pid: 48436)
+[2022-12-09 12:32:43 -0500] [48439] [INFO] Booting worker with pid: 48439
+[2022-12-09 12:32:43 -0500] [48437] [INFO] Worker exiting (pid: 48437)
+[2022-12-09 12:32:43 -0500] [48438] [INFO] Worker exiting (pid: 48438)
+[2022-12-09 12:32:43 -0500] [48440] [INFO] Booting worker with pid: 48440
+[2022-12-09 12:32:43 -0500] [48441] [INFO] Booting worker with pid: 48441
+[2022-12-09 12:32:44 -0500] [48439] [INFO] Worker exiting (pid: 48439)
+[2022-12-09 12:32:44 -0500] [48442] [INFO] Booting worker with pid: 48442
+[2022-12-09 12:32:44 -0500] [48440] [INFO] Worker exiting (pid: 48440)
+[2022-12-09 12:32:44 -0500] [48441] [INFO] Worker exiting (pid: 48441)
+[2022-12-09 12:32:44 -0500] [48443] [INFO] Booting worker with pid: 48443
+[2022-12-09 12:32:44 -0500] [48444] [INFO] Booting worker with pid: 48444
+[2022-12-09 12:32:45 -0500] [48442] [INFO] Worker exiting (pid: 48442)
+[2022-12-09 12:32:45 -0500] [48445] [INFO] Booting worker with pid: 48445
+[2022-12-09 12:32:45 -0500] [48443] [INFO] Worker exiting (pid: 48443)
+[2022-12-09 12:32:45 -0500] [48444] [INFO] Worker exiting (pid: 48444)
+[2022-12-09 12:32:46 -0500] [48448] [INFO] Booting worker with pid: 48448
+[2022-12-09 12:32:46 -0500] [48449] [INFO] Booting worker with pid: 48449
+[2022-12-09 12:32:46 -0500] [48445] [INFO] Worker exiting (pid: 48445)
+[2022-12-09 12:32:46 -0500] [48450] [INFO] Booting worker with pid: 48450
+[2022-12-09 12:32:46 -0500] [48448] [INFO] Worker exiting (pid: 48448)
+[2022-12-09 12:32:46 -0500] [48449] [INFO] Worker exiting (pid: 48449)
+[2022-12-09 12:32:47 -0500] [48451] [INFO] Booting worker with pid: 48451
+[2022-12-09 12:32:47 -0500] [48452] [INFO] Booting worker with pid: 48452
+[2022-12-09 12:32:47 -0500] [48450] [INFO] Worker exiting (pid: 48450)
+[2022-12-09 12:32:48 -0500] [48453] [INFO] Booting worker with pid: 48453
+[2022-12-09 12:32:48 -0500] [48451] [INFO] Worker exiting (pid: 48451)
+[2022-12-09 12:32:48 -0500] [48452] [INFO] Worker exiting (pid: 48452)
+[2022-12-09 12:32:48 -0500] [48454] [INFO] Booting worker with pid: 48454
+[2022-12-09 12:32:48 -0500] [48455] [INFO] Booting worker with pid: 48455
+[2022-12-09 12:32:48 -0500] [48453] [INFO] Worker exiting (pid: 48453)
+[2022-12-09 12:32:49 -0500] [48456] [INFO] Booting worker with pid: 48456
+[2022-12-09 12:32:49 -0500] [48454] [INFO] Worker exiting (pid: 48454)
+[2022-12-09 12:32:49 -0500] [48455] [INFO] Worker exiting (pid: 48455)
+[2022-12-09 12:32:49 -0500] [48457] [INFO] Booting worker with pid: 48457
+[2022-12-09 12:32:49 -0500] [48458] [INFO] Booting worker with pid: 48458
+[2022-12-09 12:32:50 -0500] [48456] [INFO] Worker exiting (pid: 48456)
+[2022-12-09 12:32:50 -0500] [48457] [INFO] Worker exiting (pid: 48457)
+[2022-12-09 12:32:50 -0500] [48459] [INFO] Booting worker with pid: 48459
+[2022-12-09 12:32:50 -0500] [48458] [INFO] Worker exiting (pid: 48458)
+[2022-12-09 12:32:50 -0500] [48460] [INFO] Booting worker with pid: 48460
+[2022-12-09 12:32:51 -0500] [48461] [INFO] Booting worker with pid: 48461
+[2022-12-09 12:32:51 -0500] [48459] [INFO] Worker exiting (pid: 48459)
+[2022-12-09 12:32:51 -0500] [48460] [INFO] Worker exiting (pid: 48460)
+[2022-12-09 12:32:51 -0500] [48462] [INFO] Booting worker with pid: 48462
+[2022-12-09 12:32:51 -0500] [48461] [INFO] Worker exiting (pid: 48461)
+[2022-12-09 12:32:52 -0500] [48463] [INFO] Booting worker with pid: 48463
+[2022-12-09 12:32:52 -0500] [48464] [INFO] Booting worker with pid: 48464
+[2022-12-09 12:32:52 -0500] [48462] [INFO] Worker exiting (pid: 48462)
+[2022-12-09 12:32:53 -0500] [48463] [INFO] Worker exiting (pid: 48463)
+[2022-12-09 12:32:53 -0500] [48465] [INFO] Booting worker with pid: 48465
+[2022-12-09 12:32:53 -0500] [48464] [INFO] Worker exiting (pid: 48464)
+[2022-12-09 12:32:53 -0500] [48466] [INFO] Booting worker with pid: 48466
+[2022-12-09 12:32:53 -0500] [48467] [INFO] Booting worker with pid: 48467
+[2022-12-09 12:32:53 -0500] [48465] [INFO] Worker exiting (pid: 48465)
+[2022-12-09 12:32:54 -0500] [48466] [INFO] Worker exiting (pid: 48466)
+[2022-12-09 12:32:54 -0500] [48468] [INFO] Booting worker with pid: 48468
+[2022-12-09 12:32:54 -0500] [48467] [INFO] Worker exiting (pid: 48467)
+[2022-12-09 12:32:54 -0500] [48469] [INFO] Booting worker with pid: 48469
+[2022-12-09 12:32:54 -0500] [48470] [INFO] Booting worker with pid: 48470
+[2022-12-09 12:32:55 -0500] [48468] [INFO] Worker exiting (pid: 48468)
+[2022-12-09 12:32:55 -0500] [48469] [INFO] Worker exiting (pid: 48469)
+[2022-12-09 12:32:55 -0500] [48471] [INFO] Booting worker with pid: 48471
+[2022-12-09 12:32:55 -0500] [48470] [INFO] Worker exiting (pid: 48470)
+[2022-12-09 12:32:55 -0500] [48472] [INFO] Booting worker with pid: 48472
+[2022-12-09 12:32:55 -0500] [48473] [INFO] Booting worker with pid: 48473
+[2022-12-09 12:32:56 -0500] [48471] [INFO] Worker exiting (pid: 48471)
+[2022-12-09 12:32:56 -0500] [48472] [INFO] Worker exiting (pid: 48472)
+[2022-12-09 12:32:56 -0500] [48474] [INFO] Booting worker with pid: 48474
+[2022-12-09 12:32:56 -0500] [48473] [INFO] Worker exiting (pid: 48473)
+[2022-12-09 12:32:57 -0500] [48475] [INFO] Booting worker with pid: 48475
+[2022-12-09 12:32:57 -0500] [48476] [INFO] Booting worker with pid: 48476
+[2022-12-09 12:32:57 -0500] [48474] [INFO] Worker exiting (pid: 48474)
+[2022-12-09 12:32:57 -0500] [48475] [INFO] Worker exiting (pid: 48475)
+[2022-12-09 12:32:57 -0500] [48477] [INFO] Booting worker with pid: 48477
+[2022-12-09 12:32:57 -0500] [48476] [INFO] Worker exiting (pid: 48476)
+[2022-12-09 12:32:58 -0500] [48478] [INFO] Booting worker with pid: 48478
+[2022-12-09 12:32:58 -0500] [48479] [INFO] Booting worker with pid: 48479
+[2022-12-09 12:32:58 -0500] [48477] [INFO] Worker exiting (pid: 48477)
+[2022-12-09 12:32:59 -0500] [48478] [INFO] Worker exiting (pid: 48478)
+[2022-12-09 12:32:59 -0500] [48480] [INFO] Booting worker with pid: 48480
+[2022-12-09 12:32:59 -0500] [48479] [INFO] Worker exiting (pid: 48479)
+[2022-12-09 12:32:59 -0500] [48481] [INFO] Booting worker with pid: 48481
+[2022-12-09 12:32:59 -0500] [48482] [INFO] Booting worker with pid: 48482
+[2022-12-09 12:33:00 -0500] [48480] [INFO] Worker exiting (pid: 48480)
+[2022-12-09 12:33:00 -0500] [48481] [INFO] Worker exiting (pid: 48481)
+[2022-12-09 12:33:00 -0500] [48483] [INFO] Booting worker with pid: 48483
+[2022-12-09 12:33:00 -0500] [48482] [INFO] Worker exiting (pid: 48482)
+[2022-12-09 12:33:00 -0500] [48484] [INFO] Booting worker with pid: 48484
+[2022-12-09 12:33:00 -0500] [48485] [INFO] Booting worker with pid: 48485
+[2022-12-09 12:33:01 -0500] [48483] [INFO] Worker exiting (pid: 48483)
+[2022-12-09 12:33:01 -0500] [48484] [INFO] Worker exiting (pid: 48484)
+[2022-12-09 12:33:01 -0500] [48490] [INFO] Booting worker with pid: 48490
+[2022-12-09 12:33:01 -0500] [48485] [INFO] Worker exiting (pid: 48485)
+[2022-12-09 12:33:01 -0500] [48491] [INFO] Booting worker with pid: 48491
+[2022-12-09 12:33:02 -0500] [48492] [INFO] Booting worker with pid: 48492
+[2022-12-09 12:33:02 -0500] [48490] [INFO] Worker exiting (pid: 48490)
+[2022-12-09 12:33:02 -0500] [48491] [INFO] Worker exiting (pid: 48491)
+[2022-12-09 12:33:02 -0500] [48493] [INFO] Booting worker with pid: 48493
+[2022-12-09 12:33:02 -0500] [48492] [INFO] Worker exiting (pid: 48492)
+[2022-12-09 12:33:03 -0500] [48494] [INFO] Booting worker with pid: 48494
+[2022-12-09 12:33:03 -0500] [48495] [INFO] Booting worker with pid: 48495
+[2022-12-09 12:33:03 -0500] [48493] [INFO] Worker exiting (pid: 48493)
+[2022-12-09 12:33:04 -0500] [48494] [INFO] Worker exiting (pid: 48494)
+[2022-12-09 12:33:04 -0500] [48496] [INFO] Booting worker with pid: 48496
+[2022-12-09 12:33:04 -0500] [48495] [INFO] Worker exiting (pid: 48495)
+[2022-12-09 12:33:04 -0500] [48497] [INFO] Booting worker with pid: 48497
+[2022-12-09 12:33:04 -0500] [48498] [INFO] Booting worker with pid: 48498
+[2022-12-09 12:33:04 -0500] [48496] [INFO] Worker exiting (pid: 48496)
+[2022-12-09 12:33:05 -0500] [48497] [INFO] Worker exiting (pid: 48497)
+[2022-12-09 12:33:05 -0500] [48499] [INFO] Booting worker with pid: 48499
+[2022-12-09 12:33:05 -0500] [48498] [INFO] Worker exiting (pid: 48498)
+[2022-12-09 12:33:05 -0500] [48500] [INFO] Booting worker with pid: 48500
+[2022-12-09 12:33:05 -0500] [48501] [INFO] Booting worker with pid: 48501
+[2022-12-09 12:33:06 -0500] [48499] [INFO] Worker exiting (pid: 48499)
+[2022-12-09 12:33:06 -0500] [48500] [INFO] Worker exiting (pid: 48500)
+[2022-12-09 12:33:06 -0500] [48501] [INFO] Worker exiting (pid: 48501)
+[2022-12-09 12:33:06 -0500] [48502] [INFO] Booting worker with pid: 48502
+[2022-12-09 12:33:06 -0500] [48503] [INFO] Booting worker with pid: 48503
+[2022-12-09 12:33:06 -0500] [48504] [INFO] Booting worker with pid: 48504
+[2022-12-09 12:33:07 -0500] [48502] [INFO] Worker exiting (pid: 48502)
+[2022-12-09 12:33:07 -0500] [48503] [INFO] Worker exiting (pid: 48503)
+[2022-12-09 12:33:07 -0500] [48504] [INFO] Worker exiting (pid: 48504)
+[2022-12-09 12:33:07 -0500] [48505] [INFO] Booting worker with pid: 48505
+[2022-12-09 12:33:08 -0500] [48506] [INFO] Booting worker with pid: 48506
+[2022-12-09 12:33:08 -0500] [48507] [INFO] Booting worker with pid: 48507
+[2022-12-09 12:33:08 -0500] [48505] [INFO] Worker exiting (pid: 48505)
+[2022-12-09 12:33:08 -0500] [48506] [INFO] Worker exiting (pid: 48506)
+[2022-12-09 12:33:09 -0500] [48507] [INFO] Worker exiting (pid: 48507)
+[2022-12-09 12:33:09 -0500] [48508] [INFO] Booting worker with pid: 48508
+[2022-12-09 12:33:09 -0500] [48509] [INFO] Booting worker with pid: 48509
+[2022-12-09 12:33:09 -0500] [48510] [INFO] Booting worker with pid: 48510
+[2022-12-09 12:33:09 -0500] [48508] [INFO] Worker exiting (pid: 48508)
+[2022-12-09 12:33:10 -0500] [48509] [INFO] Worker exiting (pid: 48509)
+[2022-12-09 12:33:10 -0500] [48510] [INFO] Worker exiting (pid: 48510)
+[2022-12-09 12:33:10 -0500] [48511] [INFO] Booting worker with pid: 48511
+[2022-12-09 12:33:10 -0500] [48512] [INFO] Booting worker with pid: 48512
+[2022-12-09 12:33:10 -0500] [48513] [INFO] Booting worker with pid: 48513
+[2022-12-09 12:33:11 -0500] [48511] [INFO] Worker exiting (pid: 48511)
+[2022-12-09 12:33:11 -0500] [48512] [INFO] Worker exiting (pid: 48512)
+[2022-12-09 12:33:11 -0500] [48513] [INFO] Worker exiting (pid: 48513)
+[2022-12-09 12:33:11 -0500] [48522] [INFO] Booting worker with pid: 48522
+[2022-12-09 12:33:11 -0500] [48523] [INFO] Booting worker with pid: 48523
+[2022-12-09 12:33:11 -0500] [48524] [INFO] Booting worker with pid: 48524
+[2022-12-09 12:33:12 -0500] [48522] [INFO] Worker exiting (pid: 48522)
+[2022-12-09 12:33:12 -0500] [48523] [INFO] Worker exiting (pid: 48523)
+[2022-12-09 12:33:12 -0500] [48529] [INFO] Booting worker with pid: 48529
+[2022-12-09 12:33:12 -0500] [48524] [INFO] Worker exiting (pid: 48524)
+[2022-12-09 12:33:13 -0500] [48530] [INFO] Booting worker with pid: 48530
+[2022-12-09 12:33:13 -0500] [48531] [INFO] Booting worker with pid: 48531
+[2022-12-09 12:33:13 -0500] [48529] [INFO] Worker exiting (pid: 48529)
+[2022-12-09 12:33:14 -0500] [48530] [INFO] Worker exiting (pid: 48530)
+[2022-12-09 12:33:14 -0500] [48532] [INFO] Booting worker with pid: 48532
+[2022-12-09 12:33:14 -0500] [48531] [INFO] Worker exiting (pid: 48531)
+[2022-12-09 12:33:14 -0500] [48533] [INFO] Booting worker with pid: 48533
+[2022-12-09 12:33:14 -0500] [48534] [INFO] Booting worker with pid: 48534
+[2022-12-09 12:33:15 -0500] [48532] [INFO] Worker exiting (pid: 48532)
+[2022-12-09 12:33:15 -0500] [48533] [INFO] Worker exiting (pid: 48533)
+[2022-12-09 12:33:15 -0500] [48535] [INFO] Booting worker with pid: 48535
+[2022-12-09 12:33:15 -0500] [48534] [INFO] Worker exiting (pid: 48534)
+[2022-12-09 12:33:15 -0500] [48536] [INFO] Booting worker with pid: 48536
+[2022-12-09 12:33:16 -0500] [48537] [INFO] Booting worker with pid: 48537
+[2022-12-09 12:33:16 -0500] [48535] [INFO] Worker exiting (pid: 48535)
+[2022-12-09 12:33:16 -0500] [48536] [INFO] Worker exiting (pid: 48536)
+[2022-12-09 12:33:16 -0500] [48538] [INFO] Booting worker with pid: 48538
+[2022-12-09 12:33:16 -0500] [48537] [INFO] Worker exiting (pid: 48537)
+[2022-12-09 12:33:17 -0500] [48539] [INFO] Booting worker with pid: 48539
+[2022-12-09 12:33:17 -0500] [48540] [INFO] Booting worker with pid: 48540
+[2022-12-09 12:33:17 -0500] [48538] [INFO] Worker exiting (pid: 48538)
+[2022-12-09 12:33:18 -0500] [48539] [INFO] Worker exiting (pid: 48539)
+[2022-12-09 12:33:18 -0500] [48541] [INFO] Booting worker with pid: 48541
+[2022-12-09 12:33:18 -0500] [48540] [INFO] Worker exiting (pid: 48540)
+[2022-12-09 12:33:18 -0500] [48542] [INFO] Booting worker with pid: 48542
+[2022-12-09 12:33:18 -0500] [48543] [INFO] Booting worker with pid: 48543
+[2022-12-09 12:33:19 -0500] [48541] [INFO] Worker exiting (pid: 48541)
+[2022-12-09 12:33:19 -0500] [48542] [INFO] Worker exiting (pid: 48542)
+[2022-12-09 12:33:19 -0500] [48543] [INFO] Worker exiting (pid: 48543)
+[2022-12-09 12:33:19 -0500] [48544] [INFO] Booting worker with pid: 48544
+[2022-12-09 12:33:19 -0500] [48545] [INFO] Booting worker with pid: 48545
+[2022-12-09 12:33:19 -0500] [48546] [INFO] Booting worker with pid: 48546
+[2022-12-09 12:33:20 -0500] [48544] [INFO] Worker exiting (pid: 48544)
+[2022-12-09 12:33:20 -0500] [48545] [INFO] Worker exiting (pid: 48545)
+[2022-12-09 12:33:20 -0500] [48546] [INFO] Worker exiting (pid: 48546)
+[2022-12-09 12:33:20 -0500] [48547] [INFO] Booting worker with pid: 48547
+[2022-12-09 12:33:20 -0500] [48548] [INFO] Booting worker with pid: 48548
+[2022-12-09 12:33:21 -0500] [48549] [INFO] Booting worker with pid: 48549
+[2022-12-09 12:33:21 -0500] [48547] [INFO] Worker exiting (pid: 48547)
+[2022-12-09 12:33:21 -0500] [48548] [INFO] Worker exiting (pid: 48548)
+[2022-12-09 12:33:21 -0500] [48549] [INFO] Worker exiting (pid: 48549)
+[2022-12-09 12:33:22 -0500] [48552] [INFO] Booting worker with pid: 48552
+[2022-12-09 12:33:22 -0500] [48553] [INFO] Booting worker with pid: 48553
+[2022-12-09 12:33:22 -0500] [48554] [INFO] Booting worker with pid: 48554
+[2022-12-09 12:33:22 -0500] [48552] [INFO] Worker exiting (pid: 48552)
+[2022-12-09 12:33:23 -0500] [48553] [INFO] Worker exiting (pid: 48553)
+[2022-12-09 12:33:23 -0500] [48554] [INFO] Worker exiting (pid: 48554)
+[2022-12-09 12:33:23 -0500] [48555] [INFO] Booting worker with pid: 48555
+[2022-12-09 12:33:23 -0500] [48556] [INFO] Booting worker with pid: 48556
+[2022-12-09 12:33:23 -0500] [48557] [INFO] Booting worker with pid: 48557
+[2022-12-09 12:33:24 -0500] [48555] [INFO] Worker exiting (pid: 48555)
+[2022-12-09 12:33:24 -0500] [48556] [INFO] Worker exiting (pid: 48556)
+[2022-12-09 12:33:24 -0500] [48557] [INFO] Worker exiting (pid: 48557)
+[2022-12-09 12:33:24 -0500] [48558] [INFO] Booting worker with pid: 48558
+[2022-12-09 12:33:24 -0500] [48559] [INFO] Booting worker with pid: 48559
+[2022-12-09 12:33:24 -0500] [48560] [INFO] Booting worker with pid: 48560
+[2022-12-09 12:33:25 -0500] [48558] [INFO] Worker exiting (pid: 48558)
+[2022-12-09 12:33:25 -0500] [48559] [INFO] Worker exiting (pid: 48559)
+[2022-12-09 12:33:25 -0500] [48560] [INFO] Worker exiting (pid: 48560)
+[2022-12-09 12:33:25 -0500] [48561] [INFO] Booting worker with pid: 48561
+[2022-12-09 12:33:25 -0500] [48562] [INFO] Booting worker with pid: 48562
+[2022-12-09 12:33:26 -0500] [48563] [INFO] Booting worker with pid: 48563
+[2022-12-09 12:33:26 -0500] [48561] [INFO] Worker exiting (pid: 48561)
+[2022-12-09 12:33:26 -0500] [48562] [INFO] Worker exiting (pid: 48562)
+[2022-12-09 12:33:26 -0500] [48563] [INFO] Worker exiting (pid: 48563)
+[2022-12-09 12:33:27 -0500] [48564] [INFO] Booting worker with pid: 48564
+[2022-12-09 12:33:27 -0500] [48565] [INFO] Booting worker with pid: 48565
+[2022-12-09 12:33:27 -0500] [48566] [INFO] Booting worker with pid: 48566
+[2022-12-09 12:33:27 -0500] [48564] [INFO] Worker exiting (pid: 48564)
+[2022-12-09 12:33:27 -0500] [48565] [INFO] Worker exiting (pid: 48565)
+[2022-12-09 12:33:28 -0500] [48566] [INFO] Worker exiting (pid: 48566)
+[2022-12-09 12:33:28 -0500] [48567] [INFO] Booting worker with pid: 48567
+[2022-12-09 12:33:28 -0500] [48568] [INFO] Booting worker with pid: 48568
+[2022-12-09 12:33:28 -0500] [48569] [INFO] Booting worker with pid: 48569
+[2022-12-09 12:33:29 -0500] [48567] [INFO] Worker exiting (pid: 48567)
+[2022-12-09 12:33:29 -0500] [48568] [INFO] Worker exiting (pid: 48568)
+[2022-12-09 12:33:29 -0500] [48569] [INFO] Worker exiting (pid: 48569)
+[2022-12-09 12:33:29 -0500] [48570] [INFO] Booting worker with pid: 48570
+[2022-12-09 12:33:29 -0500] [48571] [INFO] Booting worker with pid: 48571
+[2022-12-09 12:33:29 -0500] [48572] [INFO] Booting worker with pid: 48572
+[2022-12-09 12:33:30 -0500] [48570] [INFO] Worker exiting (pid: 48570)
+[2022-12-09 12:33:30 -0500] [48571] [INFO] Worker exiting (pid: 48571)
+[2022-12-09 12:33:30 -0500] [48572] [INFO] Worker exiting (pid: 48572)
+[2022-12-09 12:33:30 -0500] [48573] [INFO] Booting worker with pid: 48573
+[2022-12-09 12:33:30 -0500] [48574] [INFO] Booting worker with pid: 48574
+[2022-12-09 12:33:30 -0500] [48575] [INFO] Booting worker with pid: 48575
+[2022-12-09 12:33:31 -0500] [48573] [INFO] Worker exiting (pid: 48573)
+[2022-12-09 12:33:31 -0500] [48574] [INFO] Worker exiting (pid: 48574)
+[2022-12-09 12:33:31 -0500] [48575] [INFO] Worker exiting (pid: 48575)
+[2022-12-09 12:33:31 -0500] [48576] [INFO] Booting worker with pid: 48576
+[2022-12-09 12:33:32 -0500] [48577] [INFO] Booting worker with pid: 48577
+[2022-12-09 12:33:32 -0500] [48578] [INFO] Booting worker with pid: 48578
+[2022-12-09 12:33:32 -0500] [48576] [INFO] Worker exiting (pid: 48576)
+[2022-12-09 12:33:32 -0500] [48577] [INFO] Worker exiting (pid: 48577)
+[2022-12-09 12:33:33 -0500] [48578] [INFO] Worker exiting (pid: 48578)
+[2022-12-09 12:33:33 -0500] [48579] [INFO] Booting worker with pid: 48579
+[2022-12-09 12:33:33 -0500] [48580] [INFO] Booting worker with pid: 48580
+[2022-12-09 12:33:33 -0500] [48581] [INFO] Booting worker with pid: 48581
+[2022-12-09 12:33:33 -0500] [48579] [INFO] Worker exiting (pid: 48579)
+[2022-12-09 12:33:34 -0500] [48580] [INFO] Worker exiting (pid: 48580)
+[2022-12-09 12:33:34 -0500] [48581] [INFO] Worker exiting (pid: 48581)
+[2022-12-09 12:33:34 -0500] [48582] [INFO] Booting worker with pid: 48582
+[2022-12-09 12:33:34 -0500] [48583] [INFO] Booting worker with pid: 48583
+[2022-12-09 12:33:34 -0500] [48584] [INFO] Booting worker with pid: 48584
+[2022-12-09 12:33:35 -0500] [48582] [INFO] Worker exiting (pid: 48582)
+[2022-12-09 12:33:35 -0500] [48583] [INFO] Worker exiting (pid: 48583)
+[2022-12-09 12:33:35 -0500] [48584] [INFO] Worker exiting (pid: 48584)
+[2022-12-09 12:33:35 -0500] [48585] [INFO] Booting worker with pid: 48585
+[2022-12-09 12:33:35 -0500] [48587] [INFO] Booting worker with pid: 48587
+[2022-12-09 12:33:35 -0500] [48588] [INFO] Booting worker with pid: 48588
+[2022-12-09 12:33:36 -0500] [48585] [INFO] Worker exiting (pid: 48585)
+[2022-12-09 12:33:36 -0500] [48587] [INFO] Worker exiting (pid: 48587)
+[2022-12-09 12:33:36 -0500] [48588] [INFO] Worker exiting (pid: 48588)
+[2022-12-09 12:33:36 -0500] [48589] [INFO] Booting worker with pid: 48589
+[2022-12-09 12:33:36 -0500] [48590] [INFO] Booting worker with pid: 48590
+[2022-12-09 12:33:37 -0500] [48591] [INFO] Booting worker with pid: 48591
+[2022-12-09 12:33:37 -0500] [48589] [INFO] Worker exiting (pid: 48589)
+[2022-12-09 12:33:37 -0500] [48590] [INFO] Worker exiting (pid: 48590)
+[2022-12-09 12:33:37 -0500] [48591] [INFO] Worker exiting (pid: 48591)
+[2022-12-09 12:33:37 -0500] [48592] [INFO] Booting worker with pid: 48592
+[2022-12-09 12:33:38 -0500] [48593] [INFO] Booting worker with pid: 48593
+[2022-12-09 12:33:38 -0500] [48594] [INFO] Booting worker with pid: 48594
+[2022-12-09 12:33:38 -0500] [48592] [INFO] Worker exiting (pid: 48592)
+[2022-12-09 12:33:38 -0500] [48593] [INFO] Worker exiting (pid: 48593)
+[2022-12-09 12:33:39 -0500] [48594] [INFO] Worker exiting (pid: 48594)
+[2022-12-09 12:33:39 -0500] [48595] [INFO] Booting worker with pid: 48595
+[2022-12-09 12:33:39 -0500] [48596] [INFO] Booting worker with pid: 48596
+[2022-12-09 12:33:39 -0500] [48597] [INFO] Booting worker with pid: 48597
+[2022-12-09 12:33:40 -0500] [48595] [INFO] Worker exiting (pid: 48595)
+[2022-12-09 12:33:40 -0500] [48596] [INFO] Worker exiting (pid: 48596)
+[2022-12-09 12:33:40 -0500] [48597] [INFO] Worker exiting (pid: 48597)
+[2022-12-09 12:33:40 -0500] [48598] [INFO] Booting worker with pid: 48598
+[2022-12-09 12:33:40 -0500] [48599] [INFO] Booting worker with pid: 48599
+[2022-12-09 12:33:40 -0500] [48600] [INFO] Booting worker with pid: 48600
+[2022-12-09 12:33:41 -0500] [48598] [INFO] Worker exiting (pid: 48598)
+[2022-12-09 12:33:41 -0500] [48599] [INFO] Worker exiting (pid: 48599)
+[2022-12-09 12:33:41 -0500] [48600] [INFO] Worker exiting (pid: 48600)
+[2022-12-09 12:33:41 -0500] [48601] [INFO] Booting worker with pid: 48601
+[2022-12-09 12:33:41 -0500] [48602] [INFO] Booting worker with pid: 48602
+[2022-12-09 12:33:42 -0500] [48603] [INFO] Booting worker with pid: 48603
+[2022-12-09 12:33:42 -0500] [48601] [INFO] Worker exiting (pid: 48601)
+[2022-12-09 12:33:42 -0500] [48602] [INFO] Worker exiting (pid: 48602)
+[2022-12-09 12:33:42 -0500] [48603] [INFO] Worker exiting (pid: 48603)
+[2022-12-09 12:33:42 -0500] [48604] [INFO] Booting worker with pid: 48604
+[2022-12-09 12:33:42 -0500] [48605] [INFO] Booting worker with pid: 48605
+[2022-12-09 12:33:43 -0500] [48606] [INFO] Booting worker with pid: 48606
+[2022-12-09 12:33:43 -0500] [48604] [INFO] Worker exiting (pid: 48604)
+[2022-12-09 12:33:43 -0500] [48605] [INFO] Worker exiting (pid: 48605)
+[2022-12-09 12:33:44 -0500] [48606] [INFO] Worker exiting (pid: 48606)
+[2022-12-09 12:33:44 -0500] [48607] [INFO] Booting worker with pid: 48607
+[2022-12-09 12:33:44 -0500] [48608] [INFO] Booting worker with pid: 48608
+[2022-12-09 12:33:44 -0500] [48609] [INFO] Booting worker with pid: 48609
+[2022-12-09 12:33:44 -0500] [48607] [INFO] Worker exiting (pid: 48607)
+[2022-12-09 12:33:45 -0500] [48608] [INFO] Worker exiting (pid: 48608)
+[2022-12-09 12:33:45 -0500] [48609] [INFO] Worker exiting (pid: 48609)
+[2022-12-09 12:33:45 -0500] [48611] [INFO] Booting worker with pid: 48611
+[2022-12-09 12:33:45 -0500] [48612] [INFO] Booting worker with pid: 48612
+[2022-12-09 12:33:45 -0500] [48613] [INFO] Booting worker with pid: 48613
+[2022-12-09 12:33:46 -0500] [48611] [INFO] Worker exiting (pid: 48611)
+[2022-12-09 12:33:46 -0500] [48612] [INFO] Worker exiting (pid: 48612)
+[2022-12-09 12:33:46 -0500] [48615] [INFO] Booting worker with pid: 48615
+[2022-12-09 12:33:46 -0500] [48613] [INFO] Worker exiting (pid: 48613)
+[2022-12-09 12:33:46 -0500] [48617] [INFO] Booting worker with pid: 48617
+[2022-12-09 12:33:46 -0500] [48618] [INFO] Booting worker with pid: 48618
+[2022-12-09 12:33:47 -0500] [48615] [INFO] Worker exiting (pid: 48615)
+[2022-12-09 12:33:47 -0500] [48617] [INFO] Worker exiting (pid: 48617)
+[2022-12-09 12:33:47 -0500] [48619] [INFO] Booting worker with pid: 48619
+[2022-12-09 12:33:47 -0500] [48618] [INFO] Worker exiting (pid: 48618)
+[2022-12-09 12:33:47 -0500] [48620] [INFO] Booting worker with pid: 48620
+[2022-12-09 12:33:48 -0500] [48621] [INFO] Booting worker with pid: 48621
+[2022-12-09 12:33:48 -0500] [48619] [INFO] Worker exiting (pid: 48619)
+[2022-12-09 12:33:48 -0500] [48620] [INFO] Worker exiting (pid: 48620)
+[2022-12-09 12:33:49 -0500] [48622] [INFO] Booting worker with pid: 48622
+[2022-12-09 12:33:49 -0500] [48621] [INFO] Worker exiting (pid: 48621)
+[2022-12-09 12:33:49 -0500] [48623] [INFO] Booting worker with pid: 48623
+[2022-12-09 12:33:49 -0500] [48624] [INFO] Booting worker with pid: 48624
+[2022-12-09 12:33:49 -0500] [48622] [INFO] Worker exiting (pid: 48622)
+[2022-12-09 12:33:49 -0500] [48623] [INFO] Worker exiting (pid: 48623)
+[2022-12-09 12:33:50 -0500] [48625] [INFO] Booting worker with pid: 48625
+[2022-12-09 12:33:50 -0500] [48624] [INFO] Worker exiting (pid: 48624)
+[2022-12-09 12:33:50 -0500] [48626] [INFO] Booting worker with pid: 48626
+[2022-12-09 12:33:50 -0500] [48627] [INFO] Booting worker with pid: 48627
+[2022-12-09 12:33:51 -0500] [48625] [INFO] Worker exiting (pid: 48625)
+[2022-12-09 12:33:51 -0500] [48626] [INFO] Worker exiting (pid: 48626)
+[2022-12-09 12:33:51 -0500] [48628] [INFO] Booting worker with pid: 48628
+[2022-12-09 12:33:51 -0500] [48627] [INFO] Worker exiting (pid: 48627)
+[2022-12-09 12:33:51 -0500] [48629] [INFO] Booting worker with pid: 48629
+[2022-12-09 12:33:51 -0500] [48630] [INFO] Booting worker with pid: 48630
+[2022-12-09 12:33:52 -0500] [48628] [INFO] Worker exiting (pid: 48628)
+[2022-12-09 12:33:52 -0500] [48629] [INFO] Worker exiting (pid: 48629)
+[2022-12-09 12:33:52 -0500] [48631] [INFO] Booting worker with pid: 48631
+[2022-12-09 12:33:52 -0500] [48630] [INFO] Worker exiting (pid: 48630)
+[2022-12-09 12:33:52 -0500] [48632] [INFO] Booting worker with pid: 48632
+[2022-12-09 12:33:53 -0500] [48633] [INFO] Booting worker with pid: 48633
+[2022-12-09 12:33:53 -0500] [48631] [INFO] Worker exiting (pid: 48631)
+[2022-12-09 12:33:53 -0500] [48632] [INFO] Worker exiting (pid: 48632)
+[2022-12-09 12:33:53 -0500] [48634] [INFO] Booting worker with pid: 48634
+[2022-12-09 12:33:54 -0500] [48633] [INFO] Worker exiting (pid: 48633)
+[2022-12-09 12:33:54 -0500] [48635] [INFO] Booting worker with pid: 48635
+[2022-12-09 12:33:54 -0500] [48636] [INFO] Booting worker with pid: 48636
+[2022-12-09 12:33:54 -0500] [48634] [INFO] Worker exiting (pid: 48634)
+[2022-12-09 12:33:54 -0500] [48635] [INFO] Worker exiting (pid: 48635)
+[2022-12-09 12:33:55 -0500] [48637] [INFO] Booting worker with pid: 48637
+[2022-12-09 12:33:55 -0500] [48636] [INFO] Worker exiting (pid: 48636)
+[2022-12-09 12:33:55 -0500] [48638] [INFO] Booting worker with pid: 48638
+[2022-12-09 12:33:55 -0500] [48639] [INFO] Booting worker with pid: 48639
+[2022-12-09 12:33:56 -0500] [48637] [INFO] Worker exiting (pid: 48637)
+[2022-12-09 12:33:56 -0500] [48638] [INFO] Worker exiting (pid: 48638)
+[2022-12-09 12:33:56 -0500] [48640] [INFO] Booting worker with pid: 48640
+[2022-12-09 12:33:56 -0500] [48641] [INFO] Booting worker with pid: 48641
+[2022-12-09 12:33:56 -0500] [48639] [INFO] Worker exiting (pid: 48639)
+[2022-12-09 12:33:56 -0500] [48642] [INFO] Booting worker with pid: 48642
+[2022-12-09 12:33:57 -0500] [48640] [INFO] Worker exiting (pid: 48640)
+[2022-12-09 12:33:57 -0500] [48641] [INFO] Worker exiting (pid: 48641)
+[2022-12-09 12:33:57 -0500] [48643] [INFO] Booting worker with pid: 48643
+[2022-12-09 12:33:57 -0500] [48644] [INFO] Booting worker with pid: 48644
+[2022-12-09 12:33:57 -0500] [48642] [INFO] Worker exiting (pid: 48642)
+[2022-12-09 12:33:58 -0500] [48645] [INFO] Booting worker with pid: 48645
+[2022-12-09 12:33:58 -0500] [48643] [INFO] Worker exiting (pid: 48643)
+[2022-12-09 12:33:58 -0500] [48644] [INFO] Worker exiting (pid: 48644)
+[2022-12-09 12:33:58 -0500] [48646] [INFO] Booting worker with pid: 48646
+[2022-12-09 12:33:58 -0500] [48647] [INFO] Booting worker with pid: 48647
+[2022-12-09 12:33:58 -0500] [48645] [INFO] Worker exiting (pid: 48645)
+[2022-12-09 12:33:59 -0500] [48648] [INFO] Booting worker with pid: 48648
+[2022-12-09 12:33:59 -0500] [48646] [INFO] Worker exiting (pid: 48646)
+[2022-12-09 12:33:59 -0500] [48647] [INFO] Worker exiting (pid: 48647)
+[2022-12-09 12:34:00 -0500] [48649] [INFO] Booting worker with pid: 48649
+[2022-12-09 12:34:00 -0500] [48650] [INFO] Booting worker with pid: 48650
+[2022-12-09 12:34:00 -0500] [48648] [INFO] Worker exiting (pid: 48648)
+[2022-12-09 12:34:00 -0500] [48651] [INFO] Booting worker with pid: 48651
+[2022-12-09 12:34:00 -0500] [48649] [INFO] Worker exiting (pid: 48649)
+[2022-12-09 12:34:01 -0500] [48650] [INFO] Worker exiting (pid: 48650)
+[2022-12-09 12:34:01 -0500] [48652] [INFO] Booting worker with pid: 48652
+[2022-12-09 12:34:01 -0500] [48653] [INFO] Booting worker with pid: 48653
+[2022-12-09 12:34:01 -0500] [48651] [INFO] Worker exiting (pid: 48651)
+[2022-12-09 12:34:01 -0500] [48654] [INFO] Booting worker with pid: 48654
+[2022-12-09 12:34:02 -0500] [48652] [INFO] Worker exiting (pid: 48652)
+[2022-12-09 12:34:02 -0500] [48653] [INFO] Worker exiting (pid: 48653)
+[2022-12-09 12:34:02 -0500] [48655] [INFO] Booting worker with pid: 48655
+[2022-12-09 12:34:02 -0500] [48656] [INFO] Booting worker with pid: 48656
+[2022-12-09 12:34:02 -0500] [48654] [INFO] Worker exiting (pid: 48654)
+[2022-12-09 12:34:03 -0500] [48657] [INFO] Booting worker with pid: 48657
+[2022-12-09 12:34:03 -0500] [48655] [INFO] Worker exiting (pid: 48655)
+[2022-12-09 12:34:03 -0500] [48656] [INFO] Worker exiting (pid: 48656)
+[2022-12-09 12:34:03 -0500] [48658] [INFO] Booting worker with pid: 48658
+[2022-12-09 12:34:03 -0500] [48659] [INFO] Booting worker with pid: 48659
+[2022-12-09 12:34:03 -0500] [48657] [INFO] Worker exiting (pid: 48657)
+[2022-12-09 12:34:04 -0500] [48660] [INFO] Booting worker with pid: 48660
+[2022-12-09 12:34:04 -0500] [48658] [INFO] Worker exiting (pid: 48658)
+[2022-12-09 12:34:04 -0500] [48659] [INFO] Worker exiting (pid: 48659)
+[2022-12-09 12:34:04 -0500] [48661] [INFO] Booting worker with pid: 48661
+[2022-12-09 12:34:05 -0500] [48662] [INFO] Booting worker with pid: 48662
+[2022-12-09 12:34:05 -0500] [48660] [INFO] Worker exiting (pid: 48660)
+[2022-12-09 12:34:05 -0500] [48663] [INFO] Booting worker with pid: 48663
+[2022-12-09 12:34:05 -0500] [48661] [INFO] Worker exiting (pid: 48661)
+[2022-12-09 12:34:05 -0500] [48662] [INFO] Worker exiting (pid: 48662)
+[2022-12-09 12:34:06 -0500] [48664] [INFO] Booting worker with pid: 48664
+[2022-12-09 12:34:06 -0500] [48665] [INFO] Booting worker with pid: 48665
+[2022-12-09 12:34:06 -0500] [48663] [INFO] Worker exiting (pid: 48663)
+[2022-12-09 12:34:06 -0500] [48666] [INFO] Booting worker with pid: 48666
+[2022-12-09 12:34:07 -0500] [48664] [INFO] Worker exiting (pid: 48664)
+[2022-12-09 12:34:07 -0500] [48665] [INFO] Worker exiting (pid: 48665)
+[2022-12-09 12:34:07 -0500] [48667] [INFO] Booting worker with pid: 48667
+[2022-12-09 12:34:07 -0500] [48668] [INFO] Booting worker with pid: 48668
+[2022-12-09 12:34:07 -0500] [48666] [INFO] Worker exiting (pid: 48666)
+[2022-12-09 12:34:07 -0500] [48669] [INFO] Booting worker with pid: 48669
+[2022-12-09 12:34:08 -0500] [48667] [INFO] Worker exiting (pid: 48667)
+[2022-12-09 12:34:08 -0500] [48668] [INFO] Worker exiting (pid: 48668)
+[2022-12-09 12:34:08 -0500] [48670] [INFO] Booting worker with pid: 48670
+[2022-12-09 12:34:08 -0500] [48671] [INFO] Booting worker with pid: 48671
+[2022-12-09 12:34:08 -0500] [48669] [INFO] Worker exiting (pid: 48669)
+[2022-12-09 12:34:09 -0500] [48672] [INFO] Booting worker with pid: 48672
+[2022-12-09 12:34:09 -0500] [48670] [INFO] Worker exiting (pid: 48670)
+[2022-12-09 12:34:09 -0500] [48671] [INFO] Worker exiting (pid: 48671)
+[2022-12-09 12:34:09 -0500] [48673] [INFO] Booting worker with pid: 48673
+[2022-12-09 12:34:09 -0500] [48674] [INFO] Booting worker with pid: 48674
+[2022-12-09 12:34:10 -0500] [48672] [INFO] Worker exiting (pid: 48672)
+[2022-12-09 12:34:10 -0500] [48675] [INFO] Booting worker with pid: 48675
+[2022-12-09 12:34:10 -0500] [48673] [INFO] Worker exiting (pid: 48673)
+[2022-12-09 12:34:10 -0500] [48674] [INFO] Worker exiting (pid: 48674)
+[2022-12-09 12:34:11 -0500] [48676] [INFO] Booting worker with pid: 48676
+[2022-12-09 12:34:11 -0500] [48677] [INFO] Booting worker with pid: 48677
+[2022-12-09 12:34:11 -0500] [48675] [INFO] Worker exiting (pid: 48675)
+[2022-12-09 12:34:11 -0500] [48678] [INFO] Booting worker with pid: 48678
+[2022-12-09 12:34:11 -0500] [48676] [INFO] Worker exiting (pid: 48676)
+[2022-12-09 12:34:12 -0500] [48677] [INFO] Worker exiting (pid: 48677)
+[2022-12-09 12:34:12 -0500] [48679] [INFO] Booting worker with pid: 48679
+[2022-12-09 12:34:12 -0500] [48680] [INFO] Booting worker with pid: 48680
+[2022-12-09 12:34:12 -0500] [48678] [INFO] Worker exiting (pid: 48678)
+[2022-12-09 12:34:12 -0500] [48681] [INFO] Booting worker with pid: 48681
+[2022-12-09 12:34:13 -0500] [48679] [INFO] Worker exiting (pid: 48679)
+[2022-12-09 12:34:13 -0500] [48680] [INFO] Worker exiting (pid: 48680)
+[2022-12-09 12:34:13 -0500] [48682] [INFO] Booting worker with pid: 48682
+[2022-12-09 12:34:13 -0500] [48683] [INFO] Booting worker with pid: 48683
+[2022-12-09 12:34:13 -0500] [48681] [INFO] Worker exiting (pid: 48681)
+[2022-12-09 12:34:14 -0500] [48684] [INFO] Booting worker with pid: 48684
+[2022-12-09 12:34:14 -0500] [48682] [INFO] Worker exiting (pid: 48682)
+[2022-12-09 12:34:14 -0500] [48683] [INFO] Worker exiting (pid: 48683)
+[2022-12-09 12:34:14 -0500] [48685] [INFO] Booting worker with pid: 48685
+[2022-12-09 12:34:14 -0500] [48686] [INFO] Booting worker with pid: 48686
+[2022-12-09 12:34:14 -0500] [48684] [INFO] Worker exiting (pid: 48684)
+[2022-12-09 12:34:15 -0500] [48687] [INFO] Booting worker with pid: 48687
+[2022-12-09 12:34:15 -0500] [48685] [INFO] Worker exiting (pid: 48685)
+[2022-12-09 12:34:15 -0500] [48686] [INFO] Worker exiting (pid: 48686)
+[2022-12-09 12:34:15 -0500] [48688] [INFO] Booting worker with pid: 48688
+[2022-12-09 12:34:16 -0500] [48689] [INFO] Booting worker with pid: 48689
+[2022-12-09 12:34:16 -0500] [48687] [INFO] Worker exiting (pid: 48687)
+[2022-12-09 12:34:16 -0500] [48690] [INFO] Booting worker with pid: 48690
+[2022-12-09 12:34:16 -0500] [48688] [INFO] Worker exiting (pid: 48688)
+[2022-12-09 12:34:16 -0500] [48689] [INFO] Worker exiting (pid: 48689)
+[2022-12-09 12:34:17 -0500] [48691] [INFO] Booting worker with pid: 48691
+[2022-12-09 12:34:17 -0500] [48692] [INFO] Booting worker with pid: 48692
+[2022-12-09 12:34:17 -0500] [48690] [INFO] Worker exiting (pid: 48690)
+[2022-12-09 12:34:17 -0500] [48693] [INFO] Booting worker with pid: 48693
+[2022-12-09 12:34:18 -0500] [48691] [INFO] Worker exiting (pid: 48691)
+[2022-12-09 12:34:18 -0500] [48692] [INFO] Worker exiting (pid: 48692)
+[2022-12-09 12:34:18 -0500] [48694] [INFO] Booting worker with pid: 48694
+[2022-12-09 12:34:18 -0500] [48695] [INFO] Booting worker with pid: 48695
+[2022-12-09 12:34:18 -0500] [48693] [INFO] Worker exiting (pid: 48693)
+[2022-12-09 12:34:19 -0500] [48696] [INFO] Booting worker with pid: 48696
+[2022-12-09 12:34:19 -0500] [48694] [INFO] Worker exiting (pid: 48694)
+[2022-12-09 12:34:19 -0500] [48695] [INFO] Worker exiting (pid: 48695)
+[2022-12-09 12:34:19 -0500] [48697] [INFO] Booting worker with pid: 48697
+[2022-12-09 12:34:19 -0500] [48698] [INFO] Booting worker with pid: 48698
+[2022-12-09 12:34:19 -0500] [48696] [INFO] Worker exiting (pid: 48696)
+[2022-12-09 12:34:20 -0500] [48699] [INFO] Booting worker with pid: 48699
+[2022-12-09 12:34:20 -0500] [48697] [INFO] Worker exiting (pid: 48697)
+[2022-12-09 12:34:20 -0500] [48698] [INFO] Worker exiting (pid: 48698)
+[2022-12-09 12:34:20 -0500] [48700] [INFO] Booting worker with pid: 48700
+[2022-12-09 12:34:21 -0500] [48701] [INFO] Booting worker with pid: 48701
+[2022-12-09 12:34:21 -0500] [48699] [INFO] Worker exiting (pid: 48699)
+[2022-12-09 12:34:21 -0500] [48702] [INFO] Booting worker with pid: 48702
+[2022-12-09 12:34:21 -0500] [48700] [INFO] Worker exiting (pid: 48700)
+[2022-12-09 12:34:21 -0500] [48701] [INFO] Worker exiting (pid: 48701)
+[2022-12-09 12:34:22 -0500] [48703] [INFO] Booting worker with pid: 48703
+[2022-12-09 12:34:22 -0500] [48704] [INFO] Booting worker with pid: 48704
+[2022-12-09 12:34:22 -0500] [48702] [INFO] Worker exiting (pid: 48702)
+[2022-12-09 12:34:22 -0500] [48705] [INFO] Booting worker with pid: 48705
+[2022-12-09 12:34:22 -0500] [48703] [INFO] Worker exiting (pid: 48703)
+[2022-12-09 12:34:23 -0500] [48704] [INFO] Worker exiting (pid: 48704)
+[2022-12-09 12:34:23 -0500] [48706] [INFO] Booting worker with pid: 48706
+[2022-12-09 12:34:23 -0500] [48707] [INFO] Booting worker with pid: 48707
+[2022-12-09 12:34:23 -0500] [48705] [INFO] Worker exiting (pid: 48705)
+[2022-12-09 12:34:23 -0500] [48708] [INFO] Booting worker with pid: 48708
+[2022-12-09 12:34:24 -0500] [48706] [INFO] Worker exiting (pid: 48706)
+[2022-12-09 12:34:24 -0500] [48707] [INFO] Worker exiting (pid: 48707)
+[2022-12-09 12:34:24 -0500] [48709] [INFO] Booting worker with pid: 48709
+[2022-12-09 12:34:24 -0500] [48710] [INFO] Booting worker with pid: 48710
+[2022-12-09 12:34:24 -0500] [48708] [INFO] Worker exiting (pid: 48708)
+[2022-12-09 12:34:25 -0500] [48711] [INFO] Booting worker with pid: 48711
+[2022-12-09 12:34:25 -0500] [48709] [INFO] Worker exiting (pid: 48709)
+[2022-12-09 12:34:25 -0500] [48710] [INFO] Worker exiting (pid: 48710)
+[2022-12-09 12:34:25 -0500] [48712] [INFO] Booting worker with pid: 48712
+[2022-12-09 12:34:25 -0500] [48713] [INFO] Booting worker with pid: 48713
+[2022-12-09 12:34:26 -0500] [48711] [INFO] Worker exiting (pid: 48711)
+[2022-12-09 12:34:26 -0500] [48714] [INFO] Booting worker with pid: 48714
+[2022-12-09 12:34:26 -0500] [48712] [INFO] Worker exiting (pid: 48712)
+[2022-12-09 12:34:26 -0500] [48713] [INFO] Worker exiting (pid: 48713)
+[2022-12-09 12:34:26 -0500] [48715] [INFO] Booting worker with pid: 48715
+[2022-12-09 12:34:27 -0500] [48716] [INFO] Booting worker with pid: 48716
+[2022-12-09 12:34:27 -0500] [48714] [INFO] Worker exiting (pid: 48714)
+[2022-12-09 12:34:27 -0500] [48717] [INFO] Booting worker with pid: 48717
+[2022-12-09 12:34:27 -0500] [48715] [INFO] Worker exiting (pid: 48715)
+[2022-12-09 12:34:28 -0500] [48716] [INFO] Worker exiting (pid: 48716)
+[2022-12-09 12:34:28 -0500] [48718] [INFO] Booting worker with pid: 48718
+[2022-12-09 12:34:28 -0500] [48719] [INFO] Booting worker with pid: 48719
+[2022-12-09 12:34:28 -0500] [48717] [INFO] Worker exiting (pid: 48717)
+[2022-12-09 12:34:28 -0500] [48720] [INFO] Booting worker with pid: 48720
+[2022-12-09 12:34:29 -0500] [48718] [INFO] Worker exiting (pid: 48718)
+[2022-12-09 12:34:29 -0500] [48719] [INFO] Worker exiting (pid: 48719)
+[2022-12-09 12:34:29 -0500] [48721] [INFO] Booting worker with pid: 48721
+[2022-12-09 12:34:29 -0500] [48722] [INFO] Booting worker with pid: 48722
+[2022-12-09 12:34:29 -0500] [48720] [INFO] Worker exiting (pid: 48720)
+[2022-12-09 12:34:30 -0500] [48723] [INFO] Booting worker with pid: 48723
+[2022-12-09 12:34:30 -0500] [48721] [INFO] Worker exiting (pid: 48721)
+[2022-12-09 12:34:30 -0500] [48722] [INFO] Worker exiting (pid: 48722)
+[2022-12-09 12:34:30 -0500] [48724] [INFO] Booting worker with pid: 48724
+[2022-12-09 12:34:30 -0500] [48725] [INFO] Booting worker with pid: 48725
+[2022-12-09 12:34:30 -0500] [48723] [INFO] Worker exiting (pid: 48723)
+[2022-12-09 12:34:31 -0500] [48726] [INFO] Booting worker with pid: 48726
+[2022-12-09 12:34:31 -0500] [48724] [INFO] Worker exiting (pid: 48724)
+[2022-12-09 12:34:31 -0500] [48725] [INFO] Worker exiting (pid: 48725)
+[2022-12-09 12:34:31 -0500] [48736] [INFO] Booting worker with pid: 48736
+[2022-12-09 12:34:32 -0500] [48742] [INFO] Booting worker with pid: 48742
+[2022-12-09 12:34:32 -0500] [48726] [INFO] Worker exiting (pid: 48726)
+[2022-12-09 12:34:32 -0500] [48743] [INFO] Booting worker with pid: 48743
+[2022-12-09 12:34:32 -0500] [48736] [INFO] Worker exiting (pid: 48736)
+[2022-12-09 12:34:33 -0500] [48742] [INFO] Worker exiting (pid: 48742)
+[2022-12-09 12:34:33 -0500] [48744] [INFO] Booting worker with pid: 48744
+[2022-12-09 12:34:33 -0500] [48745] [INFO] Booting worker with pid: 48745
+[2022-12-09 12:34:33 -0500] [48743] [INFO] Worker exiting (pid: 48743)
+[2022-12-09 12:34:34 -0500] [48746] [INFO] Booting worker with pid: 48746
+[2022-12-09 12:34:34 -0500] [48744] [INFO] Worker exiting (pid: 48744)
+[2022-12-09 12:34:34 -0500] [48745] [INFO] Worker exiting (pid: 48745)
+[2022-12-09 12:34:34 -0500] [48747] [INFO] Booting worker with pid: 48747
+[2022-12-09 12:34:34 -0500] [48750] [INFO] Booting worker with pid: 48750
+[2022-12-09 12:34:35 -0500] [48746] [INFO] Worker exiting (pid: 48746)
+[2022-12-09 12:34:35 -0500] [48751] [INFO] Booting worker with pid: 48751
+[2022-12-09 12:34:35 -0500] [48747] [INFO] Worker exiting (pid: 48747)
+[2022-12-09 12:34:35 -0500] [48750] [INFO] Worker exiting (pid: 48750)
+[2022-12-09 12:34:35 -0500] [48752] [INFO] Booting worker with pid: 48752
+[2022-12-09 12:34:36 -0500] [48753] [INFO] Booting worker with pid: 48753
+[2022-12-09 12:34:36 -0500] [48751] [INFO] Worker exiting (pid: 48751)
+[2022-12-09 12:34:36 -0500] [48754] [INFO] Booting worker with pid: 48754
+[2022-12-09 12:34:36 -0500] [48752] [INFO] Worker exiting (pid: 48752)
+[2022-12-09 12:34:37 -0500] [48753] [INFO] Worker exiting (pid: 48753)
+[2022-12-09 12:34:37 -0500] [48755] [INFO] Booting worker with pid: 48755
+[2022-12-09 12:34:37 -0500] [48756] [INFO] Booting worker with pid: 48756
+[2022-12-09 12:34:37 -0500] [48754] [INFO] Worker exiting (pid: 48754)
+[2022-12-09 12:34:38 -0500] [48757] [INFO] Booting worker with pid: 48757
+[2022-12-09 12:34:38 -0500] [48755] [INFO] Worker exiting (pid: 48755)
+[2022-12-09 12:34:38 -0500] [48756] [INFO] Worker exiting (pid: 48756)
+[2022-12-09 12:34:38 -0500] [48758] [INFO] Booting worker with pid: 48758
+[2022-12-09 12:34:38 -0500] [48759] [INFO] Booting worker with pid: 48759
+[2022-12-09 12:34:38 -0500] [48757] [INFO] Worker exiting (pid: 48757)
+[2022-12-09 12:34:39 -0500] [48760] [INFO] Booting worker with pid: 48760
+[2022-12-09 12:34:39 -0500] [48758] [INFO] Worker exiting (pid: 48758)
+[2022-12-09 12:34:39 -0500] [48759] [INFO] Worker exiting (pid: 48759)
+[2022-12-09 12:34:40 -0500] [48763] [INFO] Booting worker with pid: 48763
+[2022-12-09 12:34:40 -0500] [48760] [INFO] Worker exiting (pid: 48760)
+[2022-12-09 12:34:40 -0500] [48764] [INFO] Booting worker with pid: 48764
+[2022-12-09 12:34:40 -0500] [48765] [INFO] Booting worker with pid: 48765
+[2022-12-09 12:34:41 -0500] [48763] [INFO] Worker exiting (pid: 48763)
+[2022-12-09 12:34:41 -0500] [48764] [INFO] Worker exiting (pid: 48764)
+[2022-12-09 12:34:41 -0500] [48766] [INFO] Booting worker with pid: 48766
+[2022-12-09 12:34:41 -0500] [48767] [INFO] Booting worker with pid: 48767
+[2022-12-09 12:34:41 -0500] [48765] [INFO] Worker exiting (pid: 48765)
+[2022-12-09 12:34:41 -0500] [48768] [INFO] Booting worker with pid: 48768
+[2022-12-09 12:34:42 -0500] [48766] [INFO] Worker exiting (pid: 48766)
+[2022-12-09 12:34:42 -0500] [48767] [INFO] Worker exiting (pid: 48767)
+[2022-12-09 12:34:42 -0500] [48769] [INFO] Booting worker with pid: 48769
+[2022-12-09 12:34:42 -0500] [48770] [INFO] Booting worker with pid: 48770
+[2022-12-09 12:34:42 -0500] [48768] [INFO] Worker exiting (pid: 48768)
+[2022-12-09 12:34:43 -0500] [48771] [INFO] Booting worker with pid: 48771
+[2022-12-09 12:34:43 -0500] [48769] [INFO] Worker exiting (pid: 48769)
+[2022-12-09 12:34:43 -0500] [48770] [INFO] Worker exiting (pid: 48770)
+[2022-12-09 12:34:43 -0500] [48772] [INFO] Booting worker with pid: 48772
+[2022-12-09 12:34:44 -0500] [48773] [INFO] Booting worker with pid: 48773
+[2022-12-09 12:34:44 -0500] [48771] [INFO] Worker exiting (pid: 48771)
+[2022-12-09 12:34:44 -0500] [48774] [INFO] Booting worker with pid: 48774
+[2022-12-09 12:34:44 -0500] [48772] [INFO] Worker exiting (pid: 48772)
+[2022-12-09 12:34:44 -0500] [48773] [INFO] Worker exiting (pid: 48773)
+[2022-12-09 12:34:45 -0500] [48775] [INFO] Booting worker with pid: 48775
+[2022-12-09 12:34:45 -0500] [48776] [INFO] Booting worker with pid: 48776
+[2022-12-09 12:34:45 -0500] [48774] [INFO] Worker exiting (pid: 48774)
+[2022-12-09 12:34:45 -0500] [48777] [INFO] Booting worker with pid: 48777
+[2022-12-09 12:34:46 -0500] [48775] [INFO] Worker exiting (pid: 48775)
+[2022-12-09 12:34:46 -0500] [48776] [INFO] Worker exiting (pid: 48776)
+[2022-12-09 12:34:46 -0500] [48780] [INFO] Booting worker with pid: 48780
+[2022-12-09 12:34:46 -0500] [48781] [INFO] Booting worker with pid: 48781
+[2022-12-09 12:34:46 -0500] [48777] [INFO] Worker exiting (pid: 48777)
+[2022-12-09 12:34:46 -0500] [48782] [INFO] Booting worker with pid: 48782
+[2022-12-09 12:34:47 -0500] [48780] [INFO] Worker exiting (pid: 48780)
+[2022-12-09 12:34:47 -0500] [48781] [INFO] Worker exiting (pid: 48781)
+[2022-12-09 12:34:47 -0500] [48783] [INFO] Booting worker with pid: 48783
+[2022-12-09 12:34:47 -0500] [48784] [INFO] Booting worker with pid: 48784
+[2022-12-09 12:34:47 -0500] [48782] [INFO] Worker exiting (pid: 48782)
+[2022-12-09 12:34:48 -0500] [48785] [INFO] Booting worker with pid: 48785
+[2022-12-09 12:34:48 -0500] [48783] [INFO] Worker exiting (pid: 48783)
+[2022-12-09 12:34:48 -0500] [48784] [INFO] Worker exiting (pid: 48784)
+[2022-12-09 12:34:48 -0500] [48788] [INFO] Booting worker with pid: 48788
+[2022-12-09 12:34:49 -0500] [48789] [INFO] Booting worker with pid: 48789
+[2022-12-09 12:34:49 -0500] [48785] [INFO] Worker exiting (pid: 48785)
+[2022-12-09 12:34:49 -0500] [48790] [INFO] Booting worker with pid: 48790
+[2022-12-09 12:34:49 -0500] [48788] [INFO] Worker exiting (pid: 48788)
+[2022-12-09 12:34:49 -0500] [48789] [INFO] Worker exiting (pid: 48789)
+[2022-12-09 12:34:50 -0500] [48791] [INFO] Booting worker with pid: 48791
+[2022-12-09 12:34:50 -0500] [48792] [INFO] Booting worker with pid: 48792
+[2022-12-09 12:34:50 -0500] [48790] [INFO] Worker exiting (pid: 48790)
+[2022-12-09 12:34:50 -0500] [48793] [INFO] Booting worker with pid: 48793
+[2022-12-09 12:34:51 -0500] [48791] [INFO] Worker exiting (pid: 48791)
+[2022-12-09 12:34:51 -0500] [48792] [INFO] Worker exiting (pid: 48792)
+[2022-12-09 12:34:51 -0500] [48794] [INFO] Booting worker with pid: 48794
+[2022-12-09 12:34:51 -0500] [48795] [INFO] Booting worker with pid: 48795
+[2022-12-09 12:34:51 -0500] [48793] [INFO] Worker exiting (pid: 48793)
+[2022-12-09 12:34:51 -0500] [48796] [INFO] Booting worker with pid: 48796
+[2022-12-09 12:34:52 -0500] [48794] [INFO] Worker exiting (pid: 48794)
+[2022-12-09 12:34:52 -0500] [48795] [INFO] Worker exiting (pid: 48795)
+[2022-12-09 12:34:52 -0500] [48797] [INFO] Booting worker with pid: 48797
+[2022-12-09 12:34:52 -0500] [48798] [INFO] Booting worker with pid: 48798
+[2022-12-09 12:34:52 -0500] [48796] [INFO] Worker exiting (pid: 48796)
+[2022-12-09 12:34:53 -0500] [48799] [INFO] Booting worker with pid: 48799
+[2022-12-09 12:34:53 -0500] [48797] [INFO] Worker exiting (pid: 48797)
+[2022-12-09 12:34:53 -0500] [48798] [INFO] Worker exiting (pid: 48798)
+[2022-12-09 12:34:53 -0500] [48800] [INFO] Booting worker with pid: 48800
+[2022-12-09 12:34:53 -0500] [48801] [INFO] Booting worker with pid: 48801
+[2022-12-09 12:34:54 -0500] [48799] [INFO] Worker exiting (pid: 48799)
+[2022-12-09 12:34:54 -0500] [48802] [INFO] Booting worker with pid: 48802
+[2022-12-09 12:34:54 -0500] [48800] [INFO] Worker exiting (pid: 48800)
+[2022-12-09 12:34:54 -0500] [48801] [INFO] Worker exiting (pid: 48801)
+[2022-12-09 12:34:55 -0500] [48803] [INFO] Booting worker with pid: 48803
+[2022-12-09 12:34:55 -0500] [48804] [INFO] Booting worker with pid: 48804
+[2022-12-09 12:34:55 -0500] [48802] [INFO] Worker exiting (pid: 48802)
+[2022-12-09 12:34:55 -0500] [48807] [INFO] Booting worker with pid: 48807
+[2022-12-09 12:34:55 -0500] [48803] [INFO] Worker exiting (pid: 48803)
+[2022-12-09 12:34:56 -0500] [48804] [INFO] Worker exiting (pid: 48804)
+[2022-12-09 12:34:56 -0500] [48808] [INFO] Booting worker with pid: 48808
+[2022-12-09 12:34:56 -0500] [48809] [INFO] Booting worker with pid: 48809
+[2022-12-09 12:34:58 -0500] [48809] [INFO] Worker exiting (pid: 48809)
+[2022-12-09 12:34:58 -0500] [48807] [INFO] Worker exiting (pid: 48807)
+[2022-12-09 12:34:58 -0500] [47312] [INFO] Handling signal: term
+[2022-12-09 12:34:58 -0500] [48808] [INFO] Worker exiting (pid: 48808)
+[2022-12-09 12:34:58 -0500] [47312] [INFO] Shutting down: Master
+[2022-12-09 12:35:00 -0500] [48814] [INFO] Starting gunicorn 20.1.0
+[2022-12-09 12:35:00 -0500] [48814] [INFO] Listening at: http://0.0.0.0:65354 (48814)
+[2022-12-09 12:35:00 -0500] [48814] [INFO] Using worker: sync
+[2022-12-09 12:35:00 -0500] [48818] [INFO] Booting worker with pid: 48818
+[2022-12-09 12:35:00 -0500] [48819] [INFO] Booting worker with pid: 48819
+[2022-12-09 12:35:00 -0500] [48820] [INFO] Booting worker with pid: 48820
+[2022-12-09 12:36:02 -0500] [48818] [INFO] Worker exiting (pid: 48818)
+[2022-12-09 12:36:02 -0500] [48820] [INFO] Worker exiting (pid: 48820)
+[2022-12-09 12:36:02 -0500] [48819] [INFO] Worker exiting (pid: 48819)
+[2022-12-09 12:36:02 -0500] [48814] [INFO] Handling signal: term
+[2022-12-09 12:36:02 -0500] [48814] [WARNING] Worker with pid 48819 was terminated due to signal 15
+[2022-12-09 12:36:02 -0500] [48814] [WARNING] Worker with pid 48820 was terminated due to signal 15
+[2022-12-09 12:36:02 -0500] [48814] [WARNING] Worker with pid 48818 was terminated due to signal 15
+[2022-12-09 12:36:02 -0500] [48814] [INFO] Shutting down: Master
+[2022-12-09 12:49:13 -0500] [49274] [INFO] Starting gunicorn 20.1.0
+[2022-12-09 12:49:13 -0500] [49274] [INFO] Listening at: http://0.0.0.0:65354 (49274)
+[2022-12-09 12:49:13 -0500] [49274] [INFO] Using worker: sync
+[2022-12-09 12:49:13 -0500] [49275] [INFO] Booting worker with pid: 49275
+[2022-12-09 12:49:13 -0500] [49276] [INFO] Booting worker with pid: 49276
+[2022-12-09 12:49:13 -0500] [49277] [INFO] Booting worker with pid: 49277

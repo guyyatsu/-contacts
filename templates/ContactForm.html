@@ -4,8 +4,6 @@
 {% block scripting %}
 <!-- SUPPOSEDLY this allows for input masking, but so far I cant get it to work. -->
 
-<!-- <script type="text/javascript" src="{{ url_for('static', filename='masking-input.js') }}" data-autoinit="true"></script> -->
-<!-- <link rel="stylesheet" href="{{ url_for('static', filename='masking-input.css') }}"/> -->
 {% endblock %}
 
 
@@ -16,33 +14,73 @@
 
 <form method="post" enctype="multipart/form-data">
 
-    <!-- Visitors $NAME -->
-    <label for="ContactName">Name:</label><br>
-    <input required type="text" id="ContactName"
-           name="ContactName" value="{{ name }}"><br>
+  <!--[ BEGIN: INPUT FIELDS ]-->
+  <div id="InputFields">
 
-    <!-- Visitors $EMAIL -->
-    <label for="Email">Email:</label><br>
-    <input required type="email" id="Email"
-           value="{{ email }}" name="Email"><br>
+    <!--[ BEGIN: REQUIRED ARGUMENTS ]-->
+    <div id="RequiredInputs" class="RequiredInputs">
 
-    <!-- Visitors $PHONE -->
-    <label for="PreferredPhone">Preferred Phone:</label><br>
-    <input type="tel" id="PreferredPhone" name="PreferredPhone"
-           value="{{ phone }}"
-           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+      <!-- Visitors $NAME -->
+      <label for="ContactName">Name:</label><br>
+      <input required type="text" id="ContactName"
+             name="ContactName" value="{{ name }}"
+             placeholder="First Last"><br>
 
-    <!-- Visitors $COMPANY -->
-    <label for="Company">Company:</label><br>
-    <input type="text" value="{{ company }}"
-           id="Company" name="Company"><br>
 
-    <!-- Visitors $WEBSITE -->
-    <label for="Website">Website:</label><br>
-    <input type="url" value="{{ website }}"
-           id="Website" name="Website"><br>
+      <!-- Visitors $EMAIL -->
+      <label for="Email">Email:</label><br>
+      <input required type="email" id="Email"
+             value="{{ email }}" name="Email"
+             placeholder="YOUsername@YOUR.domain"><br>
 
-    <input type="submit"><br>
-  </form>
+    <!--[ END: REQUIRED ARGUMENTS ]-->
+    </div>
+
+    <!--[ BEGIN: OPTIONAL ARGUMENTS ]-->
+    <!--
+    <div id="OptionalInputs" class="OptionalInputs">
+    -->
+
+      <!-- Visitors $PHONE -->
+      <!--
+      <label for="PreferredPhone">Preferred Phone:</label><br>
+      <input type="tel" id="PreferredPhone" name="PreferredPhone"
+             value="{{ phone }}"
+             placeholder="000-000-0000"
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+      -->
+
+      <!-- Visitors $COMPANY -->
+      <!--
+      <label for="Company">Company:</label><br>
+      <input type="text" value="{{ company }}"
+             id="Company" name="Company"
+             placeholder="Business Factory LTD"><br>
+      -->
+
+      <!-- Visitors $WEBSITE -->
+      <!--
+      <label for="Website">Website:</label><br>
+      <input type="url" value="{{ website }}"
+             id="Website" name="Website"
+             placeholder="https://github.com/guyyatsu.me"><br>
+      -->
+
+    <!--[ END: OPTIONAL ARGUMENTS ]-->
+    <!--
+    </div>
+    -->
+
+  <!--[ END: INPUT FIELDS ]-->
+  </div>
+
+ 
+  <!--[ BEGIN: SUBMISSION BUTTON(S) ]-->
+  <div id="SubmissionButtons">
+    <button id="submitButton" type="submit" onclick="UpdateForm()">submit</button>
+  <!--[ END: SUBMISSION BUTTON(S) ]-->
+  </div>
+
+</form>
 
 {% endblock %}

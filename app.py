@@ -12,6 +12,7 @@ ContactsDatabase = "/administrator/.contacts.db"
 connection = sqlite3.connect(ContactsDatabase)
 cursor = connection.cursor()
 
+
 # Create the contacts table if it doesn't alread exist.
 cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='contacts';")
 if len(cursor.fetchall()) == 0:
@@ -32,8 +33,7 @@ app.config['SESSION_TYPE'] = 'filesystem'
 @app.route("/", methods=["GET", "POST"])
 def ContactForm():
 
-  # Set sqlite3 constants.
-  ContactsDatabase = "/administrator/.contacts.db"
+  # New sqlite3 connection.
   connection = sqlite3.connect(ContactsDatabase)
   cursor = connection.cursor()
 
@@ -172,22 +172,6 @@ def ContactForm():
 
     return redirect("https://guyyatsu.me/contacts")
 
-
-@app.route("/success")
-def FormSuccess():
-  """ Inform the user of a successful transaction. """
-
-  # Let the user know the UPDATE was successful.
-  if session["update"]:
-    return render_template("FormSuccess.html",
-      title="Success!",
-      InputType="Contact information updated successfully.")
-
-  # Let the user know they successfully ADDED themselves.
-  else:
-    return render_template("FormSuccess.html",
-      title="Success!",
-      InputType="Contact information successfully added.")
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0", port="65354")

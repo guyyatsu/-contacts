@@ -1,17 +1,21 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+#!/bin/python3
+""" A Flask endpoint that provides back-end services for https://guyyatsu.me/contacts.
+
+Upon initial rendering the visitor is presented with two input fields;
+
+    ```Name:```
+       ~and~~~~~~>>which are both stored as lower_score string literals in the database.
+       ~and~~~~~~>>get returned along with any POST requests.
+    ```Email:```
+
+When a POST request is caught its contents are selected for against the contacts.db file.
+
+Any results are considered to be deliberate updates and the matches are deleted,
+while a new line containing the updated results is committed to the table.
+"""
+
+#import argparse
 import sqlite3
-
-with open("/home/hunter/.ssh/id_ed25519.pub") as pubkeyFile:
-  KeyHeaders = pubkeyFile.read()\
-                         .split(" ")
-
-PublicKey = KeyHeaders[1]
-
-# Set sqlite3 constants.
-ContactsDatabase = "/administrator/.contacts.db"
-connection = sqlite3.connect(ContactsDatabase)
-cursor = connection.cursor()
-
 
 # Create the contacts table if it doesn't alread exist.
 cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='contacts';")

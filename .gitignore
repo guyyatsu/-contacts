@@ -1,4 +1,4 @@
-contacts.db
+*.db
 bin/
 bin/activate bin/activate.csh bin/activate.fish bin/Activate.ps1 bin/flask bin/pip bin/pip3 bin/pip3.10 bin/python bin/python3 bin/python3.10
 lib/
@@ -13,3 +13,4 @@ __pycache__/app.cpython-310.pyc
 include/*
 include/
 include
+*.log

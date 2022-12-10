@@ -17,19 +17,47 @@ while a new line containing the updated results is committed to the table.
 #import argparse
 import sqlite3
 
-# Create the contacts table if it doesn't alread exist.
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='contacts';")
-if len(cursor.fetchall()) == 0:
-  cursor.execute(f"CREATE TABLE contacts ("
-                 f"name TEXT PRIMARY KEY NOT NULL,"
-                 f"email TEXT NOT NULL,"
-                 f"number TEXT,"
-                 f"company TEXT"
-                 f"website TEXT)")
-  connection.commit()
+from flask import Flask
+from flask import render_template
+from flask import request
+from flask import redirect
+from flask import url_for
+from flask import session
 
 
-# Initialize the flask instance.
+""" INITIALIZE CONTACTS DATABASE """
+# TODO: Add command-line argument for specifying a .db filepath.
+ContactsDatabase = "/administrator/.contacts.db"
+if len( sqlite3.connect(ContactsDatabase)\
+               .cursor()\
+               .execute( f"SELECT name "
+                         f"FROM sqlite_master "
+                         f"WHERE "
+                         f"type='table' "
+                         f"AND "
+                         f"name='contacts';")\
+               .fetchall()) == 0: sqlite3.connect(ContactsDatabase)\
+                                         .cursor.execute( f"CREATE TABLE "
+                                                          f"IF NOT EXISTS "
+                                                          f"contacts ("
+                                                            f"name "
+                                                              f"TEXT "
+                                                              f"NOT NULL"
+                                                              f"PRIMARY KEY,"
+                                                            f"email "
+                                                              f"TEXT "
+                                                              f"NOT NULL"
+                                                          f")" ); connection.commit()
+
+
+""" READ PUBKEY """
+with open("/home/hunter/.ssh/id_ed25519.pub") as pubkeyFile:
+  PublicKey = pubkeyFile.read()\
+                        .strip()\
+                        .split(" ")[1]
+
+
+""" DEFINE FLASK INSTANCE """
 app = Flask(__name__)
 app.secret_key = str(PublicKey)
 app.config['SESSION_TYPE'] = 'filesystem'

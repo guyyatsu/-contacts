@@ -14,9 +14,11 @@ Any results are considered to be deliberate updates and the matches are deleted,
 while a new line containing the updated results is committed to the table.
 """
 
+# Built-In modules:
 #import argparse
 import sqlite3
 
+# Vanilla Flask modules:
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -31,7 +33,9 @@ from flask_socketio import emit
 
 """ INITIALIZE CONTACTS DATABASE """
 # TODO: Add command-line argument for specifying a .db filepath.
-ContactsDatabase = "/administrator/.contacts.db"
+ContactsDatabase = "/server/administrator/.contacts.db"
+
+# Check whether we have our table yet or not.
 if len( sqlite3.connect(ContactsDatabase)\
                .cursor()\
                .execute( f"SELECT name "
@@ -41,7 +45,8 @@ if len( sqlite3.connect(ContactsDatabase)\
                          f"AND "
                          f"name='contacts';")\
                .fetchall()) == 0: sqlite3.connect(ContactsDatabase)\
-                                         .cursor.execute( f"CREATE TABLE "
+                                                       .cursor.execute(# Create it if not.
+                                                          f"CREATE TABLE "
                                                           f"IF NOT EXISTS "
                                                           f"contacts ("
                                                             f"name "
@@ -62,7 +67,10 @@ with open("/home/hunter/.ssh/id_ed25519.pub") as pubkeyFile:
 
 
 """ DEFINE FLASK INSTANCE """
-app = Flask(__name__)
+app = Flask( __name__,
+             template_folder = "/server/domain/guyyatsu.me/templates",
+             static_url_path = "/server/domain/guyyatsu.me/static"     )
+
 app.secret_key = str(PublicKey)
 app.config['SESSION_TYPE'] = 'filesystem'
 socket = SocketIO(app)
@@ -78,8 +86,6 @@ def ConfirmFormSubmission():
 """ APP ROUTING """
 @app.route("/", methods=["GET", "POST"])
 def ContactForm():
-  """
-  """
 
   """ HANDLE [GET] METHOD """
   if request.method == "GET":
@@ -95,7 +101,7 @@ def ContactForm():
     # TODO: Implement input-masking.
 
     """ PREPARE VIEWPOINT """
-    return render_template( "ContactForm.html",
+    return render_template( "forms/contacts.html",
                             title="Contact Form",
                             name=session["name"],
                             email=session["email"] )

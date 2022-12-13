@@ -24,6 +24,10 @@ from flask import redirect
 from flask import url_for
 from flask import session
 
+# Flask-SocketIO modules:
+from flask_socketio import SocketIO
+from flask_socketio import emit
+
 
 """ INITIALIZE CONTACTS DATABASE """
 # TODO: Add command-line argument for specifying a .db filepath.
@@ -61,6 +65,14 @@ with open("/home/hunter/.ssh/id_ed25519.pub") as pubkeyFile:
 app = Flask(__name__)
 app.secret_key = str(PublicKey)
 app.config['SESSION_TYPE'] = 'filesystem'
+socket = SocketIO(app)
+
+
+""" SOCKET HANDLING """
+@socket.on("FormSubmission")
+def ConfirmFormSubmission():
+  print("Recieved Form")
+  emit("SubmissionConfirmation")
 
 
 """ APP ROUTING """

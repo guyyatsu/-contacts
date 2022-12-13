@@ -72,15 +72,12 @@ def ContactForm():
   """ HANDLE [GET] METHOD """
   if request.method == "GET":
 
-    """ SET DEFAULT NAME """
-    if session.get("name") == None: name = "Firstname Lastname"
-    """ USE SESSION NAME """
-    else: name = session["name"].title().replace("_", " ")
-
-    """ SET DEFAULT EMAIL """
-    if session.get("email") == None: email = "YOUsername@YOUrdomain.mail"
-    """ USE SESSION EMAIL """
-    else: email = session["email"]
+    
+    # Set name and email
+    if session.get("name"): session["name"] = session["name"].title().replace("_", " ")
+    else: session["name"] = ""
+    if session.get("email"): pass
+    else: session["email"] = ""
 
     # TODO: Utilize loopable custom input.
     # TODO: Implement input-masking.
@@ -88,8 +85,8 @@ def ContactForm():
     """ PREPARE VIEWPOINT """
     return render_template( "ContactForm.html",
                             title="Contact Form",
-                            name=name,
-                            email=email           )
+                            name=session["name"],
+                            email=session["email"] )
 
 
   """ HANDLE [POST] METHOD """

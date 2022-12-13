@@ -75,4 +75,5 @@ function UpdateForm() {
 
   createSaveButton();
   createSubmitButton();
+  redirectSuccess();
 }
